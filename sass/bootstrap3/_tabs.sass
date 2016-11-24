@@ -1,0 +1,40 @@
+/* _tabs.sass */
+ul.nav-tabs
+	border: transparent
+	box-shadow: 0px 3px 9px 0px $color-gray-1
+	height: 70px
+
+ul.nav-tabs li
+	height: 70px
+
+.nav-tabs > li:hover
+	border-bottom: 4px solid $brand-success
+	border-width: 0px 0px 3px 0px
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+	color: $brand-success
+	background-color: #fff
+	border: transparent
+	border-bottom-color: transparent
+	cursor: default
+
+.nav>li>a:focus, .nav>li>a:hover    
+	background-color: transparent 
+
+ul.nav-tabs li.active
+	border-bottom: 4px solid $brand-success
+	border-width: 0px 0px 3px 0px
+	a
+	color: $brand-success
+
+.nav-tabs > li > a:hover
+	border: transparent
+
+.nav-tabs>li>a
+	color: $color-gray-1
+	border: none
+	padding: 24px 18px 19px 18px 
+	font-size: 17px
+	font-weight: bold
+	text-transform: uppercase
+
