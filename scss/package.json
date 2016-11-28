@@ -1,0 +1,25 @@
+{
+  "name": "ux.styleguide",
+  "version": "1.0.0",
+  "description": "Ux Style Guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingaia/ux.styleguide.git"
+  },
+  "keywords": [
+    "ux",
+    "sass",
+    "style",
+    "guide"
+  ],
+  "author": "Thiago Franchin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingaia/ux.styleguide/issues"
+  },
+  "homepage": "https://github.com/ingaia/ux.styleguide#readme"
+}

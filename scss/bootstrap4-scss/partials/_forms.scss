@@ -1,0 +1,35 @@
+/* FORMS */
+
+/* FORMS INPUTS e BUTTONS */
+  .form-group { margin-bottom: 20px; }
+  /** LG */
+  .form-control-lg, .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn { padding: 1.125rem 1.5rem !important; }
+  /** MD */
+  .form-control-md, .input-group-md>.form-control, .input-group-md>.input-group-addon, .input-group-md>.input-group-btn>.btn { padding: 0.813rem 0.99rem !important; }
+  /** DEFAULT */
+  .form-control-default, .input-group-default>.form-control, .input-group-default>.input-group-addon, .input-group-default>.input-group-btn>.btn { padding: 0.5rem 0.855rem !important; }
+  /** SM */
+  .form-control-sm, .input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn { padding: 0.344rem 0.75rem !important; }
+
+/* TAGS FORM */
+  form .tagPosition { position: relative; }
+  .tagForm-default {     
+    position: absolute;
+    z-index: 8;
+    top: 6px;
+    right: 10px;
+    background: transparent;
+    letter-spacing: 1px;
+  }
+
+  
+
+/* FORM SELECT */
+  /** LG */
+  select.form-control-lg:not([size]):not([multiple]), .input-group-lg>select.form-control:not([size]):not([multiple]), .input-group-lg>select.input-group-addon:not([size]):not([multiple]), .input-group-lg>.input-group-btn>select.btn:not([size]):not([multiple]) { height: 3.938rem !important; }
+  /** MD */
+  select.form-control-md:not([size]):not([multiple]), .input-group-md>select.form-control:not([size]):not([multiple]), .input-group-md>select.input-group-addon:not([size]):not([multiple]), .input-group-md>.input-group-btn>select.btn:not([size]):not([multiple]) { height: 3rem !important; }
+  /** DEFAULT */
+  select.form-control-default:not([size]):not([multiple]), .input-group-default>select.form-control:not([size]):not([multiple]), .input-group-default>select.input-group-addon:not([size]):not([multiple]), .input-group-default>.input-group-btn>select.btn:not([size]):not([multiple]) { height: 2.375rem !important; }
+  /** SM */
+  select.form-control-sm:not([size]):not([multiple]), .input-group-sm>select.form-control:not([size]):not([multiple]), .input-group-sm>select.input-group-addon:not([size]):not([multiple]), .input-group-sm>.input-group-btn>select.btn:not([size]):not([multiple]) { height: 1.875rem !important; }

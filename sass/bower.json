@@ -19,5 +19,12 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "gaia-font-icons": "^1.0.12"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
 }
