@@ -4,7 +4,7 @@ A `UX Styleguide` da suporte para criação de projetos usando o Bootstrap 3 ou 
 
 ## Instalação
 
-* [Bower].
+### Bower
 
 ```console
 $ bower install ingaia.ux.styleguide
@@ -17,7 +17,7 @@ Escolha qual versão do bootstrap você quer usar:
 
 ### a. Styleguide com Bootstrap 3
 
-* [Bower].
+### Bower
 
 Bootstrap-sass Bower é compatível com o node-sass 3.2.0+. Você pode instalá-lo com:
 
@@ -31,7 +31,7 @@ Compile os arquivos da ux.styleguide com os arquivos do bootstrap-sass localizad
 
 A versão do bootstrap usada para criação dos layouts é a bootstrap#v4.0.0-alpha.5. Você pode instalá-lo com:
 
-* [Bower].
+### Bower
 
 ```console
 $ bower install bootstrap#v4.0.0-alpha.5
