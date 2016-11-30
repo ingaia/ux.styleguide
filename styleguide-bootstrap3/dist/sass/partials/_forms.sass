@@ -53,3 +53,85 @@
 		border: 1px solid transparent
 		background-color: transparent
 		box-shadow: inset 0 1px 1px transparent
+
+
+/* CHECKBOX */
+.checkbox-ingaia
+	input[type=checkbox]
+		opacity: 0
+		position: relative
+		left: 14px
+
+	input[type=checkbox] + span:before
+		content: " "
+		display: inline-block
+		margin-right: 10px
+		width: 17px
+		height: 17px
+		visibility: visible	
+		-webkit-border-radius: 10px
+		-moz-border-radius: 10px
+		border-radius: 10px
+		line-height: center
+		font-size: 8px
+		text-align: center	
+		color: #fff
+		cursor: pointer
+		padding: 3px 0 0 0
+		position: relative
+		top: 3px
+		background: transparent
+
+
+
+	input[type=checkbox]:checked + span:before
+		font-family: 'gaia-font-icons'
+		content: "\f123"
+		position: relative
+		top: -1px
+
+	.blue
+		input[type=checkbox]:checked + span:before
+			background: $color-saas
+		span.blue
+			&:before
+				border: 2px solid $color-saas
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas	
+
+	.purple
+		input[type=checkbox]:checked + span:before
+			background: $color-maas
+		span.purple
+			&:before
+				border: 2px solid $color-maas
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-maas, 0px 0px 3px $color-maas
+
+	.green
+		input[type=checkbox]:checked + span:before
+			background: $color-financial-solution
+		span.green
+			&:before
+				border: 2px solid $color-financial-solution
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-financial-solution, 0px 0px 3px $color-financial-solution							
+
+
+	.orange
+		input[type=checkbox]:checked + span:before
+			background: $color-education
+		span.orange
+			&:before
+				border: 2px solid $color-education
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-education, 0px 0px 3px $color-education
+
+	.red
+		input[type=checkbox]:checked + span:before
+			background: $color-real-estate-left
+		span.red
+			&:before
+				border: 2px solid $color-real-estate-left
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-real-estate-left, 0px 0px 3px $color-real-estate-left
