@@ -56,82 +56,130 @@
 
 
 /* CHECKBOX */
-.checkbox-ingaia
+.ingaia-checkbox
+	margin-right: 5px
+	
+	label
+		display: inline-block
+
+
+	span
+		&:before
+			border: 2px solid $color-gray-2
+		&:hover:before
+			box-shadow: inset 0px 0px 3px $color-gray-2, 0px 0px 3px $color-gray-2	
+			
 	input[type=checkbox]
 		opacity: 0
 		position: relative
 		left: 14px
 
+
 	input[type=checkbox] + span:before
-		content: " "
+		content: "\f123"
 		display: inline-block
-		margin-right: 10px
-		width: 17px
-		height: 17px
 		visibility: visible	
-		-webkit-border-radius: 10px
-		-moz-border-radius: 10px
-		border-radius: 10px
-		line-height: center
-		font-size: 8px
+		-webkit-border-radius: 100%
+		-moz-border-radius: 100%
+		border-radius: 100%		
 		text-align: center	
-		color: #fff
+		color: transparent
 		cursor: pointer
 		padding: 3px 0 0 0
 		position: relative
-		top: 3px
 		background: transparent
-
-
+		width: 17px
+		height: 17px
+		font-size: 9px			
+		padding: 2px 0 0 0
+		margin-right: 5px
 
 	input[type=checkbox]:checked + span:before
 		font-family: 'gaia-font-icons'
 		content: "\f123"
-		position: relative
-		top: -1px
+		color: $color-gray-2
+		display: inline-block
 
-	.blue
+	&.check-lg
+		input[type=checkbox] + span:before
+			width: 27px
+			height: 27px
+			font-size: 17px			
+			padding: 2px 0 0 0
+
+	&.check-md
+		input[type=checkbox] + span:before
+			width: 22px
+			height: 22px
+			font-size: 12px			
+			padding: 2px 0 0 0
+
+	&.check-sm
+		input[type=checkbox] + span:before
+			width: 19px
+			height: 19px
+			font-size: 10px			
+			padding: 2px 0 0 0
+
+	&.check-xs
+		input[type=checkbox] + span:before
+			width: 17px
+			height: 17px
+			font-size: 9px			
+			padding: 2px 0 0 0
+
+
+	&.check-blue
 		input[type=checkbox]:checked + span:before
 			background: $color-saas
-		span.blue
+			color: #fff
+		span
 			&:before
 				border: 2px solid $color-saas
 			&:hover:before
-				box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas	
+				box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas
 
-	.purple
+
+	&.check-purple
 		input[type=checkbox]:checked + span:before
 			background: $color-maas
-		span.purple
+			color: #fff
+		span
 			&:before
 				border: 2px solid $color-maas
 			&:hover:before
 				box-shadow: inset 0px 0px 3px $color-maas, 0px 0px 3px $color-maas
 
-	.green
+	&.check-green
 		input[type=checkbox]:checked + span:before
 			background: $color-financial-solution
-		span.green
+			color: #fff
+		span
 			&:before
 				border: 2px solid $color-financial-solution
 			&:hover:before
 				box-shadow: inset 0px 0px 3px $color-financial-solution, 0px 0px 3px $color-financial-solution							
 
-
-	.orange
+	&.check-orange
 		input[type=checkbox]:checked + span:before
 			background: $color-education
-		span.orange
+			color: #fff
+		span
 			&:before
 				border: 2px solid $color-education
 			&:hover:before
 				box-shadow: inset 0px 0px 3px $color-education, 0px 0px 3px $color-education
 
-	.red
+	&.check-red
 		input[type=checkbox]:checked + span:before
 			background: $color-real-estate-left
-		span.red
+			color: #fff
+		span
 			&:before
 				border: 2px solid $color-real-estate-left
 			&:hover:before
 				box-shadow: inset 0px 0px 3px $color-real-estate-left, 0px 0px 3px $color-real-estate-left
+	
+.check-inverse
+	input[type=checkbox]:checked + span:before
+		color: $color-gray-3 !important
