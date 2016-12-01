@@ -1,0 +1,25 @@
+{
+  "name": "ingaia.ux.styleguide",
+  "description": "inGaia Ux Style Guide",
+  "main": "index.js",
+  "authors": [
+    "Thiago Franchin"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "inGaia" 
+    "ux",
+    "sass",
+    "style",
+    "guide",
+    "styleguide"
+  ],
+  "homepage": "https://github.com/ingaia/ux.styleguide",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
