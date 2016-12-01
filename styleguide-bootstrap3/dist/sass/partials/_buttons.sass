@@ -1,6 +1,4 @@
 /* _buttons.sass */
-html
-	font-size: 16px
 
 $btn-default-color:              $brand-default
 $btn-default-bg:                 #fff
@@ -34,63 +32,63 @@ $btn-danger-border:              darken($btn-danger-bg, 5%)
 	outline: 0 !important
 
 .btn
-	text-transform: uppercase
-	font-weight: bold
-	display: inline-block
-	line-height: 1.25
-	text-align: center
-	white-space: nowrap
-	vertical-align: middle
-	cursor: pointer
-	user-select: none
-	border: 1px solid transparent
-	border-radius: 2px
+	text-transform: uppercase !important
+	font-weight: bold !important
+	display: inline-block !important
+	line-height: 1.25 !important
+	text-align: center !important
+	white-space: nowrap !important
+	vertical-align: middle !important
+	cursor: pointer !important
+	user-select: none !important
+	border: 1px solid transparent !important
+	border-radius: 2px !important
 
 /* BUTTONS COLORS */
 @mixin NewColorButton($textColor, $bgColor, $BorderColor)
-	color: $textColor
-	background-color: $bgColor
-	border: 1px solid $bgColor
+	color: $textColor !important
+	background-color: $bgColor !important
+	border: 1px solid $bgColor !important
 	&:hover
-		color: $textColor 
-		background-color: darken($bgColor, 5%)
-		border: 1px solid darken($bgColor, 5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 5%) !important
+		border: 1px solid darken($bgColor, 5%) !important
 	&:focus
-		color: $textColor
-		background-color: darken($bgColor, 5%)
-		border: 1px solid darken($bgColor, 5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 5%) !important
+		border: 1px solid darken($bgColor, 5%) !important
 	&.active
-		color: $textColor
-		background-color: darken($bgColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&.active:hover
-		color: $textColor
-		background-color: darken($bgColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&.active.focus
-		color: $textColor
-		background-color: darken($bgColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&.active:focus
-		color: $textColor
-		background-color: darken($bgColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&:active
-		color: $textColor
-		background-color: darken($bgColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&:active:hover
-		color: $textColor
-		background-color: darken($bgColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&:active.focus
-		color: $textColor
-		background-color: darken($bgColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&:active:focus
-		color: $textColor
-		background-color: darken($bgColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: $textColor !important
+		background-color: darken($bgColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 
 .open>.dropdown-toggle
 	&.btn-primary
@@ -121,53 +119,53 @@ $btn-danger-border:              darken($btn-danger-bg, 5%)
 
 /* BUTTONS COLORS */
 @mixin NewColorButtonOutline($textColor, $bgColor, $BorderColor)
-	color: $textColor
-	background-color: $bgColor
-	border: 1px solid $textColor
+	color: $textColor !important
+	background-color: $bgColor !important
+	border: 1px solid $textColor !important
 	&:hover
-		color: #fff 
-		background-color: $BorderColor
-		border: 1px solid $BorderColor
+		color: #fff !important
+		background-color: $BorderColor !important
+		border: 1px solid $BorderColor !important
 	&:focus
-		color: #fff
-		background-color: $BorderColor
-		border: 1px solid $BorderColor
+		color: #fff !important
+		background-color: $BorderColor !important
+		border: 1px solid $BorderColor !important
 	&:active:hover
-		color: #fff
-		background-color: darken($BorderColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: #fff !important
+		background-color: darken($BorderColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&.active
-		color: #fff
-		background-color: darken($BorderColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: #fff !important
+		background-color: darken($BorderColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&:active
-		color: #fff
-		background-color: darken($BorderColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: #fff !important
+		background-color: darken($BorderColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&.active.focus
-		color: #fff
-		background-color: darken($BorderColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: #fff !important
+		background-color: darken($BorderColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&.active:focus
-		color: #fff
-		background-color: darken($BorderColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: #fff !important
+		background-color: darken($BorderColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&.active:hover
-		color: #fff
-		background-color: darken($BorderColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: #fff !important
+		background-color: darken($BorderColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&:active.focus
-		color: #fff
-		background-color: darken($BorderColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: #fff !important
+		background-color: darken($BorderColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&:active:focus
-		color: #fff
-		background-color: darken($BorderColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: #fff !important
+		background-color: darken($BorderColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 	&:active:hover
-		color: #fff
-		background-color: darken($BorderColor, 6.5%)
-		border: 1px solid darken($BorderColor, 6.5%)
+		color: #fff !important
+		background-color: darken($BorderColor, 6.5%) !important
+		border: 1px solid darken($BorderColor, 6.5%) !important
 
 .btn-outline-primary
 	@include NewColorButtonOutline($brand-primary,transparent,$btn-primary-border)
@@ -184,21 +182,21 @@ $btn-danger-border:              darken($btn-danger-bg, 5%)
 
 /* BUTTONS SIZE */
 .btn-lg	
-	padding: px(1.125) px(1.5)
-	font-size: px(1.25) /* 20px */
-	height: 63px
+	padding: px(1.125) px(1.5) !important
+	font-size: px(1.25) !important /* 20px */
+	height: 63px !important
 .btn-md
-	padding: px(0.875) px(0.99)
-	font-size: px(0.9375) /* 15px */
-	height: 48px
+	padding: px(0.875) px(0.99) !important
+	font-size: px(0.9375) !important /* 15px */
+	height: 48px !important
 .btn-sm
-	padding: px(0.625) px(0.855)
-	font-size: px(0.8125) /* 13px */
-	height: 38px
+	padding: px(0.625) px(0.855) !important
+	font-size: px(0.8125) !important /* 13px */
+	height: 38px !important
 .btn-xs
-	padding: px(0.407) px(0.75)
-	font-size: px(0.75) /* 12px */
-	height: 30px
+	padding: px(0.407) px(0.75) !important
+	font-size: px(0.75) !important /* 12px */
+	height: 30px !important
 
 
 // SWITCH
@@ -244,7 +242,7 @@ $btn-danger-border:              darken($btn-danger-bg, 5%)
 		background-color: $brand-success
 
 	.toggle-slider i:nth-child(1)
-		color: $brand-success 
+		color: $brand-success
 
 	// Rounded toggle-slider
 	.toggle-slider.round  

@@ -1,21 +1,62 @@
-/* COLORS */
-  $gray-dark:                 #2f343b; // Cor da navbar
-  $gray:                      #55595c;
-  $gray-light:                #818a91;
-  $gray-lighter:              #eceeef;
-  $gray-lightest:             #f7f7f9;
+/*  _colors.scss*/
+  // COLORS MARCAS
+  $color-ingaia:                #0a345e;
+  $color-ingaia-1:              #5668b1;
+  $color-ingaia-2:              #4052a4;
+  $color-ingaia-3:              #243571;
+  $color-ingaia-4:              #222e64;
 
-  $brand-primary:             #6e8c99; // Color_old 116f84
+  $color-saas:                  #00a2c2;
+  $color-saas-1:                #06adcf;
+  $color-saas-2:                #168fab;
+  $color-saas-3:                #116f84;
+  $color-saas-4:                #0f3842;
+
+  $color-maas:                  #9d72af;
+  $color-maas-1:                #cda7ce;
+  $color-maas-2:                #a77ab5;
+  $color-maas-3:                #886297;
+  $color-maas-4:                #634970;
+
+  $color-financial-solution:    #3cb185;
+  $color-financial-solution-1:  #53be86;
+  $color-financial-solution-2:  #35a56f;
+  $color-financial-solution-3:  #1c7e57;
+  $color-financial-solution-4:  #133d2a;
+
+  $color-education:             #e89d51;
+  $color-education-1:           #be8244;
+  $color-education-2:           #faaa5c;
+  $color-education-3:           #7d562e;
+  $color-education-4:           #3d2812;
+
+  $color-real-estate-left:      #f0545e;
+  $color-real-estate-left-1:    #e24a54;
+  $color-real-estate-left-2:    #bf3d49;
+  $color-real-estate-left-3:    #7b272d;
+  $color-real-estate-left-4:    #371417;
+
+  $color-gray:                  #dedede;
+  $color-gray-1:                #b5b5b5;
+  $color-gray-2:                #676767;
+  $color-gray-3:                #2f343b;
+  $color-gray-4:                #222222;
+
+  $gray-dark:                 $color-gray-4;
+  $gray:                      $color-gray-3;
+  $gray-light:                $color-gray-2;
+  $gray-lighter:              $color-gray-1;
+  $gray-lightest:             $color-gray;
+
+  $brand-primary:             $color-saas-3;
+  $brand-default:             $color-gray-1;
+  $brand-success:             $color-saas;
   $brand-info:                #2884b0;
   $brand-warning:             #c0ad8f;
-  $brand-danger:              #bf3d49;
+  $brand-danger:              $color-real-estate-left-2;
+  $brand-inverse:             $color-gray-3;
 
-  $link-color:                #2884b0;
-
-
-  .color-white { color: #ffffff !important; }
-  .bg-white { background-color: #ffffff !important; }
-  .bg-transparent { background-color: transparent !important; }
+  $link-color:                $brand-info;
 
   .color-secondary-1 { color: #b5b5b5 !important; }
   .color-secondary-2 { color: #676767 !important; }
@@ -27,67 +68,37 @@
   .bg-secondary-3 { background-color: #2f343b !important; }
   .bg-secondary-4 { background-color: #222222 !important; }
 
-/* CORES DAS MARCAS */
-  /** MARCAS COLORS */
-  .color-ingaia { color: #0a345e !important; }
-    .color-ingaia-1 { color: #5668b1 !important; }
-    .color-ingaia-2 { color: #4052a4 !important; }
-    .color-ingaia-3 { color: #243571 !important; }
-    .color-ingaia-4 { color: #222e64 !important; }
-  .color-saas { color: #00a2c2 !important; }  
-    .color-saas-1 { color: #06adcf !important; }
-    .color-saas-2 { color: #168fab !important; }
-    .color-saas-3 { color: #116f84 !important; }
-    .color-saas-4 { color: #0f3842 !important; }
-  .color-maas { color: #9d72af !important; }  
-    .color-maas-1 { color: #cda7ce !important; }
-    .color-maas-2 { color: #a77ab5 !important; }
-    .color-maas-3 { color: #886297 !important; }
-    .color-maas-4 { color: #634970 !important; }
-  .color-education { color: #faaa5c !important; }  
-    .color-education-1 { color: #e89d51 !important; }
-    .color-education-2 { color: #be8244 !important; }
-    .color-education-3 { color: #7d562e !important; }
-    .color-education-4 { color: #3d2812 !important; }
-  .color-financial-solution { color: #3cb185 !important; }
-    .color-financial-solution-1 { color: #53be86 !important; }
-    .color-financial-solution-2 { color: #35a56f !important; }
-    .color-financial-solution-3 { color: #1c7e57 !important; }
-    .color-financial-solution-4 { color: #133d2a !important; }
-  .color-real-estate-left { color: #f0545e !important; }
-    .color-real-estate-left-1 { color: #e24a54 !important; }
-    .color-real-estate-left-2 { color: #bf3d49 !important; }
-    .color-real-estate-left-3 { color: #7b272d !important; }
-    .color-real-estate-left-4 { color: #371417 !important; }
+  // COLORS CLASS
+  .color-white { color: #fff; }
+  .color-ingaia { color: $color-ingaia; }
+  .color-saas { color: $color-saas }
+  .color-maas { color: $color-maas }
+  .color-education { color: $color-education }
+  .color-financial-solution { color: $color-financial-solution }
+  .color-real-estate-left { color: $color-real-estate-left }
+    
+  // BACKGROUD COLORS CLASS
+  .bg-transparent { background-color: transparent !important; }
+  .bg-white { background-color: #ffffff !important; }
+  .bg-ingaia { background-color: $color-ingaia; }
+  .bg-saas { background-color: $color-saas; }
+  .bg-maas { background-color: $color-maas }
+  .bg-education { background-color: $color-education; }
+  .bg-financial-solution { background-color: $color-financial-solution; }
+  .bg-real-estate-left { background-color: $color-real-estate-left; }
 
-  /** MARCAS BACKGROUNDS */
-  .bg-ingaia { background-color: #0a345e !important; }
-    .bg-ingaia-1 { background-color: #5668b1 !important; }
-    .bg-ingaia-2 { background-color: #4052a4 !important; }
-    .bg-ingaia-3 { background-color: #243571 !important; }
-    .bg-ingaia-4 { background-color: #222e64 !important; }
-  .bg-saas { background-color: #00a2c2 !important; }  
-    .bg-saas-1 { background-color: #06adcf !important; }
-    .bg-saas-2 { background-color: #168fab !important; }
-    .bg-saas-3 { background-color: #116f84 !important; }
-    .bg-saas-4 { background-color: #0f3842 !important; }
-  .bg-maas { background-color: #9d72af !important; }  
-    .bg-maas-1 { background-color: #cda7ce !important; }
-    .bg-maas-2 { background-color: #a77ab5 !important; }
-    .bg-maas-3 { background-color: #886297 !important; }
-    .bg-maas-4 { background-color: #634970 !important; }
-  .bg-education { background-color: #faaa5c !important; }  
-    .bg-education-1 { background-color: #e89d51 !important; }
-    .bg-education-2 { background-color: #be8244 !important; }
-    .bg-education-3 { background-color: #7d562e !important; }
-    .bg-education-4 { background-color: #3d2812 !important; }
-  .bg-financial-solution { background-color: #3cb185 !important; }
-    .bg-financial-solution-1 { background-color: #53be86 !important; }
-    .bg-financial-solution-2 { background-color: #35a56f !important; }
-    .bg-financial-solution-3 { background-color: #1c7e57 !important; }
-    .bg-financial-solution-4 { background-color: #133d2a !important; }
-  .bg-real-estate-left { background-color: #f0545e !important; }
-    .bg-real-estate-left-1 { background-color: #e24a54 !important; }
-    .bg-real-estate-left-2 { background-color: #bf3d49 !important; }
-    .bg-real-estate-left-3 { background-color: #7b272d !important; }
-    .bg-real-estate-left-4 { background-color: #371417 !important; }
+  // HR CLASS
+  .hr-white { border-top: 1px solid #fff; }
+  .hr-primary { border-top: 1px solid $brand-primary; }
+  .hr-default { border-top: 1px solid $brand-default; }
+  .hr-success { border-top: 1px solid $brand-success; }
+  .hr-info { border-top: 1px solid $brand-info; }
+  .hr-warning { border-top: 1px solid $brand-warning; }
+  .hr-danger { border-top: 1px solid $brand-danger; }
+
+  .hr-ingaia { border-top: 1px solid $color-ingaia; }
+  .hr-saas { border-top: 1px solid $color-saas; }
+  .hr-maas { border-top: 1px solid $color-maas; }
+  .hr-financial-solution { border-top: 1px solid $color-financial-solution; }
+  .hr-education { border-top: 1px solid $color-education; }
+  .hr-real-estate-left { border-top: 1px solid $color-real-estate-left; }

@@ -1,13 +1,13 @@
 /* sass --watch stylesheet.scss:../dist/css/style.min.css --style compressed */
 
+@import "partials/grid-xl";
+@import "partials/reset";
 @import "partials/colors";
 @import "partials/typography";
-@import "partials/reset";
-//@import "../bower_components/bootstrap/scss/bootstrap";
-@import "partials/grid-xl";
 @import "partials/forms";
 @import "partials/buttons";
 @import "partials/tabs";
 @import "partials/label";
 @import "partials/cards";
 @import "partials/popover";
+@import "../../../bower_components/bootstrap/scss/bootstrap";
