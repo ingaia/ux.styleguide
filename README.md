@@ -4,6 +4,12 @@ A `UX Styleguide` da suporte para criação de projetos usando o Bootstrap 3 ou 
 
 ## Instalação
 
+### npm
+
+```console
+$ npm install ingaia.ux.styleguide
+```
+
 ### Bower
 
 ```console
