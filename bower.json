@@ -1,7 +1,6 @@
 {
   "name": "ingaia.ux.styleguide",
-  "description": "inGaia Ux Style Guide",
-  "main": "index.js",
+  "description": "inGaia Ux Style Guide",  
   "authors": [
     "Thiago Franchin"
   ],
