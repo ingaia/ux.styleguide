@@ -37,13 +37,11 @@
 
 /* CHECKBOX */
 .ingaia-checkbox {
-  margin-right: 2px;
-  
+  margin-right: 5px;  
 
   label {
     display: inline-block;
   }
-
 
   span {
     &:before {
@@ -55,43 +53,46 @@
   }
 
   input[type=checkbox] {
-    opacity: 0;
-    position: relative;
-    left: 14px;
+    display: none
   }
 
   input[type=checkbox] + span:before {
-    content: "\f123";
+    content: "\E014";
     display: inline-block;
     visibility: visible; 
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
-    border-radius: 100%;   
-    text-align: center;  
+    border-radius: 100%;
+    text-align: center;
     color: transparent;
-    cursor: pointer;    
+    cursor: pointer;
+    padding: 3px 0 0 0;
     position: relative;
     background: transparent;
     width: 17px;
     height: 17px;
-    font-size: 9px;      
-    padding: 1px 1px 0 0;
+    font-size: 11px;
+    padding: 0;
+    line-height: 14px;
     margin-right: 5px;
+    vertical-align: text-bottom;
   }
 
   input[type=checkbox]:checked + span:before {
-    font-family: 'gaia-font-icons';
-    content: "\f123";
+    font-family: 'ingaia-font-icons-1481041243';
+    content: "\E014";
     color: $color-gray-2;
-    display: inline-block;
+    display: inline-block;    
+    vertical-align: text-bottom;
   }
 
   &.check-lg {
     input[type=checkbox] + span:before {
       width: 27px;
       height: 27px;
-      font-size: 17px;     
-      padding: 2px 0 0 1px;
+      font-size: 18px;     
+      padding: 0;
+      line-height: 24px;
     }
   }
 
@@ -99,8 +100,9 @@
     input[type=checkbox] + span:before {
       width: 22px;
       height: 22px;
-      font-size: 12px;     
-      padding: 2px 0 0 0;
+      font-size: 14px;
+      padding: 0;
+      line-height: 19px;
     }
   }
 
@@ -108,8 +110,9 @@
     input[type=checkbox] + span:before {
       width: 19px;
       height: 19px;
-      font-size: 10px;     
-      padding: 2px 0px 0 1px;
+      font-size: 12px;
+      padding: 0;
+      line-height: 16px;
     }
   }
 
@@ -117,8 +120,9 @@
     input[type=checkbox] + span:before {
       width: 17px;
       height: 17px;
-      font-size: 9px;      
-      padding: 1px 0px 0 0;
+      font-size: 11px;
+      padding: 0;
+      line-height: 14px;
     }
   }
 
