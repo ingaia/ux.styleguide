@@ -5,19 +5,28 @@
   .card i { font-size: 1.15rem; }
 
   /** Bordas */
-  .card.border-left-ingaia { border-left: 3px solid #0a345e; }
-  .card.border-bottom-ingaia { border-bottom: 3px solid #0a345e; }
-  .card.border-left-saas { border-left: 3px solid #00a2c2; }
-  .card.border-bottom-saas { border-bottom: 3px solid #00a2c2; }
-  .card.border-left-maas { border-left: 3px solid #9d72af; }
-  .card.border-bottom-maas { border-bottom: 3px solid #9d72af; }
-  .card.border-left-education { border-left: 3px solid #faaa5c; }
-  .card.border-bottom-education { border-bottom: 3px solid #faaa5c; }
-  .card.border-left-financial-solution { border-left: 3px solid #3cb185; }
-  .card.border-bottom-financial-solution { border-bottom: 3px solid #3cb185; }
-  .card.border-left-real-estate-left { border-left: 3px solid #f0545e; }
-  .card.border-bottom-real-estate-left { border-bottom: 3px solid #f0545e; }
-  .border-dashed { border-bottom: dashed 1px #DBDBDB; }
+  .card.border-left-ingaia { border-left: 3px solid $color-ingaia; }
+  .card.border-left-saas { border-left: 3px solid $color-saas; }
+  .card.border-left-maas { border-left: 3px solid $color-maas; }
+  .card.border-left-education { border-left: 3px solid $color-education; }
+  .card.border-left-financial-solution { border-left: 3px solid $color-financial-solution; }
+  .card.border-left-real-estate-left { border-left: 3px solid $color-real-estate-left; }
+ 
+  .card.border-top-ingaia { border-top: 3px solid $color-ingaia; }
+  .card.border-top-saas { border-top: 3px solid $color-saas; }
+  .card.border-top-maas { border-top: 3px solid $color-maas; }
+  .card.border-top-education { border-top: 3px solid $color-education; }
+  .card.border-top-financial-solution { border-top: 3px solid $color-financial-solution; }
+  .card.border-top-real-estate-left { border-top: 3px solid $color-real-estate-left; }
+
+  .card.border-bottom-ingaia { border-bottom: 3px solid $color-ingaia; }
+  .card.border-bottom-saas { border-bottom: 3px solid $color-saas; }
+  .card.border-bottom-maas { border-bottom: 3px solid $color-maas; }
+  .card.border-bottom-education { border-bottom: 3px solid $color-education; }
+  .card.border-bottom-financial-solution { border-bottom: 3px solid $color-financial-solution; }
+  .card.border-bottom-real-estate-left { border-bottom: 3px solid $color-real-estate-left; }
+ 
+  .border-dashed { border-bottom: dashed 1px $color-gray; }
 
   /* CARD-1 */
   #card-1 .status span { font-size: 1.15rem !important; margin-right: 2px;}
@@ -37,7 +46,7 @@
   #card-2 .input-group { margin-bottom: 20px; }
 
   /* CARD-3 */  
-  #card-3 #card-3-1 div div { border-right: solid 1px #DBDBDB; }
+  #card-3 #card-3-1 div div { border-right: solid 1px $color-gray; }
   #card-3 #card-3-1 div div:nth-child(4n+4) { border-right: none; }
   #card-3 #card-3-1 div div:last-child { border-right: none; }
   #card-3 #card-3-1 i { font-size: 1.5625rem; margin-right: 5px; }
