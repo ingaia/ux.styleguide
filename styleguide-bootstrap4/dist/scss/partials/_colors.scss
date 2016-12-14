@@ -56,19 +56,15 @@
   $brand-danger:              $color-real-estate-left-2;
   $brand-inverse:             $color-gray-3;
 
-  $link-color:                $brand-info;
+  $link-color:                $brand-success;
 
+  // COLORS CLASS
+  .color-secondary { color: $color-gray !important; }
   .color-secondary-1 { color: $color-gray-1 !important; }
   .color-secondary-2 { color: $color-gray-2 !important; }
   .color-secondary-3 { color: $color-gray-3 !important; }
   .color-secondary-4 { color: $color-gray-4 !important; }
 
-  .bg-secondary-1 { background-color: $color-gray-1 !important; }
-  .bg-secondary-2 { background-color: $color-gray-2 !important; }
-  .bg-secondary-3 { background-color: $color-gray-3 !important; }
-  .bg-secondary-4 { background-color: $color-gray-4 !important; }
-
-  // COLORS CLASS
   .color-white { color: #fff; }
   .color-ingaia { color: $color-ingaia; }
   .color-saas { color: $color-saas }
@@ -78,6 +74,12 @@
   .color-real-estate-left { color: $color-real-estate-left }
     
   // BACKGROUD COLORS CLASS
+  .bg-secondary { background-color: $color-gray !important; }
+  .bg-secondary-1 { background-color: $color-gray-1 !important; }
+  .bg-secondary-2 { background-color: $color-gray-2 !important; }
+  .bg-secondary-3 { background-color: $color-gray-3 !important; }
+  .bg-secondary-4 { background-color: $color-gray-4 !important; }
+
   .bg-transparent { background-color: transparent !important; }
   .bg-white { background-color: #ffffff !important; }
   .bg-ingaia { background-color: $color-ingaia; }
