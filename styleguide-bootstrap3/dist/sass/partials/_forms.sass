@@ -72,7 +72,7 @@
 		display: none
 
 	input[type=checkbox] + span:before
-		content: "\E014"
+		content: "\E013"
 		display: inline-block
 		visibility: visible	
 		-webkit-border-radius: 100%
@@ -93,8 +93,8 @@
 		vertical-align: text-bottom
 
 	input[type=checkbox]:checked + span:before
-		font-family: 'ingaia-font-icons-1481041243'
-		content: "\E014"
+		font-family: 'ingaia-font-icons'
+		content: "\E013"
 		color: $color-gray-2
 		display: inline-block
 		vertical-align: text-bottom
@@ -185,3 +185,136 @@
 .check-inverse
 	input[type=checkbox]:checked + span:before
 		color: $color-gray-3 !important
+
+
+/* RADIO */
+.ingaia-radio
+	margin-right: 5px
+	
+	label
+		display: inline-block
+
+	span
+		&:before
+			border: 2px solid $color-gray-2
+		&:hover:before
+			box-shadow: inset 0px 0px 3px $color-gray-2, 0px 0px 3px $color-gray-2	
+			
+	input[type=radio]
+		display: none
+
+	input[type=radio] + span:before
+		content: "\E01E"
+		display: inline-block
+		visibility: visible	
+		-webkit-border-radius: 100%
+		-moz-border-radius: 100%
+		border-radius: 100%		
+		text-align: center	
+		color: transparent
+		cursor: pointer
+		padding: 3px 0 0 0
+		position: relative
+		background: transparent
+		width: 17px
+		height: 17px
+		font-size: 11px			
+		padding: 0
+		line-height: 14px
+		margin-right: 5px
+		vertical-align: text-bottom
+
+	input[type=radio]:checked + span:before
+		font-family: 'ingaia-font-icons'
+		content: "\E01E"
+		color: $color-gray-2
+		display: inline-block
+		vertical-align: text-bottom
+
+	&.radio-lg
+		input[type=radio] + span:before
+			width: 27px
+			height: 27px
+			font-size: 18px			
+			padding: 0
+			line-height: 24px
+
+	&.radio-md
+		input[type=radio] + span:before
+			width: 22px
+			height: 22px
+			font-size: 14px			
+			padding: 0
+			line-height: 19px
+
+	&.radio-sm
+		input[type=radio] + span:before
+			width: 19px
+			height: 19px
+			font-size: 12px			
+			padding: 0
+			line-height: 16px
+
+	&.radio-xs
+		input[type=radio] + span:before
+			width: 17px
+			height: 17px
+			font-size: 11px			
+			padding: 0
+			line-height: 14px
+
+	&.radio-blue
+		input[type=radio]:checked + span:before
+			background: $color-saas
+			color: #fff
+		span
+			&:before
+				border: 2px solid $color-saas
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas
+
+
+	&.radio-purple
+		input[type=radio]:checked + span:before
+			background: $color-maas
+			color: #fff
+		span
+			&:before
+				border: 2px solid $color-maas
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-maas, 0px 0px 3px $color-maas
+
+	&.radio-green
+		input[type=radio]:checked + span:before
+			background: $color-financial-solution
+			color: #fff
+		span
+			&:before
+				border: 2px solid $color-financial-solution
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-financial-solution, 0px 0px 3px $color-financial-solution							
+
+	&.radio-orange
+		input[type=radio]:checked + span:before
+			background: $color-education
+			color: #fff
+		span
+			&:before
+				border: 2px solid $color-education
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-education, 0px 0px 3px $color-education
+
+	&.radio-red
+		input[type=radio]:checked + span:before
+			background: $color-real-estate-left
+			color: #fff
+		span
+			&:before
+				border: 2px solid $color-real-estate-left
+			&:hover:before
+				box-shadow: inset 0px 0px 3px $color-real-estate-left, 0px 0px 3px $color-real-estate-left
+	
+.radio-inverse
+	input[type=radio]:checked + span:before
+		color: $color-gray-3 !important
+
