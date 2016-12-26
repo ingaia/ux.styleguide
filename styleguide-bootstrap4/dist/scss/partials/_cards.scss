@@ -4,30 +4,6 @@
   .card-header { padding: 0.75rem 1.25rem 0.25rem 1.25rem !important; }
   .card i { font-size: 1.15rem; }
 
-  /** Bordas */
-  .card.border-left-ingaia { border-left: 3px solid $color-ingaia; }
-  .card.border-left-saas { border-left: 3px solid $color-saas; }
-  .card.border-left-maas { border-left: 3px solid $color-maas; }
-  .card.border-left-education { border-left: 3px solid $color-education; }
-  .card.border-left-financial-solution { border-left: 3px solid $color-financial-solution; }
-  .card.border-left-real-estate-left { border-left: 3px solid $color-real-estate-left; }
- 
-  .card.border-top-ingaia { border-top: 3px solid $color-ingaia; }
-  .card.border-top-saas { border-top: 3px solid $color-saas; }
-  .card.border-top-maas { border-top: 3px solid $color-maas; }
-  .card.border-top-education { border-top: 3px solid $color-education; }
-  .card.border-top-financial-solution { border-top: 3px solid $color-financial-solution; }
-  .card.border-top-real-estate-left { border-top: 3px solid $color-real-estate-left; }
-
-  .card.border-bottom-ingaia { border-bottom: 3px solid $color-ingaia; }
-  .card.border-bottom-saas { border-bottom: 3px solid $color-saas; }
-  .card.border-bottom-maas { border-bottom: 3px solid $color-maas; }
-  .card.border-bottom-education { border-bottom: 3px solid $color-education; }
-  .card.border-bottom-financial-solution { border-bottom: 3px solid $color-financial-solution; }
-  .card.border-bottom-real-estate-left { border-bottom: 3px solid $color-real-estate-left; }
- 
-  .border-dashed { border-bottom: dashed 1px $color-gray; }
-
   /* CARD-1 */
   #card-1 .status span { font-size: 1.15rem !important; margin-right: 2px;}
   #card-1 .status span:last-child { margin-right: 0; }
