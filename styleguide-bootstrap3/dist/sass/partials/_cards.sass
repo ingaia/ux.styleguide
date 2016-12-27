@@ -13,8 +13,7 @@
 			font-size: 20px !important
 			color: $color-gray-1 !important
 
-@mixin BorderLeft($color, $topLeft, $topRight, $bottomRight, $bottomLeft )
-	border-left: 3px solid $color !important
+@mixin BorderLeft($topLeft, $topRight, $bottomRight, $bottomLeft)	
 	-webkit-border-top-left-radius: $topLeft !important
 	-webkit-border-top-right-radius: $topRight !important
 	-webkit-border-bottom-left-radius: $bottomLeft !important
@@ -29,29 +28,27 @@
 	border-bottom-right-radius: $bottomRight !important
 
 
-// PANEL MARGIN LEFT
+// PANEL BORDER LEFT
 .panel.border-left-ingaia
-	@include BorderLeft($color-ingaia,2px,4px,4px,2px)
+	@include BorderLeft(2px,4px,4px,2px)
 
 .panel.border-left-saas
-	@include BorderLeft($color-saas,2px,4px,4px,2px)
+	@include BorderLeft(2px,4px,4px,2px)
 
 .panel.border-left-maas
-	@include BorderLeft($color-maas,2px,4px,4px,2px)
+	@include BorderLeft(2px,4px,4px,2px)
 
 .panel.border-left-financial-solution
-	@include BorderLeft($color-financial-solution,2px,4px,4px,2px)
+	@include BorderLeft(2px,4px,4px,2px)
 
 .panel.border-left-education
-	@include BorderLeft($color-education,2px,4px,4px,2px)
+	@include BorderLeft(2px,4px,4px,2px)
 
 .panel.border-left-real-estate-left
-	@include BorderLeft($color-real-estate-left,2px,4px,4px,2px)
+	@include BorderLeft(2px,4px,4px,2px)
 
 
-
-@mixin BorderBottom($color, $topLeft, $topRight, $bottomLeft, $bottomRight)
-	border-bottom: 3px solid $color !important
+@mixin BorderBottom($topLeft, $topRight, $bottomLeft, $bottomRight)	
 	-webkit-border-top-left-radius: $topLeft !important
 	-webkit-border-top-right-radius: $topRight !important
 	-webkit-border-bottom-left-radius: $bottomLeft !important
@@ -66,22 +63,21 @@
 	border-bottom-right-radius: $bottomRight !important
 
 
-
-// PANEL MARGIN BOTTOM
+// PANEL BORDER BOTTOM
 .panel.border-bottom-ingaia
-	@include BorderBottom($color-ingaia,4px,4px,2px,2px)
+	@include BorderBottom(4px,4px,2px,2px)
 
 .panel.border-bottom-saas
-	@include BorderBottom($color-saas,4px,4px,2px,2px)
+	@include BorderBottom(4px,4px,2px,2px)
 
 .panel.border-bottom-maas
-	@include BorderBottom($color-maas,4px,4px,2px,2px)
+	@include BorderBottom(4px,4px,2px,2px)
 
 .panel.border-bottom-financial-solution
-	@include BorderBottom($color-financial-solution,4px,4px,2px,2px)
+	@include BorderBottom(4px,4px,2px,2px)
 
 .panel.border-bottom-education
-	@include BorderBottom($color-education,4px,4px,2px,2px)
+	@include BorderBottom(4px,4px,2px,2px)
 
 .panel.border-bottom-real-estate-left
-	@include BorderBottom($color-real-estate-left,4px,4px,2px,2px)
+	@include BorderBottom(4px,4px,2px,2px)

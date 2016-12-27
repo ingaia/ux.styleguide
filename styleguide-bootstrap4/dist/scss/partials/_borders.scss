@@ -32,6 +32,7 @@
 
 /* ARROWS */
 @mixin NewArrow($top, $left, $arrowColorTop, $arrowColorRight, $arrowColorBottom, $arrowColorLeft, $borderTopPx, $borderRightPx, $borderBottomPx, $borderLeftPx) {
+  position: relative;
   &:after{
     content: "";
     display: inline-block;
