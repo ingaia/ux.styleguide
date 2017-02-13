@@ -33,6 +33,8 @@ select.form-control-default:not([size]):not([multiple]), .input-group-default>se
 /** SM */
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm>select.form-control:not([size]):not([multiple]), .input-group-sm>select.input-group-addon:not([size]):not([multiple]), .input-group-sm>.input-group-btn>select.btn:not([size]):not([multiple]) { height: 1.875rem !important; }
 
+.form-control:disabled, .form-control[readonly] { opacity: 0.65 !important; }
+
 
 label.active {
   background-color: $brand-success !important;
