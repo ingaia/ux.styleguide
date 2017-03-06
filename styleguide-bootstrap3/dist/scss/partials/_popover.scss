@@ -1,0 +1,49 @@
+/* _popover.sass */
+
+.popover.right {
+  border-left: 4px solid $brand-success !important;
+
+  .arrow {
+    border-right-color: $brand-success !important;
+  }
+
+  .arrow:after {
+    border-right-color: transparent !important;
+  }
+}
+
+.popover.left {
+  border-right: 4px solid $brand-success !important;
+
+  .arrow {
+    border-left-color: $brand-success !important;
+  }
+
+  .arrow:after {
+    border-left-color: transparent !important;
+  }
+}
+
+.popover.top {
+  border-bottom: 4px solid $brand-success !important;
+
+  .arrow {
+    border-top-color: $brand-success !important;
+  }
+
+  .arrow:after {
+    border-top-color: transparent !important;
+  }
+}
+
+.popover.bottom {
+  border-top: 4px solid $brand-success !important;
+
+  .arrow {
+    border-bottom-color: $brand-success !important;
+  }
+
+  .arrow:after {
+    border-bottom-color: transparent !important;
+  }
+}

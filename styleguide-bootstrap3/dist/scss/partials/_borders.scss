@@ -1,0 +1,170 @@
+/* _borders.sass */
+.border-top-ingaia {
+  border-top: 3px solid $color-ingaia !important;
+}
+
+.border-top-saas {
+  border-top: 3px solid $color-saas !important;
+}
+
+.border-top-maas {
+  border-top: 3px solid $color-maas !important;
+}
+
+.border-top-education {
+  border-top: 3px solid $color-education !important;
+}
+
+.border-top-financial-solution {
+  border-top: 3px solid $color-financial-solution !important;
+}
+
+.border-top-real-estate-left {
+  border-top: 3px solid $color-real-estate-left !important;
+}
+
+.border-right-ingaia {
+  border-right: 3px solid $color-ingaia !important;
+}
+
+.border-right-saas {
+  border-right: 3px solid $color-saas !important;
+}
+
+.border-right-maas {
+  border-right: 3px solid $color-maas !important;
+}
+
+.border-right-education {
+  border-right: 3px solid $color-education !important;
+}
+
+.border-right-financial-solution {
+  border-right: 3px solid $color-financial-solution !important;
+}
+
+.border-right-real-estate-left {
+  border-right: 3px solid $color-real-estate-left !important;
+}
+
+.border-bottom-ingaia {
+  border-bottom: 3px solid $color-ingaia !important;
+}
+
+.border-bottom-saas {
+  border-bottom: 3px solid $color-saas !important;
+}
+
+.border-bottom-maas {
+  border-bottom: 3px solid $color-maas !important;
+}
+
+.border-bottom-education {
+  border-bottom: 3px solid $color-education !important;
+}
+
+.border-bottom-financial-solution {
+  border-bottom: 3px solid $color-financial-solution !important;
+}
+
+.border-bottom-real-estate-left {
+  border-bottom: 3px solid $color-real-estate-left !important;
+}
+
+.border-left-ingaia {
+  border-left: 3px solid $color-ingaia !important;
+}
+
+.border-left-saas {
+  border-left: 3px solid $color-saas !important;
+}
+
+.border-left-maas {
+  border-left: 3px solid $color-maas !important;
+}
+
+.border-left-education {
+  border-left: 3px solid $color-education !important;
+}
+
+.border-left-financial-solution {
+  border-left: 3px solid $color-financial-solution !important;
+}
+
+.border-left-real-estate-left {
+  border-left: 3px solid $color-real-estate-left !important;
+}
+
+.border-dashed {
+  border-bottom: dashed 1px $color-gray !important;
+}
+
+/* ARROWS */
+@mixin NewArrow($top, $left, $arrowColorTop, $arrowColorRight, $arrowColorBottom, $arrowColorLeft, $borderTopPx, $borderRightPx, $borderBottomPx, $borderLeftPx) {
+  position: relative;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border-top: $borderTopPx solid $arrowColorTop;
+    border-right: $borderRightPx solid $arrowColorRight;
+    border-bottom: $borderBottomPx solid $arrowColorBottom;
+    border-left: $borderLeftPx solid $arrowColorLeft;
+    position: absolute;
+    top: $top;
+    left: $left;
+  }
+}
+
+/* Par├ómetros: TOP LEFT colorT colorR colorB colorL | Border: TOP, RIGHT, BOTTOM, LEFT */
+.arrow-top-right {
+  @include NewArrow(calc(0% - 10px), calc(100% - 30px), transparent, transparent, $brand-success, transparent, 0px, 7px, 7px, 7px);
+}
+
+.arrow-top-middle {
+  @include NewArrow(calc(0% - 10px), 46%, transparent, transparent, $brand-success, transparent, 0px, 7px, 7px, 7px);
+}
+
+.arrow-top-left {
+  @include NewArrow(calc(0% - 10px), calc(0% + 20px), transparent, transparent, $brand-success, transparent, 0px, 7px, 7px, 7px);
+}
+
+.arrow-bottom-right {
+  @include NewArrow(calc(100% + 3px), calc(100% - 30px), $brand-success, transparent, transparent, transparent, 7px, 7px, 0px, 7px);
+}
+
+.arrow-bottom-middle {
+  @include NewArrow(calc(100% + 3px), 46%, $brand-success, transparent, transparent, transparent, 7px, 7px, 0px, 7px);
+}
+
+.arrow-bottom-left {
+  @include NewArrow(calc(100% + 3px), calc(0% + 20px), $brand-success, transparent, transparent, transparent, 7px, 7px, 0px, 7px);
+}
+
+.arrow-left-top {
+  @include NewArrow(calc(0% + 20px), calc(0% - 17px), transparent, $brand-success, transparent, transparent, 7px, 7px, 7px, 7px);
+}
+
+.arrow-left-middle {
+  @include NewArrow(46%, calc(0% - 17px), transparent, $brand-success, transparent, transparent, 7px, 7px, 7px, 7px);
+}
+
+.arrow-left-bottom {
+  @include NewArrow(calc(100% - 30px), calc(0% - 17px), transparent, $brand-success, transparent, transparent, 7px, 7px, 7px, 7px);
+}
+
+.arrow-right-top {
+  @include NewArrow(calc(0% + 20px), calc(100% + 3px), transparent, transparent, transparent, $brand-success, 7px, 7px, 7px, 7px);
+}
+
+.arrow-right-middle {
+  @include NewArrow(46%, calc(100% + 3px), transparent, transparent, transparent, $brand-success, 7px, 7px, 7px, 7px);
+}
+
+.arrow-right-bottom {
+  @include NewArrow(calc(100% - 30px), calc(100% + 3px), transparent, transparent, transparent, $brand-success, 7px, 7px, 7px, 7px);
+}

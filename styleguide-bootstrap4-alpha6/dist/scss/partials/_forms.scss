@@ -1,0 +1,394 @@
+/* FORMS */
+
+/* FORMS INPUTS e BUTTONS */
+.form-group { margin-bottom: 20px !important; }
+/** LG */
+.form-control-lg, .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn { padding: 1.125rem 1.5rem !important; }
+/** MD */
+.form-control-md, .input-group-md>.form-control, .input-group-md>.input-group-addon, .input-group-md>.input-group-btn>.btn { padding: 0.813rem 0.99rem !important; }
+/** DEFAULT */
+.form-control-default, .input-group-default>.form-control, .input-group-default>.input-group-addon, .input-group-default>.input-group-btn>.btn { padding: 0.5rem 0.855rem !important; }
+/** SM */
+.form-control-sm, .input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn { padding: 0.344rem 0.75rem !important; }
+
+/* TAGS FORM */
+form .tagPosition { position: relative !important; }
+.tagForm-default {     
+  position: absolute !important;
+  z-index: 8 !important;
+  top: 6px !important;
+  right: 10px !important;
+  background: transparent !important;
+  letter-spacing: 1px !important;
+}
+  
+
+/* FORM SELECT */
+/** LG */
+select.form-control-lg:not([size]):not([multiple]), .input-group-lg>select.form-control:not([size]):not([multiple]), .input-group-lg>select.input-group-addon:not([size]):not([multiple]), .input-group-lg>.input-group-btn>select.btn:not([size]):not([multiple]) { height: 3.938rem !important; }
+/** MD */
+select.form-control-md:not([size]):not([multiple]), .input-group-md>select.form-control:not([size]):not([multiple]), .input-group-md>select.input-group-addon:not([size]):not([multiple]), .input-group-md>.input-group-btn>select.btn:not([size]):not([multiple]) { height: 3rem !important; }
+/** DEFAULT */
+select.form-control-default:not([size]):not([multiple]), .input-group-default>select.form-control:not([size]):not([multiple]), .input-group-default>select.input-group-addon:not([size]):not([multiple]), .input-group-default>.input-group-btn>select.btn:not([size]):not([multiple]) { height: 2.375rem !important; }
+/** SM */
+select.form-control-sm:not([size]):not([multiple]), .input-group-sm>select.form-control:not([size]):not([multiple]), .input-group-sm>select.input-group-addon:not([size]):not([multiple]), .input-group-sm>.input-group-btn>select.btn:not([size]):not([multiple]) { height: 1.875rem !important; }
+
+.form-control:disabled, .form-control[readonly] { opacity: 0.65 !important; }
+
+
+label.active {
+  background-color: $brand-success !important;
+  border-color: $brand-success !important;
+}
+
+/* CHECKBOX */
+.ingaia-checkbox {
+  margin-right: 5px;  
+
+  label {
+    display: inline-block;
+  }
+
+  span {
+    &:before {
+      border: 2px solid $color-gray-2;
+    }
+    &:hover:before {
+      box-shadow: inset 0px 0px 3px $color-gray-2, 0px 0px 3px $color-gray-2;
+    }
+  }
+
+  input[type=checkbox] {
+    display: none
+  }
+
+  input[type=checkbox] + span:before {
+    content: "\E013";
+    display: inline-block;
+    visibility: visible; 
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+    color: transparent;
+    cursor: pointer;
+    padding: 3px 0 0 0;
+    position: relative;
+    background: transparent;
+    width: 17px;
+    height: 17px;
+    font-size: 11px;
+    padding: 0;
+    line-height: 14px;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+  }
+
+  input[type=checkbox]:checked + span:before {
+    font-family: 'ingaia-font-icons';
+    content: "\E013";
+    color: $color-gray-2;
+    display: inline-block;    
+    vertical-align: text-bottom;
+  }
+
+  &.check-lg {
+    input[type=checkbox] + span:before {
+      width: 27px;
+      height: 27px;
+      font-size: 18px;     
+      padding: 0;
+      line-height: 24px;
+    }
+  }
+
+  &.check-md {
+    input[type=checkbox] + span:before {
+      width: 22px;
+      height: 22px;
+      font-size: 14px;
+      padding: 0;
+      line-height: 19px;
+    }
+  }
+
+  &.check-sm {
+    input[type=checkbox] + span:before {
+      width: 19px;
+      height: 19px;
+      font-size: 12px;
+      padding: 0;
+      line-height: 16px;
+    }
+  }
+
+  &.check-xs {
+    input[type=checkbox] + span:before {
+      width: 17px;
+      height: 17px;
+      font-size: 11px;
+      padding: 0;
+      line-height: 14px;
+    }
+  }
+
+
+  &.check-blue {
+    input[type=checkbox]:checked + span:before {
+      background: $color-saas;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 2px solid $color-saas;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas;
+      }
+    }
+  }
+
+
+  &.check-purple {
+    input[type=checkbox]:checked + span:before {
+      background: $color-maas;
+      color: #fff;
+    }
+    span{
+      &:before {
+        border: 2px solid $color-maas;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-maas, 0px 0px 3px $color-maas;
+      }
+    }
+  }
+
+  &.check-green {
+    input[type=checkbox]:checked + span:before {
+      background: $color-financial-solution;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 2px solid $color-financial-solution;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-financial-solution, 0px 0px 3px $color-financial-solution;
+      }
+    }
+  }
+
+  &.check-orange {
+    input[type=checkbox]:checked + span:before {
+      background: $color-education;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 2px solid $color-education;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-education, 0px 0px 3px $color-education;
+      }
+    }
+  }
+
+  &.check-red {
+    input[type=checkbox]:checked + span:before {
+      background: $color-real-estate-left;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 2px solid $color-real-estate-left;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-real-estate-left, 0px 0px 3px $color-real-estate-left;
+      }
+    }
+  }    
+}
+
+.check-inverse {
+  input[type=checkbox]:checked + span:before {
+    color: $color-gray-3 !important;
+  }
+}
+
+
+
+/* RADIO */
+.ingaia-radio {
+  margin-right: 5px;  
+
+  label {
+    display: inline-block;
+  }
+
+  span {
+    &:before {
+      border: 2px solid $color-gray-2;
+    }
+    &:hover:before {
+      box-shadow: inset 0px 0px 3px $color-gray-2, 0px 0px 3px $color-gray-2;
+    }
+  }
+
+  input[type=radio] {
+    display: none
+  }
+
+  input[type=radio] + span:before {
+    content: "\E01E";
+    display: inline-block;
+    visibility: visible; 
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+    color: transparent;
+    cursor: pointer;
+    padding: 3px 0 0 0;
+    position: relative;
+    background: transparent;
+    width: 17px;
+    height: 17px;
+    font-size: 11px;
+    padding: 0;
+    line-height: 14px;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+  }
+
+  input[type=radio]:checked + span:before {
+    font-family: 'ingaia-font-icons';
+    content: "\E01E";
+    color: $color-gray-2;
+    display: inline-block;    
+    vertical-align: text-bottom;
+  }
+
+  &.radio-lg {
+    input[type=radio] + span:before {
+      width: 27px;
+      height: 27px;
+      font-size: 18px;     
+      padding: 0;
+      line-height: 24px;
+    }
+  }
+
+  &.radio-md {
+    input[type=radio] + span:before {
+      width: 22px;
+      height: 22px;
+      font-size: 14px;
+      padding: 0;
+      line-height: 19px;
+    }
+  }
+
+  &.radio-sm {
+    input[type=radio] + span:before {
+      width: 19px;
+      height: 19px;
+      font-size: 12px;
+      padding: 0;
+      line-height: 16px;
+    }
+  }
+
+  &.radio-xs {
+    input[type=radio] + span:before {
+      width: 17px;
+      height: 17px;
+      font-size: 11px;
+      padding: 0;
+      line-height: 14px;
+    }
+  }
+
+
+  &.radio-blue {
+    input[type=radio]:checked + span:before {
+      background: $color-saas;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 2px solid $color-saas;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas;
+      }
+    }
+  }
+
+
+  &.radio-purple {
+    input[type=radio]:checked + span:before {
+      background: $color-maas;
+      color: #fff;
+    }
+    span{
+      &:before {
+        border: 2px solid $color-maas;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-maas, 0px 0px 3px $color-maas;
+      }
+    }
+  }
+
+  &.radio-green {
+    input[type=radio]:checked + span:before {
+      background: $color-financial-solution;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 2px solid $color-financial-solution;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-financial-solution, 0px 0px 3px $color-financial-solution;
+      }
+    }
+  }
+
+  &.radio-orange {
+    input[type=radio]:checked + span:before {
+      background: $color-education;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 2px solid $color-education;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-education, 0px 0px 3px $color-education;
+      }
+    }
+  }
+
+  &.radio-red {
+    input[type=radio]:checked + span:before {
+      background: $color-real-estate-left;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 2px solid $color-real-estate-left;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-real-estate-left, 0px 0px 3px $color-real-estate-left;
+      }
+    }
+  }    
+}
+
+.radio-inverse {
+  input[type=radio]:checked + span:before {
+    color: $color-gray-3 !important;
+  }
+}
