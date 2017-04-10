@@ -43,7 +43,8 @@ label.active {
 
 /* CHECKBOX */
 .ingaia-checkbox {
-  margin-right: 5px;  
+  margin-right: 5px;
+  margin-bottom: 0px;  
 
   label {
     display: inline-block;
@@ -51,7 +52,7 @@ label.active {
 
   span {
     &:before {
-      border: 2px solid $color-gray-2;
+      border: 3px solid $color-gray-2;
     }
     &:hover:before {
       box-shadow: inset 0px 0px 3px $color-gray-2, 0px 0px 3px $color-gray-2;
@@ -80,7 +81,7 @@ label.active {
     font-size: 11px;
     padding: 0;
     line-height: 14px;
-    margin-right: 5px;
+    margin-right: 5px;    
     vertical-align: text-bottom;
   }
 
@@ -96,7 +97,7 @@ label.active {
     input[type=checkbox] + span:before {
       width: 27px;
       height: 27px;
-      font-size: 18px;     
+      font-size: 17px;     
       padding: 0;
       line-height: 24px;
     }
@@ -106,9 +107,9 @@ label.active {
     input[type=checkbox] + span:before {
       width: 22px;
       height: 22px;
-      font-size: 14px;
+      font-size: 13px;
       padding: 0;
-      line-height: 19px;
+      line-height: 18px;
     }
   }
 
@@ -116,9 +117,9 @@ label.active {
     input[type=checkbox] + span:before {
       width: 19px;
       height: 19px;
-      font-size: 12px;
+      font-size: 11px;
       padding: 0;
-      line-height: 16px;
+      line-height: 15px;
     }
   }
 
@@ -126,9 +127,9 @@ label.active {
     input[type=checkbox] + span:before {
       width: 17px;
       height: 17px;
-      font-size: 11px;
+      font-size: 10px;
       padding: 0;
-      line-height: 14px;
+      line-height: 13px;
     }
   }
 
@@ -140,7 +141,7 @@ label.active {
     }
     span {
       &:before {
-        border: 2px solid $color-saas;
+        border: 3px solid $color-saas;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas;
@@ -156,7 +157,7 @@ label.active {
     }
     span{
       &:before {
-        border: 2px solid $color-maas;
+        border: 3px solid $color-maas;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-maas, 0px 0px 3px $color-maas;
@@ -171,7 +172,7 @@ label.active {
     }
     span {
       &:before {
-        border: 2px solid $color-financial-solution;
+        border: 3px solid $color-financial-solution;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-financial-solution, 0px 0px 3px $color-financial-solution;
@@ -186,7 +187,7 @@ label.active {
     }
     span {
       &:before {
-        border: 2px solid $color-education;
+        border: 3px solid $color-education;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-education, 0px 0px 3px $color-education;
@@ -201,7 +202,7 @@ label.active {
     }
     span {
       &:before {
-        border: 2px solid $color-real-estate-left;
+        border: 3px solid $color-real-estate-left;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-real-estate-left, 0px 0px 3px $color-real-estate-left;
@@ -228,7 +229,7 @@ label.active {
 
   span {
     &:before {
-      border: 2px solid $color-gray-2;
+      border: 3px solid $color-gray-2;
     }
     &:hover:before {
       box-shadow: inset 0px 0px 3px $color-gray-2, 0px 0px 3px $color-gray-2;
@@ -317,7 +318,7 @@ label.active {
     }
     span {
       &:before {
-        border: 2px solid $color-saas;
+        border: 3px solid $color-saas;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas;
@@ -333,7 +334,7 @@ label.active {
     }
     span{
       &:before {
-        border: 2px solid $color-maas;
+        border: 3px solid $color-maas;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-maas, 0px 0px 3px $color-maas;
@@ -348,7 +349,7 @@ label.active {
     }
     span {
       &:before {
-        border: 2px solid $color-financial-solution;
+        border: 3px solid $color-financial-solution;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-financial-solution, 0px 0px 3px $color-financial-solution;
@@ -363,7 +364,7 @@ label.active {
     }
     span {
       &:before {
-        border: 2px solid $color-education;
+        border: 3px solid $color-education;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-education, 0px 0px 3px $color-education;
@@ -378,7 +379,7 @@ label.active {
     }
     span {
       &:before {
-        border: 2px solid $color-real-estate-left;
+        border: 3px solid $color-real-estate-left;
       }
       &:hover:before {
         box-shadow: inset 0px 0px 3px $color-real-estate-left, 0px 0px 3px $color-real-estate-left;
