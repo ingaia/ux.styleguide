@@ -1,4 +1,5 @@
 /* _borders.scss */
+/* BORDERS MARCAS */
 .border-top-ingaia { border-top: 3px solid $color-ingaia !important; }
 .border-top-saas { border-top: 3px solid $color-saas !important; }
 .border-top-maas { border-top: 3px solid $color-maas !important; }
@@ -29,6 +30,57 @@
 
 .border-dashed { border-bottom: dashed 1px $color-gray !important; }
 
+/* BORDERS GRAY*/
+.border-top-gray { border-top: solid 3px $color-gray !important; }
+.border-right-gray { border-right: solid 3px $color-gray !important; }
+.border-left-gray { border-left: solid 3px $color-gray !important; }
+.border-bottom-gray { border-bottom: solid 3px $color-gray !important; }
+
+.border-top-gray-1 { border-top: solid 3px $color-gray-1 !important; }
+.border-right-gray-1 { border-right: solid 3px $color-gray-1 !important; }
+.border-left-gray-1 { border-left: solid 3px $color-gray-1 !important; }
+.border-bottom-gray-1 { border-bottom: solid 3px $color-gray-1 !important; }
+
+.border-top-gray-2 { border-top: solid 3px $color-gray-2 !important; }
+.border-right-gray-2 { border-right: solid 3px $color-gray-2 !important; }
+.border-left-gray-2 { border-left: solid 3px $color-gray-2 !important; }
+.border-bottom-gray-2 { border-bottom: solid 3px $color-gray-2 !important; }
+
+.border-top-gray-3 { border-top: solid 3px $color-gray-3 !important; }
+.border-right-gray-3 { border-right: solid 3px $color-gray-3 !important; }
+.border-left-gray-3 { border-left: solid 3px $color-gray-3 !important; }
+.border-bottom-gray-3 { border-bottom: solid 3px $color-gray-3 !important; }
+
+.border-top-gray-4 { border-top: solid 3px $color-gray-4 !important; }
+.border-right-gray-4 { border-right: solid 3px $color-gray-4 !important; }
+.border-left-gray-4 { border-left: solid 3px $color-gray-4 !important; }
+.border-bottom-gray-4 { border-bottom: solid 3px $color-gray-4 !important; }
+
+/* BORDER STATE */
+.border-top-primary { border-top: solid 3px $brand-primary !important; }
+.border-right-primary { border-right: solid 3px $brand-primary !important; }
+.border-left-primary { border-left: solid 3px $brand-primary !important; }
+.border-bottom-primary { border-bottom: solid 3px $brand-primary !important; }
+
+.border-top-success { border-top: solid 3px $brand-success !important; }
+.border-right-success { border-right: solid 3px $brand-success !important; }
+.border-left-success { border-left: solid 3px $brand-success !important; }
+.border-bottom-success { border-bottom: solid 3px $brand-success !important; }
+
+.border-top-info { border-top: solid 3px $brand-info !important; }
+.border-right-info { border-right: solid 3px $brand-info !important; }
+.border-left-info { border-left: solid 3px $brand-info !important; }
+.border-bottom-info { border-bottom: solid 3px $brand-info !important; }
+
+.border-top-warning { border-top: solid 3px $brand-warning !important; }
+.border-right-warning { border-right: solid 3px $brand-warning !important; }
+.border-left-warning { border-left: solid 3px $brand-warning !important; }
+.border-bottom-warning { border-bottom: solid 3px $brand-warning !important; }
+
+.border-top-danger { border-top: solid 3px $brand-danger !important; }
+.border-right-danger { border-right: solid 3px $brand-danger !important; }
+.border-left-danger { border-left: solid 3px $brand-danger !important; }
+.border-bottom-danger { border-bottom: solid 3px $brand-danger !important; }
 
 /* ARROWS */
 @mixin NewArrow($top, $left, $arrowColorTop, $arrowColorRight, $arrowColorBottom, $arrowColorLeft, $borderTopPx, $borderRightPx, $borderBottomPx, $borderLeftPx) {
@@ -70,7 +122,13 @@
 
 /* ARROW Color marcar e color PRIMARY (Cor default é success da marca) */
 //TOP (right, middle, left)
+.arrow-top-right-gray{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-gray,transparent,0px,7px,7px,7px); }
 .arrow-top-right-primary{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-primary,transparent,0px,7px,7px,7px); }
+.arrow-top-right-success{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-success,transparent,0px,7px,7px,7px); }
+.arrow-top-right-info{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-info,transparent,0px,7px,7px,7px); }
+.arrow-top-right-warning{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-warning,transparent,0px,7px,7px,7px); }
+.arrow-top-right-danger{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-danger,transparent,0px,7px,7px,7px); }
+
 .arrow-top-right-ingaia{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-ingaia,transparent,0px,7px,7px,7px); }
 .arrow-top-right-saas{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-saas,transparent,0px,7px,7px,7px); }
 .arrow-top-right-maas{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-maas,transparent,0px,7px,7px,7px); }
@@ -78,7 +136,13 @@
 .arrow-top-right-education{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-education,transparent,0px,7px,7px,7px); }
 .arrow-top-right-real-estate-left{ @include NewArrow(calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-real-estate-left,transparent,0px,7px,7px,7px); }
 
+.arrow-top-middle-gray{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$color-gray,transparent,0px,7px,7px,7px); }
 .arrow-top-middle-primary{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$brand-primary,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-success{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$brand-success,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-info{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$brand-info,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-warning{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$brand-warning,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-danger{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$brand-danger,transparent,0px,7px,7px,7px); }
+
 .arrow-top-middle-ingaia{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$color-ingaia,transparent,0px,7px,7px,7px); }
 .arrow-top-middle-saas{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$color-saas,transparent,0px,7px,7px,7px); }
 .arrow-top-middle-maas{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$color-maas,transparent,0px,7px,7px,7px); }
@@ -86,7 +150,13 @@
 .arrow-top-middle-education{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$color-education,transparent,0px,7px,7px,7px); }
 .arrow-top-middle-real-estate-left{ @include NewArrow(calc(0% - 10px),46%,transparent,transparent,$color-real-estate-left,transparent,0px,7px,7px,7px); }
 
+.arrow-top-left-gray{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-gray,transparent,0px,7px,7px,7px); }
 .arrow-top-left-primary{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-primary,transparent,0px,7px,7px,7px); }
+.arrow-top-left-success{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-success,transparent,0px,7px,7px,7px); }
+.arrow-top-left-info{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-info,transparent,0px,7px,7px,7px); }
+.arrow-top-left-warning{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-warning,transparent,0px,7px,7px,7px); }
+.arrow-top-left-danger{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-danger,transparent,0px,7px,7px,7px); }
+
 .arrow-top-left-ingaia{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-ingaia,transparent,0px,7px,7px,7px); }
 .arrow-top-left-saas{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-saas,transparent,0px,7px,7px,7px); }
 .arrow-top-left-maas{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-maas,transparent,0px,7px,7px,7px); }
@@ -95,7 +165,13 @@
 .arrow-top-left-real-estate-left{ @include NewArrow(calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-real-estate-left,transparent,0px,7px,7px,7px); }
 
 //BOTTOM (right, middle, left)
+.arrow-bottom-right-gray{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$color-gray,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-right-primary{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$brand-primary,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-success{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$brand-success,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-info{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$brand-info,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-warning{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$brand-warning,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-danger{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$brand-danger,transparent,transparent,transparent,7px,7px,0px,7px); }
+
 .arrow-bottom-right-ingaia{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$color-ingaia,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-right-saas{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$color-saas,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-right-maas{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$color-maas,transparent,transparent,transparent,7px,7px,0px,7px); }
@@ -103,7 +179,13 @@
 .arrow-bottom-right-education{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$color-education,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-right-real-estate-left{ @include NewArrow(calc(100% + 3px),calc(100% - 30px),$color-real-estate-left,transparent,transparent,transparent,7px,7px,0px,7px); }
 
+.arrow-bottom-middle-gray{ @include NewArrow(calc(100% + 3px),46%,$color-gray,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-middle-primary{ @include NewArrow(calc(100% + 3px),46%,$brand-primary,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-success{ @include NewArrow(calc(100% + 3px),46%,$brand-success,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-info{ @include NewArrow(calc(100% + 3px),46%,$brand-info,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-warning{ @include NewArrow(calc(100% + 3px),46%,$brand-warning,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-danger{ @include NewArrow(calc(100% + 3px),46%,$brand-danger,transparent,transparent,transparent,7px,7px,0px,7px); }
+
 .arrow-bottom-middle-ingaia{ @include NewArrow(calc(100% + 3px),46%,$color-ingaia,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-middle-saas{ @include NewArrow(calc(100% + 3px),46%,$color-saas,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-middle-maas{ @include NewArrow(calc(100% + 3px),46%,$color-maas,transparent,transparent,transparent,7px,7px,0px,7px); }
@@ -111,7 +193,13 @@
 .arrow-bottom-middle-education{ @include NewArrow(calc(100% + 3px),46%,$color-education,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-middle-real-estate-left{ @include NewArrow(calc(100% + 3px),46%,$color-real-estate-left,transparent,transparent,transparent,7px,7px,0px,7px); }
 
+.arrow-bottom-left-gray{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$color-gray,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-left-primary{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$brand-primary,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-success{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$brand-success,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-info{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$brand-info,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-warning{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$brand-warning,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-danger{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$brand-danger,transparent,transparent,transparent,7px,7px,0px,7px); }
+
 .arrow-bottom-left-ingaia{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$color-ingaia,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-left-saas{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$color-saas,transparent,transparent,transparent,7px,7px,0px,7px); }
 .arrow-bottom-left-maas{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$color-maas,transparent,transparent,transparent,7px,7px,0px,7px); }
@@ -120,7 +208,13 @@
 .arrow-bottom-left-real-estate-left{ @include NewArrow(calc(100% + 3px),calc(0% + 20px),$color-real-estate-left,transparent,transparent,transparent,7px,7px,0px,7px); }
 
 //LEFT (top, middle, bottom)
+.arrow-left-top-gray{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$color-gray,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-top-primary{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$brand-primary,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-success{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$brand-success,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-info{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$brand-info,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-warning{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$brand-warning,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-danger{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$brand-danger,transparent,transparent,7px,7px,7px,7px); }
+
 .arrow-left-top-ingaia{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$color-ingaia,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-top-saas{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$color-saas,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-top-maas{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$color-maas,transparent,transparent,7px,7px,7px,7px); }
@@ -128,8 +222,13 @@
 .arrow-left-top-education{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$color-education,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-top-real-estate-left{ @include NewArrow(calc(0% + 20px),calc(0% - 17px),transparent,$color-real-estate-left,transparent,transparent,7px,7px,7px,7px); }
 
-
+.arrow-left-middle-gray{ @include NewArrow(46%,calc(0% - 17px),transparent,$color-gray,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-middle-primary{ @include NewArrow(46%,calc(0% - 17px),transparent,$brand-primary,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-success{ @include NewArrow(46%,calc(0% - 17px),transparent,$brand-success,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-info{ @include NewArrow(46%,calc(0% - 17px),transparent,$brand-info,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-warning{ @include NewArrow(46%,calc(0% - 17px),transparent,$brand-warning,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-danger{ @include NewArrow(46%,calc(0% - 17px),transparent,$brand-danger,transparent,transparent,7px,7px,7px,7px); }
+
 .arrow-left-middle-ingaia{ @include NewArrow(46%,calc(0% - 17px),transparent,$color-ingaia,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-middle-saas{ @include NewArrow(46%,calc(0% - 17px),transparent,$color-saas,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-middle-maas{ @include NewArrow(46%,calc(0% - 17px),transparent,$color-maas,transparent,transparent,7px,7px,7px,7px); }
@@ -137,8 +236,13 @@
 .arrow-left-middle-education{ @include NewArrow(46%,calc(0% - 17px),transparent,$color-education,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-middle-real-estate-left{ @include NewArrow(46%,calc(0% - 17px),transparent,$color-real-estate-left,transparent,transparent,7px,7px,7px,7px); }
 
-
+.arrow-left-bottom-gray{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$color-gray,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-bottom-primary{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$brand-primary,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-success{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$brand-success,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-info{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$brand-info,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-warning{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$brand-warning,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-danger{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$brand-danger,transparent,transparent,7px,7px,7px,7px); }
+
 .arrow-left-bottom-ingaia{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$color-ingaia,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-bottom-saas{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$color-saas,transparent,transparent,7px,7px,7px,7px); }
 .arrow-left-bottom-maas{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$color-maas,transparent,transparent,7px,7px,7px,7px); }
@@ -147,7 +251,13 @@
 .arrow-left-bottom-real-estate-left{ @include NewArrow(calc(100% - 30px),calc(0% - 17px),transparent,$color-real-estate-left,transparent,transparent,7px,7px,7px,7px); }
 
 //RIGHT (top, middle, bottom)
+.arrow-right-top-gray{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-gray,7px,7px,7px,7px); }
 .arrow-right-top-primary{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-primary,7px,7px,7px,7px); }
+.arrow-right-top-success{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-success,7px,7px,7px,7px); }
+.arrow-right-top-info{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-info,7px,7px,7px,7px); }
+.arrow-right-top-warning{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-warning,7px,7px,7px,7px); }
+.arrow-right-top-danger{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-danger,7px,7px,7px,7px); }
+
 .arrow-right-top-ingaia{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-ingaia,7px,7px,7px,7px); }
 .arrow-right-top-saas{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-saas,7px,7px,7px,7px); }
 .arrow-right-top-maas{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-maas,7px,7px,7px,7px); }
@@ -155,7 +265,13 @@
 .arrow-right-top-education{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-education,7px,7px,7px,7px); }
 .arrow-right-top-real-estate-left{ @include NewArrow(calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-real-estate-left,7px,7px,7px,7px); }
 
+.arrow-right-middle-gray{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$color-gray,7px,7px,7px,7px); }
 .arrow-right-middle-primary{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$brand-primary,7px,7px,7px,7px); }
+.arrow-right-middle-success{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$brand-success,7px,7px,7px,7px); }
+.arrow-right-middle-info{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$brand-info,7px,7px,7px,7px); }
+.arrow-right-middle-warning{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$brand-warning,7px,7px,7px,7px); }
+.arrow-right-middle-danger{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$brand-danger,7px,7px,7px,7px); }
+
 .arrow-right-middle-ingaia{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$color-ingaia,7px,7px,7px,7px); }
 .arrow-right-middle-saas{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$color-saas,7px,7px,7px,7px); }
 .arrow-right-middle-maas{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$color-maas,7px,7px,7px,7px); }
@@ -163,7 +279,13 @@
 .arrow-right-middle-education{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$color-education,7px,7px,7px,7px); }
 .arrow-right-middle-real-estate-left{ @include NewArrow(46%,calc(100% + 3px),transparent,transparent,transparent,$color-real-estate-left,7px,7px,7px,7px); }
 
+.arrow-right-bottom-gray{ @include NewArrow(calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-gray,7px,7px,7px,7px); }
 .arrow-right-bottom-primary{ @include NewArrow(calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-primary,7px,7px,7px,7px); }
+.arrow-right-bottom-success{ @include NewArrow(calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-success,7px,7px,7px,7px); }
+.arrow-right-bottom-info{ @include NewArrow(calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-info,7px,7px,7px,7px); }
+.arrow-right-bottom-warning{ @include NewArrow(calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-warning,7px,7px,7px,7px); }
+.arrow-right-bottom-danger{ @include NewArrow(calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-danger,7px,7px,7px,7px); }
+
 .arrow-right-bottom-ingaia{ @include NewArrow(calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-ingaia,7px,7px,7px,7px); }
 .arrow-right-bottom-saas{ @include NewArrow(calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-saas,7px,7px,7px,7px); }
 .arrow-right-bottom-maas{ @include NewArrow(calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-maas,7px,7px,7px,7px); }
