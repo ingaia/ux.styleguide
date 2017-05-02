@@ -1,37 +1,6 @@
+/* _cards.scss */
 /* CARDS */
   /** box-shadow */
   .card { -webkit-box-shadow: 3px 3px 10px 0px rgba(163,163,163,0.5); -moz-box-shadow: 3px 3px 10px 0px rgba(163,163,163,0.5); box-shadow: 3px 3px 10px 0px rgba(163,163,163,0.5); }
   .card-header { padding: 0.75rem 1.25rem 0.25rem 1.25rem !important; }
   .card i { font-size: 1.15rem; }
-
-  /* CARD-1 */
-  #card-1 .status span { font-size: 1.15rem !important; margin-right: 2px;}
-  #card-1 .status span:last-child { margin-right: 0; }
-  #card-1 .status { line-height: 1.4rem; }
-  @media (max-width: 543px) { 
-    #card-1 .status { margin-bottom: 10px !important; } 
-    #card-1 .status:first-child { white-space: nowrap } 
-  }
-  @media (min-width: 1396px) { 
-    #card-1 .status:first-child { white-space: nowrap } 
-  }
-
-  /* CARD-2 */
-  #card-2 select { margin-bottom: 20px !important; }
-  #card-2 .input-group { margin-bottom: 20px; }
-
-  /* CARD-3 */  
-  #card-3 #card-3-1 div div { border-right: solid 1px $color-gray; }
-  #card-3 #card-3-1 div div:nth-child(4n+4) { border-right: none; }
-  #card-3 #card-3-1 div div:last-child { border-right: none; }
-  #card-3 #card-3-1 i { font-size: 1.5625rem; margin-right: 5px; }
-  #card-3 #card-3-1 span:nth-child(2) { font-size: 1.5rem; margin-right: 3px;  }
-  #card-3 #card-3-2 i { font-size: 0.75rem; margin-left: 20px; margin-right: 15px;  }
-  #card-3 .card-footer { border-top: none !important; }
-  @media (max-width: 575px) {
-    #card-3 #card-3-1 div div { border-right: none; }
-  }
-
-  /* CARD-4 */
-  #card-4 .card-footer { border-top: none; }
-  #card-4 #card-4-1 i { font-size: 0.75rem; margin-right: 15px;  }

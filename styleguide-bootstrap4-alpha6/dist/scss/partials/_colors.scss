@@ -1,4 +1,4 @@
-/*  _colors.scss*/
+/* _colors.scss*/
   // COLORS MARCAS
   $color-ingaia:                #0a345e;
   $color-ingaia-1:              #5668b1;
@@ -58,6 +58,11 @@
 
   $link-color:                $brand-success;
 
+  $color-blue:                $color-saas;
+  $color-red:                 $color-real-estate-left;
+  $color-orange:              $color-education;
+  $color-green:               $color-financial-solution;
+  $color-purple:              $color-maas;
   
   // COLORS CLASS
   .color-secondary { color: $color-gray !important; }
@@ -66,7 +71,19 @@
   .color-secondary-3 { color: $color-gray-3 !important; }
   .color-secondary-4 { color: $color-gray-4 !important; }
 
+  .color-gray { color: $color-gray !important; }
+  .color-gray-1 { color: $color-gray-1 !important; }
+  .color-gray-2 { color: $color-gray-2 !important; }
+  .color-gray-3 { color: $color-gray-3 !important; }
+  .color-gray-4 { color: $color-gray-4 !important; }
+
   .color-white { color: #ffffff !important; }
+  .color-blue { color: $color-blue !important; }
+  .color-red { color: $color-red !important; }
+  .color-orange { color: $color-orange !important; }
+  .color-green { color: $color-green !important; }
+  .color-purple { color: $color-purple !important; }
+
   .color-primary { color: $brand-primary !important; }
   .color-success { color: $brand-success !important; }
   .color-info { color: $brand-info !important; }
@@ -78,8 +95,7 @@
   .color-maas { color: $color-maas !important; }
   .color-education { color: $color-education !important; }
   .color-financial-solution { color: $color-financial-solution !important; }
-  .color-real-estate-left { color: $color-real-estate-left !important; }
-  
+  .color-real-estate-left { color: $color-real-estate-left !important; }  
 
   // BACKGROUD COLORS CLASS
   .bg-secondary { background-color: $color-gray !important; }
@@ -87,6 +103,18 @@
   .bg-secondary-2 { background-color: $color-gray-2 !important; }
   .bg-secondary-3 { background-color: $color-gray-3 !important; }
   .bg-secondary-4 { background-color: $color-gray-4 !important; }
+
+  .bg-gray { background-color: $color-gray !important; }
+  .bg-gray-1 { background-color: $color-gray-1 !important; }
+  .bg-gray-2 { background-color: $color-gray-2 !important; }
+  .bg-gray-3 { background-color: $color-gray-3 !important; }
+  .bg-gray-4 { background-color: $color-gray-4 !important; }
+
+  .bg-blue { background-color: $color-blue !important; }
+  .bg-red { background-color: $color-red !important; }
+  .bg-orange { background-color: $color-orange !important; }
+  .bg-green { background-color: $color-green !important; }
+  .bg-purple { background-color: $color-purple !important; }
 
   .bg-transparent { background-color: transparent !important; }
   .bg-white { background-color: #ffffff !important; }
@@ -97,8 +125,13 @@
   .bg-financial-solution { background-color: $color-financial-solution !important; }
   .bg-real-estate-left { background-color: $color-real-estate-left !important; }
 
-
   // HR CLASS
+  .hr-blue { border-top: 1px solid $color-blue !important; }
+  .hr-red { border-top: 1px solid $color-red !important; }
+  .hr-orange { border-top: 1px solid $color-orange !important; }
+  .hr-green { border-top: 1px solid $color-green !important; }
+  .hr-purple { border-top: 1px solid $color-purple !important; }
+
   .hr-white { border-top: 1px solid #ffffff !important; }
   .hr-primary { border-top: 1px solid $brand-primary !important; }
   .hr-default { border-top: 1px solid $brand-default !important; }
