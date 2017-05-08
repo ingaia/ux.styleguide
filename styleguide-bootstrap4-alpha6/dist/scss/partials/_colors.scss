@@ -65,17 +65,11 @@
   $color-purple:              $color-maas;
   
   // COLORS CLASS
-  .color-secondary { color: $color-gray !important; }
-  .color-secondary-1 { color: $color-gray-1 !important; }
-  .color-secondary-2 { color: $color-gray-2 !important; }
-  .color-secondary-3 { color: $color-gray-3 !important; }
-  .color-secondary-4 { color: $color-gray-4 !important; }
-
-  .color-gray { color: $color-gray !important; }
-  .color-gray-1 { color: $color-gray-1 !important; }
-  .color-gray-2 { color: $color-gray-2 !important; }
-  .color-gray-3 { color: $color-gray-3 !important; }
-  .color-gray-4 { color: $color-gray-4 !important; }
+  .color-secondary, .color-gray { color: $color-gray !important; }
+  .color-secondary-1, .color-gray-1 { color: $color-gray-1 !important; }
+  .color-secondary-2, .color-gray-2 { color: $color-gray-2 !important; }
+  .color-secondary-3, .color-gray-3 { color: $color-gray-3 !important; }
+  .color-secondary-4, .color-gray-4 { color: $color-gray-4 !important; }
 
   .color-white { color: #ffffff !important; }
   .color-blue { color: $color-blue !important; }
@@ -89,7 +83,7 @@
   .color-info { color: $brand-info !important; }
   .color-warning { color: $brand-warning !important; }
   .color-danger { color: $brand-danger !important; }
-
+  
   .color-ingaia { color: $color-ingaia !important; }
   .color-saas { color: $color-saas !important; }
   .color-maas { color: $color-maas !important; }
@@ -98,17 +92,11 @@
   .color-real-estate-left { color: $color-real-estate-left !important; }  
 
   // BACKGROUD COLORS CLASS
-  .bg-secondary { background-color: $color-gray !important; }
-  .bg-secondary-1 { background-color: $color-gray-1 !important; }
-  .bg-secondary-2 { background-color: $color-gray-2 !important; }
-  .bg-secondary-3 { background-color: $color-gray-3 !important; }
-  .bg-secondary-4 { background-color: $color-gray-4 !important; }
-
-  .bg-gray { background-color: $color-gray !important; }
-  .bg-gray-1 { background-color: $color-gray-1 !important; }
-  .bg-gray-2 { background-color: $color-gray-2 !important; }
-  .bg-gray-3 { background-color: $color-gray-3 !important; }
-  .bg-gray-4 { background-color: $color-gray-4 !important; }
+  .bg-secondary, .bg-gray{ background-color: $color-gray !important; }
+  .bg-secondary-1, .bg-gray-1 { background-color: $color-gray-1 !important; }
+  .bg-secondary-2, .bg-gray-2 { background-color: $color-gray-2 !important; }
+  .bg-secondary-3, .bg-gray-3 { background-color: $color-gray-3 !important; }
+  .bg-secondary-4, .bg-gray-4 { background-color: $color-gray-4 !important; }
 
   .bg-blue { background-color: $color-blue !important; }
   .bg-red { background-color: $color-red !important; }
@@ -146,3 +134,10 @@
   .hr-financial-solution { border-top: 1px solid $color-financial-solution !important; }
   .hr-education { border-top: 1px solid $color-education !important; }
   .hr-real-estate-left { border-top: 1px solid $color-real-estate-left !important; }
+
+  .color-inverse {
+    background-color: $color-gray-3 !important;
+    button, a, p, i, span, div, table, thead, th, tr, h1, h2, h3, h4, h5, h6 {
+      color: #ffffff !important;
+    }
+  }
