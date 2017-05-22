@@ -1,7 +1,7 @@
 /* _buttons.scss */
 /* BUTTONS */
 
-button, .btn { text-transform: uppercase !important; font-weight: bold !important; }
+button, .btn { text-transform: uppercase !important; font-weight: 700 !important; }
 
 /* SIZE BUTTONS */
   /** LG - Height 63px */
@@ -11,8 +11,8 @@ button, .btn { text-transform: uppercase !important; font-weight: bold !importan
   .btn-md, .btn-group-md>.btn { font-size: 0.9375rem !important; padding: 0.875rem 0.99rem !important; }
   .btn-md i { font-size: 0.9375rem !important; }
   /** DEFAULT Height 38px */
-  .btn-default, .btn-group-default>.btn { font-size: 0.8125rem !important; padding: 0.625rem 0.855rem !important; }
-  .btn-default i { font-size: 0.8125rem !important; }
+  .btn-default, .btn-group-default>.btn { font-size: 0.8125rem !important; padding: 0.563rem 0.855rem !important; line-height: 1.42857 !important; }
+  .btn-default i { font-size: 0.9375rem !important; }
   /** SM - Height 30px */
   .btn-sm, .btn-group-sm>.btn { font-size: 0.75rem !important; padding: 0.407rem 0.75rem !important;  }
   .btn-sm i { font-size: 0.75rem !important; }
