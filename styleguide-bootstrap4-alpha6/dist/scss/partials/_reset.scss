@@ -4,3 +4,12 @@ $border-radius-sm:          2px;
 $navbar-border-radius:      0px;
 
 a { text-decoration: none !important; }
+
+.ing {
+    display: inline-block;
+    font: normal normal normal 1rem ingaia-font-icons;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	vertical-align: middle;
+}
