@@ -36,104 +36,205 @@
   $color-real-estate-left-3:    #7b272d;
   $color-real-estate-left-4:    #371417;
 
+  $color-secondary:             #dedede;
+  $color-secondary-1:           #b5b5b5;
+  $color-secondary-2:           #676767;
+  $color-secondary-3:           #2f343b;
+  $color-secondary-4:           #222222;
+
   $color-gray:                  #dedede;
   $color-gray-1:                #b5b5b5;
   $color-gray-2:                #676767;
   $color-gray-3:                #2f343b;
   $color-gray-4:                #222222;
 
-  $gray-dark:                 $color-gray-4;
-  $gray:                      $color-gray-3;
-  $gray-light:                $color-gray-2;
-  $gray-lighter:              $color-gray-1;
-  $gray-lightest:             $color-gray;
+  $gray-dark:                   $color-gray-4;
+  $gray:                        $color-gray-3;
+  $gray-light:                  $color-gray-2;
+  $gray-lighter:                $color-gray-1;
+  $gray-lightest:               $color-gray;
 
-  $brand-primary:             #6e8c99;
-  $brand-default:             $color-gray-1;
-  $brand-success:             $color-saas;
-  $brand-info:                #2884b0;
-  $brand-warning:             #c0ad8f;
-  $brand-danger:              $color-real-estate-left-2;
-  $brand-inverse:             $color-gray-3;
+  $brand-primary:               #6e8c99;
+  $brand-default:               $color-gray-1;
+  $brand-success:               $color-saas;
+  $brand-info:                  #2884b0;
+  $brand-warning:               #c0ad8f;
+  $brand-danger:                $color-real-estate-left-2;
+  $brand-inverse:               $color-gray-3;
 
-  $link-color:                $brand-success;
+  $link-color:                  $brand-success;
 
-  $color-blue:                $color-saas;
-  $color-red:                 $color-real-estate-left;
-  $color-orange:              $color-education;
-  $color-green:               $color-financial-solution;
-  $color-purple:              $color-maas;
+  //COLORS in COLORS
+
+  $color-silver:                $brand-primary;
+
+  $color-blue:                  $color-saas;
+  $color-blue-1:                $color-saas-1;
+  $color-blue-2:                $color-saas-2;
+  $color-blue-3:                $color-saas-3;
+  $color-blue-4:                $color-saas-4;
+
+  $color-red:                   $color-real-estate-left;
+  $color-red-1:                 $color-real-estate-left-1;
+  $color-red-2:                 $color-real-estate-left-2;
+  $color-red-3:                 $color-real-estate-left-3;
+  $color-red-4:                 $color-real-estate-left-4;
+
+  $color-orange:                $color-education;
+  $color-orange-1:              $color-education-1;
+  $color-orange-2:              $color-education-2;
+  $color-orange-3:              $color-education-3;
+  $color-orange-4:              $color-education-4;
+
+  $color-green:                 $color-financial-solution;
+  $color-green-1:               $color-financial-solution-1;
+  $color-green-2:               $color-financial-solution-2;
+  $color-green-3:               $color-financial-solution-3;
+  $color-green-4:               $color-financial-solution-4;
+
+  $color-purple:                $color-maas;
+  $color-purple-1:              $color-maas-1;
+  $color-purple-2:              $color-maas-2;
+  $color-purple-3:              $color-maas-3;
+  $color-purple-4:              $color-maas-4;
+
+  $color-navy:                  $color-ingaia;
+  $color-navy-1:                $color-ingaia-1;
+  $color-navy-2:                $color-ingaia-2;
+  $color-navy-3:                $color-ingaia-3;
+  $color-navy-4:                $color-ingaia-4;
+
+  $color-ocean:                 #2884b0;
+  $color-ocean-1:               #5ab8e8;
+  $color-ocean-2:               #2e8dbd;
+  $color-ocean-3:               #277297;
+  $color-ocean-4:               #1f526d;
+
+  $color-deep-purple:           #5b469b;
+  $color-deep-purple-1:         #6d5ea9;
+  $color-deep-purple-2:         #614c9f;
+  $color-deep-purple-3:         #4f3594;
+  $color-deep-purple-4:         #392c70;
+
+  $color-majesty:               #9c69ac;
+  $color-majesty-1:             #a270b0;
+  $color-majesty-2:             #925da7;
+  $color-majesty-3:             #7f489a;
+  $color-majesty-4:             #492b5a;
+
+  $color-pink:                  #ce1e65;
+  $color-pink-1:                #dc176a;
+  $color-pink-2:                #b51f59;
+  $color-pink-3:                #8d1946;
+  $color-pink-4:                #481325;
+
+  $color-chocolate:             #725722;
+  $color-chocolate-1:           #fec350;
+  $color-chocolate-2:           #be9338;
+  $color-chocolate-3:           #7e612b;
+  $color-chocolate-4:           #57431d;
+
+  $color-coyote:                #8f8332;
+  $color-coyote-1:              #dac824;
+  $color-coyote-2:              #9d9135;
+  $color-coyote-3:              #776e2d;
+  $color-coyote-4:              #504a1e;
+
+  $color-yellow:                #f4f077;
+  $color-yellow-1:              #e6e463;
+  $color-yellow-2:              #bfbc54;
+  $color-yellow-3:              #7f7e37;
+  $color-yellow-4:              #40411e;
+
+  $color-brown:                 #c0ad8f;
+  $color-brown-1:               #c9b998;
+  $color-brown-2:               #a4967e;
+  $color-brown-3:               #7d745e;
+  $color-brown-4:               #3e392f;
+
+  $color-emerald:               #91cb74;
+  $color-emerald-1:             #7ec573;
+  $color-emerald-2:             #59bc66;
+  $color-emerald-3:             #2f8144;
+  $color-emerald-4:             #1c4324;
   
-  // COLORS CLASS
-  .color-secondary, .color-gray { color: $color-gray !important; }
-  .color-secondary-1, .color-gray-1 { color: $color-gray-1 !important; }
-  .color-secondary-2, .color-gray-2 { color: $color-gray-2 !important; }
-  .color-secondary-3, .color-gray-3 { color: $color-gray-3 !important; }
-  .color-secondary-4, .color-gray-4 { color: $color-gray-4 !important; }
+  $color-pistachio:             #a8d9be;
+  $color-pistachio-1:           #b4dec6;
+  $color-pistachio-2:           #95bfa8;
+  $color-pistachio-3:           #789b89;
+  $color-pistachio-4:           #465b50;
 
-  .color-white { color: #ffffff !important; }
-  .color-blue { color: $color-blue !important; }
-  .color-red { color: $color-red !important; }
-  .color-orange { color: $color-orange !important; }
-  .color-green { color: $color-green !important; }
-  .color-purple { color: $color-purple !important; }
+  $color-video:             #FAAB5D;
+  $color-video-1:           #E79C51;
+  $color-video-2:           #BD8143;
+  $color-video-3:           #7D552E;
+  $color-video-4:           #3D2914;
+  $color-video-5:           #30353C;
 
-  .color-primary { color: $brand-primary !important; }
-  .color-success { color: $brand-success !important; }
-  .color-info { color: $brand-info !important; }
-  .color-warning { color: $brand-warning !important; }
-  .color-danger { color: $brand-danger !important; }
+
+
+  @mixin NewClassColor($className, $colorSelected, $colorSelected1, $colorSelected2, $colorSelected3, $colorSelected4) {
+    .color-#{$className} { color: $colorSelected !important; }    
+    .color-#{$className}-1 { color: $colorSelected1 !important; }
+    .color-#{$className}-2 { color: $colorSelected2 !important; }
+    .color-#{$className}-3 { color: $colorSelected3 !important; }
+    .color-#{$className}-4 { color: $colorSelected4 !important; }
+    .bg-#{$className} { background-color: $colorSelected !important; }
+    .bg-#{$className}-1 { background-color: $colorSelected1 !important; }
+    .bg-#{$className}-2 { background-color: $colorSelected2 !important; }
+    .bg-#{$className}-3 { background-color: $colorSelected3 !important; }
+    .bg-#{$className}-4 { background-color: $colorSelected4 !important; }
+    .hr-#{$className} { border-top: 1px solid $colorSelected !important; }
+    .hr-#{$className}-1 { border-top: 1px solid $colorSelected1 !important; }
+    .hr-#{$className}-2 { border-top: 1px solid $colorSelected2 !important; }
+    .hr-#{$className}-3 { border-top: 1px solid $colorSelected3 !important; }
+    .hr-#{$className}-4 { border-top: 1px solid $colorSelected4 !important; }
+  }
+
+  @include NewClassColor('blue', $color-blue, $color-blue-1, $color-blue-2, $color-blue-3, $color-blue-4 ); 
+  @include NewClassColor('red', $color-red, $color-red-1, $color-red-2, $color-red-3, $color-red-4 );
+  @include NewClassColor('orange', $color-orange, $color-orange-1, $color-orange-2, $color-orange-3, $color-orange-4 );
+  @include NewClassColor('green', $color-green, $color-green-1, $color-green-2, $color-green-3, $color-green-4 );
+  @include NewClassColor('purple', $color-purple, $color-purple-1, $color-purple-2, $color-purple-3, $color-purple-4 );
+  @include NewClassColor('gray', $color-gray, $color-gray-1, $color-gray-2, $color-gray-3, $color-gray-4 );
+  @include NewClassColor('navy', $color-navy, $color-navy-1, $color-navy-2, $color-navy-3, $color-navy-4 );
+  @include NewClassColor('ocean', $color-ocean, $color-ocean-1, $color-ocean-2, $color-ocean-3, $color-ocean-4 );
+  @include NewClassColor('deep-purple', $color-deep-purple, $color-deep-purple-1, $color-deep-purple-2, $color-deep-purple-3, $color-deep-purple-4 );
+  @include NewClassColor('majesty', $color-majesty, $color-majesty-1, $color-majesty-2, $color-majesty-3, $color-majesty-4 );
+  @include NewClassColor('pink', $color-pink, $color-pink-1, $color-pink-2, $color-pink-3, $color-pink-4 );
+  @include NewClassColor('chocolate', $color-chocolate, $color-chocolate-1, $color-chocolate-2, $color-chocolate-3, $color-chocolate-4 );
+  @include NewClassColor('coyote', $color-coyote, $color-coyote-1, $color-coyote-2, $color-coyote-3, $color-coyote-4 );
+  @include NewClassColor('yellow', $color-yellow, $color-yellow-1, $color-yellow-2, $color-yellow-3, $color-yellow-4 );
+  @include NewClassColor('brown', $color-brown, $color-brown-1, $color-brown-2, $color-brown-3, $color-brown-4 );
+  @include NewClassColor('emerald', $color-emerald, $color-emerald-1, $color-emerald-2, $color-emerald-3, $color-emerald-4 );
+  @include NewClassColor('pistachio', $color-pistachio, $color-pistachio-1, $color-pistachio-2, $color-pistachio-3, $color-pistachio-4 );
+  @include NewClassColor('video', $color-video, $color-video-1, $color-video-2, $color-video-3, $color-video-4 );
+  @include NewClassColor('secondary', $color-secondary, $color-secondary-1, $color-secondary-2, $color-secondary-3, $color-secondary-4 );
+  @include NewClassColor('ingaia', $color-ingaia, $color-ingaia-1, $color-ingaia-2, $color-ingaia-3, $color-ingaia-4 );
+  @include NewClassColor('saas', $color-saas, $color-saas-1, $color-saas-2, $color-saas-3, $color-saas-4 );
+  @include NewClassColor('maas', $color-maas, $color-maas-1, $color-maas-2, $color-maas-3, $color-maas-4 );
+  @include NewClassColor('education', $color-education, $color-education-1, $color-education-2, $color-education-3, $color-education-4 );
+  @include NewClassColor('financial-solution', $color-financial-solution, $color-financial-solution-1, $color-financial-solution-2, $color-financial-solution-3, $color-financial-solution-4 );
+  @include NewClassColor('real-estate-left', $color-real-estate-left, $color-real-estate-left-1, $color-real-estate-left-2, $color-real-estate-left-3, $color-real-estate-left-4 );
   
-  .color-ingaia { color: $color-ingaia !important; }
-  .color-saas { color: $color-saas !important; }
-  .color-maas { color: $color-maas !important; }
-  .color-education { color: $color-education !important; }
-  .color-financial-solution { color: $color-financial-solution !important; }
-  .color-real-estate-left { color: $color-real-estate-left !important; }  
 
-  // BACKGROUD COLORS CLASS
-  .bg-secondary, .bg-gray{ background-color: $color-gray !important; }
-  .bg-secondary-1, .bg-gray-1 { background-color: $color-gray-1 !important; }
-  .bg-secondary-2, .bg-gray-2 { background-color: $color-gray-2 !important; }
-  .bg-secondary-3, .bg-gray-3 { background-color: $color-gray-3 !important; }
-  .bg-secondary-4, .bg-gray-4 { background-color: $color-gray-4 !important; }
+  @mixin NewClassColorSingle($nameColorSingle, $colorSingle){
+    .color-#{$nameColorSingle} { color: $nameColorSingle !important; }
+    .bg-#{$nameColorSingle} { background-color: $colorSingle !important; }
+    .hr-#{$nameColorSingle} { border-top: 1px solid $colorSingle !important; }
+  }
 
-  .bg-blue { background-color: $color-blue !important; }
-  .bg-red { background-color: $color-red !important; }
-  .bg-orange { background-color: $color-orange !important; }
-  .bg-green { background-color: $color-green !important; }
-  .bg-purple { background-color: $color-purple !important; }
+    // COLORS CLASS
+  @include NewClassColorSingle('white', #fff);
+  @include NewClassColorSingle('silver', $brand-primary);
+  @include NewClassColorSingle('transparent', transparent );
+  @include NewClassColorSingle('video-5', #30353C );
 
-  .bg-transparent { background-color: transparent !important; }
-  .bg-white { background-color: #ffffff !important; }
-  .bg-ingaia { background-color: $color-ingaia !important; }
-  .bg-saas { background-color: $color-saas !important; }
-  .bg-maas { background-color: $color-maas !important; }
-  .bg-education { background-color: $color-education !important; }
-  .bg-financial-solution { background-color: $color-financial-solution !important; }
-  .bg-real-estate-left { background-color: $color-real-estate-left !important; }
-
-  // HR CLASS
-  .hr-blue { border-top: 1px solid $color-blue !important; }
-  .hr-red { border-top: 1px solid $color-red !important; }
-  .hr-orange { border-top: 1px solid $color-orange !important; }
-  .hr-green { border-top: 1px solid $color-green !important; }
-  .hr-purple { border-top: 1px solid $color-purple !important; }
-
-  .hr-white { border-top: 1px solid #ffffff !important; }
-  .hr-primary { border-top: 1px solid $brand-primary !important; }
-  .hr-default { border-top: 1px solid $brand-default !important; }
-  .hr-success { border-top: 1px solid $brand-success !important; }
-  .hr-info { border-top: 1px solid $brand-info !important; }
-  .hr-warning { border-top: 1px solid $brand-warning !important; }
-  .hr-danger { border-top: 1px solid $brand-danger !important; }
-
-  .hr-ingaia { border-top: 1px solid $color-ingaia !important; }
-  .hr-saas { border-top: 1px solid $color-saas !important; }
-  .hr-maas { border-top: 1px solid $color-maas !important; }
-  .hr-financial-solution { border-top: 1px solid $color-financial-solution !important; }
-  .hr-education { border-top: 1px solid $color-education !important; }
-  .hr-real-estate-left { border-top: 1px solid $color-real-estate-left !important; }
+  @include NewClassColorSingle('primary', $brand-primary );
+  @include NewClassColorSingle('success', $brand-success );
+  @include NewClassColorSingle('info', $brand-info );
+  @include NewClassColorSingle('warning', $brand-warning );
+  @include NewClassColorSingle('danger', $brand-danger );
 
   .color-inverse {
     background-color: $color-gray-3 !important;
