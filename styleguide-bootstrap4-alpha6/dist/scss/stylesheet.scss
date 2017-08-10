@@ -1,6 +1,9 @@
 @import "partials/variable";
+@import "partials/colors-variables";
+
+@import "../../../../bootstrap/scss/bootstrap";
+
 @import "partials/reset";
-@import "partials/colors";
 @import "partials/typography";
 @import "partials/forms";
 @import "partials/buttons";
@@ -10,3 +13,4 @@
 @import "partials/popover";
 @import "partials/_spinner-icons";
 @import "partials/datepicker_react";
+@import "partials/colors";
