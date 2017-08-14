@@ -7,7 +7,7 @@ A `UX Styleguide` da suporte para criação de projetos usando o Bootstrap 3 ou 
 ### npm
 
 ```console
-$ npm install ingaia.ux.styleguide
+$ npm install ingaia.ux.styleguide --save
 ```
 
 ### Bower
@@ -19,7 +19,8 @@ $ bower install ingaia.ux.styleguide
 Escolha qual versão do bootstrap você quer usar:
 
 * [Bootstrap 3](#a-styleguide-com-bootstrap-3).
-* [Bootstrap 4](#b-styleguide-com-bootstrap-4).
+* [Bootstrap 4 alpha 5](#b-styleguide-com-bootstrap-4-alpha-5).
+* [Bootstrap 4 alpha 6](#c-styleguide-com-bootstrap-4-alpha-6).
 
 ### a. Styleguide com Bootstrap 3
 
@@ -33,7 +34,7 @@ $ bower install bootstrap-sass
 
 Compile os arquivos da ux.styleguide com os arquivos do bootstrap-sass localizados na pasta assets [assets].
 
-### b. Styleguide com Bootstrap 4
+### b. Styleguide com Bootstrap 4 Alpha 5
 
 A versão do bootstrap usada para criação dos layouts é a bootstrap#v4.0.0-alpha.5. Você pode instalá-lo com:
 
@@ -41,4 +42,14 @@ A versão do bootstrap usada para criação dos layouts é a bootstrap#v4.0.0-al
 
 ```console
 $ bower install bootstrap#v4.0.0-alpha.5
+```
+
+### c. Styleguide com Bootstrap 4 Alpha 6
+
+A versão do bootstrap usada para criação dos layouts é a bootstrap#v4.0.0-alpha.6. Você pode instalá-lo com:
+
+### Npm
+
+```console
+$ npm install bootstrap@4.0.0-alpha.6 --save
 ```
