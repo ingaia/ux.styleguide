@@ -1,0 +1,115 @@
+/* _borders.scss */
+
+@mixin NewBorder($borderPosition, $borderColor) {
+  border-#{$borderPosition}: 3px solid !important;
+  border-#{$borderPosition}-color: $borderColor !important;
+}
+
+.border-dashed { border-bottom: dashed 1px $color-gray; }
+
+/* BORDERS MARCAS */
+
+.border-top-ingaia{ @include NewBorder(top, $color-ingaia); }
+.border-top-saas { @include NewBorder(top, $color-saas); }
+.border-top-maas { @include NewBorder(top, $color-maas); }
+.border-top-education { @include NewBorder(top, $color-education); }
+.border-top-financial-solution { @include NewBorder(top, $color-financial-solution); }
+.border-top-real-estate-left { @include NewBorder(top, $color-real-estate-left); }
+
+.border-right-ingaia { @include NewBorder(right, $color-ingaia); }
+.border-right-saas { @include NewBorder(right, $color-saas); }
+.border-right-maas { @include NewBorder(right, $color-maas); }
+.border-right-education { @include NewBorder(right, $color-education); }
+.border-right-financial-solution { @include NewBorder(right, $color-financial-solution); }
+.border-right-real-estate-left { @include NewBorder(right, $color-real-estate-left); }
+
+.border-bottom-ingaia { @include NewBorder(bottom, $color-ingaia); }
+.border-bottom-saas { @include NewBorder(bottom, $color-saas); }
+.border-bottom-maas { @include NewBorder(bottom, $color-maas); }
+.border-bottom-education { @include NewBorder(bottom, $color-education); }
+.border-bottom-financial-solution { @include NewBorder(bottom, $color-financial-solution); }
+.border-bottom-real-estate-left { @include NewBorder(bottom, $color-real-estate-left); }
+
+.border-left-ingaia { @include NewBorder(left, $color-ingaia); }
+.border-left-saas { @include NewBorder(left, $color-saas); }
+.border-left-maas { @include NewBorder(left, $color-maas); }
+.border-left-education { @include NewBorder(left, $color-education); }
+.border-left-financial-solution { @include NewBorder(left, $color-financial-solution); }
+.border-left-real-estate-left { @include NewBorder(left, $color-real-estate-left); }
+
+/* BORDERS GRAY*/
+.border-top-gray { @include NewBorder(top, $color-gray); }
+.border-right-gray { @include NewBorder(right, $color-gray); }
+.border-left-gray { @include NewBorder(left, $color-gray); }
+.border-bottom-gray { @include NewBorder(bottom, $color-gray); }
+
+.border-top-gray-1 { @include NewBorder(top, $color-gray-1); }
+.border-right-gray-1 { @include NewBorder(right, $color-gray-1); }
+.border-left-gray-1 { @include NewBorder(left, $color-gray-1); }
+.border-bottom-gray-1 { @include NewBorder(bottom, $color-gray-1); }
+
+.border-top-gray-2 { @include NewBorder(top, $color-gray-2); }
+.border-right-gray-2 { @include NewBorder(right, $color-gray-2); }
+.border-left-gray-2 { @include NewBorder(left, $color-gray-2); }
+.border-bottom-gray-2 { @include NewBorder(bottom, $color-gray-2); }
+
+.border-top-gray-3 { @include NewBorder(top, $color-gray-3); }
+.border-right-gray-3 { @include NewBorder(right, $color-gray-3); }
+.border-left-gray-3 { @include NewBorder(left, $color-gray-3); }
+.border-bottom-gray-3 { @include NewBorder(bottom, $color-gray-3); }
+
+.border-top-gray-4 { @include NewBorder(top, $color-gray-4); }
+.border-right-gray-4 { @include NewBorder(right, $color-gray-4); }
+.border-left-gray-4 { @include NewBorder(left, $color-gray-4); }
+.border-bottom-gray-4 { @include NewBorder(bottom, $color-gray-4); }
+
+/* BORDER STATE */
+.border-top-primary { @include NewBorder(top, $brand-primary); }
+.border-right-primary { @include NewBorder(right, $brand-primary); }
+.border-left-primary { @include NewBorder(left, $brand-primary); }
+.border-bottom-primary { @include NewBorder(bottom, $brand-primary); }
+
+.border-top-success { @include NewBorder(top, $brand-success); }
+.border-right-success { @include NewBorder(right, $brand-success); }
+.border-left-success { @include NewBorder(left, $brand-success); }
+.border-bottom-success { @include NewBorder(bottom, $brand-success); }
+
+.border-top-info { @include NewBorder(top, $brand-info); }
+.border-right-info { @include NewBorder(right, $brand-info); }
+.border-left-info { @include NewBorder(left, $brand-info); }
+.border-bottom-info { @include NewBorder(bottom, $brand-info); }
+
+.border-top-warning { @include NewBorder(top, $brand-warning); }
+.border-right-warning { @include NewBorder(right, $brand-warning); }
+.border-left-warning { @include NewBorder(left, $brand-warning); }
+.border-bottom-warning { @include NewBorder(bottom, $brand-warning); }
+
+.border-top-danger { @include NewBorder(top, $brand-danger); }
+.border-right-danger { @include NewBorder(right, $brand-danger); }
+.border-left-danger { @include NewBorder(left, $brand-danger); }
+.border-bottom-danger { @include NewBorder(bottom, $brand-danger); }
+
+/* BORDER COLOR */
+.border-top-blue { @include NewBorder(top, $color-blue); }
+.border-top-purple { @include NewBorder(top, $color-purple); }
+.border-top-orange { @include NewBorder(top, $color-orange); }
+.border-top-green { @include NewBorder(top, $color-green); }
+.border-top-red { @include NewBorder(top, $color-red); }
+
+.border-right-blue { @include NewBorder(right, $color-blue); }
+.border-right-purple { @include NewBorder(right, $color-purple); }
+.border-right-orange { @include NewBorder(right, $color-orange); }
+.border-right-green { @include NewBorder(right, $color-green); }
+.border-right-red { @include NewBorder(right, $color-red); }
+
+.border-bottom-blue { @include NewBorder(bottom, $color-blue); }
+.border-bottom-purple { @include NewBorder(bottom, $color-purple); }
+.border-bottom-orange { @include NewBorder(bottom, $color-orange); }
+.border-bottom-green { @include NewBorder(bottom, $color-green); }
+.border-bottom-red { @include NewBorder(bottom, $color-red); }
+
+.border-left-blue { @include NewBorder(left, $color-blue); }
+.border-left-purple { @include NewBorder(left, $color-purple); }
+.border-left-orange { @include NewBorder(left, $color-orange); }
+.border-left-green { @include NewBorder(left, $color-green); }
+.border-left-red { @include NewBorder(left, $color-red); }

@@ -1,0 +1,266 @@
+/* _datepicker_react.scss*/
+/* Ícone do input */
+.react-date-field__calendar-icon { border: none !important; padding: 7px 11px !important; }
+.react-date-field__calendar-icon:after, .react-date-field__calendar-icon:before {
+  content: none !important;
+  width: 0px !important;
+}
+.react-date-field__calendar-icon:before {
+  content: '\E00A'!important;
+  font-family: ingaia-font-icons !important;
+  color: $brand-success !important;
+}
+.react-date-field__calendar-icon-inner {
+  background: none !important;
+}
+
+/* Bg do Datepicker */
+.react-date-picker__month-view--theme-default {
+  background-color: #E9E9E9 !important;
+  padding-bottom: 25px !important;
+  padding-right: 10px !important;
+  padding-left: 3px !important;
+}
+
+
+/* Bg do mês e ano */
+.react-date-picker__nav-bar--theme-default .react-date-picker__nav-bar-history-view {
+  background-color: #E9E9E9 !important;
+  width: 100% !important;
+  // position: relative; right: 5px;
+  border-top: 0px !important; border-left: 0px !important; border-right: 0px !important;
+  border-bottom-color: $brand-success !important;
+  padding-bottom: 10px !important;
+}
+
+/* Seta da escolha do ano */
+.react-date-picker__decade-view--theme-default .react-date-picker__decade-view-arrow {
+  fill: $brand-success !important;
+}
+
+/* Box da escolha do ano */
+.react-date-picker__decade-view--theme-default .react-date-picker__decade-view-year {
+  padding: 5px !important;
+  cursor: pointer !important;
+  background-color: #fff !important;
+  margin: 1px !important;
+  border: 1px solid #ccc !important;
+}
+
+/* Box da escolha do ano selecionado */
+.react-date-picker__decade-view--theme-default .react-date-picker__decade-view-year--value {
+  color: white !important;
+  background: $brand-success padding-box !important;
+  border: 1px solid $brand-success !important;
+}
+
+/* Buttons da escolha de mês e ano */
+/* Buttons OK */
+.react-date-picker__footer--theme-default .react-date-picker__footer-button:first-of-type {
+  padding: 5px 12px !important;
+  outline: none !important;
+  position: relative !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  border: 1px solid #00a2c2 !important;
+  background: #00a2c2 !important;
+  font-size: 0.9em !important;
+  color: #fff !important;
+  border-radius: 2px !important;
+}
+
+/* Buttons OK HOVER */
+.react-date-picker__footer--theme-default .react-date-picker__footer-button:first-of-type:hover {
+  border: 1px solid #00778F !important;
+  background: #00778F !important;
+}
+
+/* Button CANCEL */
+.react-date-picker__footer--theme-default .react-date-picker__footer-button:last-of-type {
+  padding: 5px 12px !important;
+  outline: none !important;
+  position: relative !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  border: 1px solid #ccc !important;
+  background: transparent !important;
+  font-size: 0.9em !important;
+  color: #ccc !important;
+  border-radius: 2px !important;
+}
+/* Button CANCEL HOVER */
+.react-date-picker__footer--theme-default .react-date-picker__footer-button:last-of-type:hover {
+  background: #ccc !important;
+  color: #fff !important;
+}
+
+/* Campo da escolha do mês */
+.react-date-picker__year-view--theme-default .react-date-picker__year-view-month {
+  padding: 5px !important;
+  cursor: pointer !important;
+  border: 2px solid #DADADA !important;
+  background-color: #fff !important;
+  margin: 2px !important;
+  color: $color-gray-3 !important;
+  border-radius: 4px !important;
+}
+
+/* Campo da escolha do mês Ativo */
+.react-date-picker__year-view--theme-default .react-date-picker__year-view-month--active.react-date-picker__year-view-month--value {
+  background: $brand-success padding-box !important;
+  border: 2px solid $brand-success !important;
+  color: #fff !important;
+}
+
+
+/* Dia selecionado */
+.react-date-picker__month-view--theme-default .react-date-picker__month-view-day--value .react-date-picker__month-view-day-text { background-color: $brand-success !important; }
+
+/* Nº dentro do box NÃO selecionado */
+.react-date-picker__month-view--theme-default .react-date-picker__month-view-day--today-highlight { color: #000; }
+
+/* N° dentro do box selecionado na data atual */
+.react-date-picker__month-view--theme-default .react-date-picker__month-view-day--in-hover-range.react-date-picker__month-view-day--today-highlight .react-date-picker__month-view-day-text, .react-date-picker__month-view--theme-default .react-date-picker__month-view-day--in-range.react-date-picker__month-view-day--today-highlight .react-date-picker__month-view-day-text, .react-date-picker__month-view--theme-default .react-date-picker__month-view-day--value.react-date-picker__month-view-day--today-highlight .react-date-picker__month-view-day-text {
+  color: #fff !important;
+  border-color: inset 0px 0px 5px 0px #499DB6 !important;
+  -moz-box-shadow: inset 0px 0px 5px 0px #499DB6 !important;
+  box-shadow: inset 0px 0px 5px 0px #499DB6 !important;
+  background-color: #5bc0de !important;
+}
+
+/* Borda do input */
+.react-date-field--theme-default { border: 1px solid $color-gray !important; }
+
+/* Borda do input com FOCUS */
+.react-date-field--theme-default.react-date-field--focused { border: 1px solid $brand-success !important; }
+
+/* Borda e Sombra do Datepicker */
+.react-date-field--theme-default > .react-date-field__picker {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.34375) !important;
+  border: 1px solid $brand-success !important;
+}
+
+/* Setas do Datepicker */
+.react-date-picker__nav-bar--theme-default .react-date-picker__nav-bar-arrow {
+  fill: $brand-success !important;
+}
+
+/* Dias da Semana */
+.react-date-picker__month-view--theme-default .react-date-picker__month-view-week-day-names { text-transform: lowercase !important;}
+
+/* Box dos dias */
+.react-date-picker__month-view--theme-default .react-date-picker__month-view-day .react-date-picker__month-view-day-text {
+  border: 1px solid $color-gray-1 !important;
+  border-radius: 2px !important;
+  text-align: center !important;
+  min-width: 38px !important;
+  min-height: 31px !important;
+  max-width: 38px !important;
+  max-height: 37px !important;
+  margin-bottom: 1px !important;
+  background-color: #fff !important;
+}
+
+/* Style dos N° da 1ª coluna */
+.react-date-picker__month-view--theme-default .react-date-picker__month-view-week-number {
+  color: $color-gray-4 !important;
+  font-style: italic !important;
+}
+
+// Tamanhos Datapicker_react
+.datepicker-sm {
+  &.datepicker-block {
+    .react-date-field { width: 100%; }
+  }
+  .react-date-field {
+    height: 30px;
+    border-radius: 4px;
+    .react-date-field__input {
+      padding: 0.344rem 0.75rem;
+      font-size: .875rem !important;
+      color: $brand-primary !important;
+    }
+    .react-date-field__clear-icon svg {
+      height: 15px;
+      position: relative;
+      left: 5px;
+    }
+  }
+}
+
+.datepicker-md {
+  &.datepicker-block {
+    .react-date-field { width: 100%; }
+  }
+  .react-date-field {
+    height: 48px;
+    border-radius: 4px;
+    .react-date-field__input {
+      padding: 0.813rem 0.99rem;
+      font-size: 1rem !important;
+      color: $brand-primary !important;
+    }
+    .react-date-field__clear-icon svg {
+      height: 16px;
+      position: relative;
+      left: 5px;
+    }
+  }
+}
+
+.datepicker-default {
+  &.datepicker-block {
+    .react-date-field { width: 100%; }
+  }
+  .react-date-field {
+    height: 38px;
+    border-radius: 4px;
+    .react-date-field__input {
+      padding: 0.5rem 0.855rem;
+      font-size: 1rem !important;
+      color: $brand-primary !important;
+    }
+    .react-date-field__clear-icon svg {
+      height: 16px;
+      position: relative;
+      left: 5px;
+    }
+  }
+}
+
+.datepicker-lg {
+  &.datepicker-block {
+    .react-date-field { width: 100%; }
+  }
+  .react-date-field {
+    height: 63px;
+    border-radius: 4px;
+    .react-date-field__input {
+      padding: 1.125rem 1.5rem;
+      font-size: 1.25rem !important;
+      color: $brand-primary !important;
+    }
+    .react-date-field__clear-icon svg {
+      height: 17px;
+      position: relative;
+      left: 5px;
+    }
+  }
+}
+
+.react-date-field__input { background-color: transparent; }
+.react-date-field > .react-date-field__picker { width: 333px !important; background-color: #e8e8e8 !important; }
+
+.react-date-picker__month-view--theme-default .react-date-picker__month-view-day--in-hover-range .react-date-picker__month-view-day-text, .react-date-picker__month-view--theme-default .react-date-picker__month-view-day--in-range .react-date-picker__month-view-day-text, .react-date-picker__month-view--theme-default .react-date-picker__month-view-day--value .react-date-picker__month-view-day-text {
+    color: $brand-success !important;
+}
+
+
+.react-date-picker__calendar--theme-default .react-date-picker__month-view--theme-default {
+    left: 50%;
+    transform: translateX(-50%);
+}

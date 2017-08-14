@@ -1,0 +1,418 @@
+/* checkbox-radiobutton.scss */
+/* ↓↓↓↓↓↓↓↓↓↓ CHECKBOX SWITCH ↓↓↓↓↓↓↓↓↓↓ */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 17px;
+  }
+
+  /** Hide default HTML checkbox */
+  .switch input { display:none; }
+
+  /** The toggle-slider */
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .3s;
+            transition: .3s;
+  }
+
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: -2px;
+    bottom: -2px;
+    background-color: #b5b5b5;
+    -webkit-transition: .3s;
+            transition: .3s;
+  }
+
+  input:checked + .toggle-slider { background-color: #dbdbdb; }
+  input:focus + .toggle-slider { box-shadow: 0 0 1px #2196F3; }
+  input:checked + .toggle-slider:before {
+    -webkit-transform: translateX(22px);
+        -ms-transform: translateX(22px);
+            transform: translateX(22px);
+    background-color: $brand-success;
+  }
+  .switch .toggle-slider i:nth-child(1) { color: $brand-success; }
+
+  /** Rounded toggle-slider */
+  .toggle-slider.round { border-radius: 10px; }
+  .toggle-slider.round:before {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(122,122,122,1);
+       -moz-box-shadow: 0px 0px 2px 0px rgba(122,122,122,1);
+            box-shadow: 0px 0px 2px 0px rgba(122,122,122,1);
+  }
+
+  .switch .ing-check { font-size: 10px; margin-top: 2px; margin-left: 5px; }
+  .switch .ing-close { font-size: 7px; margin-top: 3px; margin-right: 6px; }
+
+/* ↓↓↓↓↓↓↓↓↓↓ CHECKBOX CUSTOM ↓↓↓↓↓↓↓↓↓↓ */
+  .custom-checkbox .custom-control-indicator { border-radius: 15px !important; }
+  .custom-control-indicator { border: solid 3px $brand-success !important; background-color: transparent !important; background-size: 80% 80% !important; top: 0.12rem !important; left: 0px !important; width: 1.2rem !important; height: 1.2rem !important; }
+  .custom-control-input:checked ~ .custom-control-indicator {
+    color: transparent !important;
+    background-color: $brand-success !important;
+}
+.custom-control-input:focus ~ .custom-control-indicator { box-shadow: 0 0 0 0.075rem transparent,0 0 0 0.2rem transparent !important; }
+/* Altera a cor do checked */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
+/* ↓↓↓↓↓↓↓↓↓↓ CHECKBOX ↓↓↓↓↓↓↓↓↓↓ */
+.ingaia-checkbox {
+  margin-right: 5px;
+  margin-bottom: 0px;
+
+  label {
+    display: inline-block;
+  }
+
+  span {
+    &:before {
+      border: 3px solid $color-gray-2;
+    }
+    &:hover:before {
+      box-shadow: inset 0px 0px 3px $color-gray-2, 0px 0px 3px $color-gray-2;
+    }
+  }
+
+  input[type=checkbox] {
+    display: none
+  }
+
+  input[type=checkbox] + span:before {
+    content: "\E013";
+    display: inline-block;
+    visibility: visible;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;
+    text-align: center;
+    color: transparent;
+    cursor: pointer;
+    padding: 3px 0 0 0;
+    position: relative;
+    background: transparent;
+    width: 17px;
+    height: 17px;
+    font-size: 11px;
+    padding: 0;
+    line-height: 14px;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+  }
+
+  input[type=checkbox]:checked + span:before {
+    font-family: 'ingaia-font-icons';
+    content: "\E013";
+    color: $color-gray-2;
+    display: inline-block;
+    vertical-align: text-bottom;
+  }
+
+  &.check-lg {
+    input[type=checkbox] + span:before {
+      width: 27px;
+      height: 27px;
+      font-size: 17px;
+      padding: 0;
+      line-height: 24px;
+    }
+  }
+
+  &.check-md {
+    input[type=checkbox] + span:before {
+      width: 22px;
+      height: 22px;
+      font-size: 13px;
+      padding: 0;
+      line-height: 18px;
+    }
+  }
+
+  &.check-sm {
+    input[type=checkbox] + span:before {
+      width: 19px;
+      height: 19px;
+      font-size: 11px;
+      padding: 0;
+      line-height: 15px;
+    }
+  }
+
+  &.check-xs {
+    input[type=checkbox] + span:before {
+      width: 17px;
+      height: 17px;
+      font-size: 10px;
+      padding: 0;
+      line-height: 13px;
+    }
+  }
+
+  &.check-blue {
+    input[type=checkbox]:checked + span:before {
+      background: $color-saas;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 3px solid $color-saas;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas;
+      }
+    }
+  }
+
+  &.check-purple {
+    input[type=checkbox]:checked + span:before {
+      background: $color-maas;
+      color: #fff;
+    }
+    span{
+      &:before {
+        border: 3px solid $color-maas;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-maas, 0px 0px 3px $color-maas;
+      }
+    }
+  }
+
+  &.check-green {
+    input[type=checkbox]:checked + span:before {
+      background: $color-financial-solution;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 3px solid $color-financial-solution;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-financial-solution, 0px 0px 3px $color-financial-solution;
+      }
+    }
+  }
+
+  &.check-orange {
+    input[type=checkbox]:checked + span:before {
+      background: $color-education;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 3px solid $color-education;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-education, 0px 0px 3px $color-education;
+      }
+    }
+  }
+
+  &.check-red {
+    input[type=checkbox]:checked + span:before {
+      background: $color-real-estate-left;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 3px solid $color-real-estate-left;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-real-estate-left, 0px 0px 3px $color-real-estate-left;
+      }
+    }
+  }
+}
+
+.check-inverse {
+  input[type=checkbox]:checked + span:before {
+    color: $color-gray-3 !important;
+  }
+}
+
+/* ↓↓↓↓↓↓↓↓↓↓ RADIO ↓↓↓↓↓↓↓↓↓↓ */
+.ingaia-radio {
+  margin-right: 5px;
+
+  label {
+    display: inline-block;
+  }
+
+  span {
+    &:before {
+      border: 3px solid $color-gray-2;
+    }
+    &:hover:before {
+      box-shadow: inset 0px 0px 3px $color-gray-2, 0px 0px 3px $color-gray-2;
+    }
+  }
+
+  input[type=radio] {
+    display: none
+  }
+
+  input[type=radio] + span:before {
+    content: "\E01E";
+    display: inline-block;
+    visibility: visible;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+    color: transparent;
+    cursor: pointer;
+    padding: 3px 0 0 0;
+    position: relative;
+    background: transparent;
+    width: 17px;
+    height: 17px;
+    font-size: 11px;
+    padding: 0;
+    line-height: 14px;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+  }
+
+  input[type=radio]:checked + span:before {
+    font-family: 'ingaia-font-icons';
+    content: "\E01E";
+    color: $color-gray-2;
+    display: inline-block;
+    vertical-align: text-bottom;
+  }
+
+  &.radio-lg {
+    input[type=radio] + span:before {
+      width: 27px;
+      height: 27px;
+      font-size: 18px;
+      padding: 0;
+      line-height: 24px;
+    }
+  }
+
+  &.radio-md {
+    input[type=radio] + span:before {
+      width: 22px;
+      height: 22px;
+      font-size: 14px;
+      padding: 0;
+      line-height: 19px;
+    }
+  }
+
+  &.radio-sm {
+    input[type=radio] + span:before {
+      width: 19px;
+      height: 19px;
+      font-size: 12px;
+      padding: 0;
+      line-height: 16px;
+    }
+  }
+
+  &.radio-xs {
+    input[type=radio] + span:before {
+      width: 17px;
+      height: 17px;
+      font-size: 11px;
+      padding: 0;
+      line-height: 14px;
+    }
+  }
+
+  &.radio-blue {
+    input[type=radio]:checked + span:before {
+      background: $color-saas;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 3px solid $color-saas;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-saas, 0px 0px 3px $color-saas;
+      }
+    }
+  }
+
+  &.radio-purple {
+    input[type=radio]:checked + span:before {
+      background: $color-maas;
+      color: #fff;
+    }
+    span{
+      &:before {
+        border: 3px solid $color-maas;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-maas, 0px 0px 3px $color-maas;
+      }
+    }
+  }
+
+  &.radio-green {
+    input[type=radio]:checked + span:before {
+      background: $color-financial-solution;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 3px solid $color-financial-solution;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-financial-solution, 0px 0px 3px $color-financial-solution;
+      }
+    }
+  }
+
+  &.radio-orange {
+    input[type=radio]:checked + span:before {
+      background: $color-education;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 3px solid $color-education;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-education, 0px 0px 3px $color-education;
+      }
+    }
+  }
+
+  &.radio-red {
+    input[type=radio]:checked + span:before {
+      background: $color-real-estate-left;
+      color: #fff;
+    }
+    span {
+      &:before {
+        border: 3px solid $color-real-estate-left;
+      }
+      &:hover:before {
+        box-shadow: inset 0px 0px 3px $color-real-estate-left, 0px 0px 3px $color-real-estate-left;
+      }
+    }
+  }
+}
+
+.radio-inverse {
+  input[type=radio]:checked + span:before {
+    color: $color-gray-3 !important;
+  }
+}

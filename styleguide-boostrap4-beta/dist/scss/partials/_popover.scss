@@ -1,0 +1,362 @@
+/* _popover.scss */
+
+/* ARROWS */
+@mixin NewArrow($borderPosition, $borderColor, $top, $left, $arrowColorTop, $arrowColorRight, $arrowColorBottom, $arrowColorLeft, $borderTopPx, $borderRightPx, $borderBottomPx, $borderLeftPx) {
+  border-#{$borderPosition}: 3px solid !important;
+  border-#{$borderPosition}-color: $borderColor !important;
+  &:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border-top: $borderTopPx solid $arrowColorTop;
+    border-right: $borderRightPx solid $arrowColorRight;
+    border-bottom: $borderBottomPx solid $arrowColorBottom;
+    border-left: $borderLeftPx solid $arrowColorLeft;
+    position: absolute;
+    top: $top;
+    left: $left;
+  }
+}
+
+/* Parâmetros: BorderPosition BorderColor | TOP LEFT colorT colorR colorB colorL | Border: TOP, RIGHT, BOTTOM, LEFT */
+.arrow-top-right{ @include NewArrow(top, $brand-success, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-success,transparent,0px,7px,7px,7px); }
+.arrow-top-middle{ @include NewArrow(top, $brand-success, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$brand-success,transparent,0px,7px,7px,7px); }
+.arrow-top-left{ @include NewArrow(top, $brand-success, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-success,transparent,0px,7px,7px,7px); }
+
+.arrow-bottom-right{ @include NewArrow(bottom, $brand-success, calc(100% + 3px),calc(100% - 30px),$brand-success,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle{ @include NewArrow(bottom, $brand-success, calc(100% + 3px),calc(100% - 50% - 7.5px),$brand-success,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left{ @include NewArrow(bottom, $brand-success, calc(100% + 3px),calc(0% + 20px),$brand-success,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+.arrow-left-top{ @include NewArrow(left, $brand-success, calc(0% + 20px),calc(0% - 17px),transparent,$brand-success,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle{ @include NewArrow(left, $brand-success, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$brand-success,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom{ @include NewArrow(left, $brand-success, calc(100% - 30px),calc(0% - 17px),transparent,$brand-success,transparent,transparent,7px,7px,7px,7px); }
+
+.arrow-right-top{ @include NewArrow(right, $brand-success, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-success,7px,7px,7px,7px); }
+.arrow-right-middle{ @include NewArrow(right, $brand-success, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$brand-success,7px,7px,7px,7px); }
+.arrow-right-bottom{ @include NewArrow(right, $brand-success, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-success,7px,7px,7px,7px); }
+
+
+/* ARROW Color marcar e color PRIMARY (Cor default é success da marca) */
+//TOP (right, middle, left)
+/// TOP RIGHT
+.arrow-top-right-primary{ @include NewArrow(top, $brand-primary, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-primary,transparent,0px,7px,7px,7px); }
+.arrow-top-right-success{ @include NewArrow(top, $brand-success, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-success,transparent,0px,7px,7px,7px); }
+.arrow-top-right-info{ @include NewArrow(top, $brand-info, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-info,transparent,0px,7px,7px,7px); }
+.arrow-top-right-warning{ @include NewArrow(top, $brand-warning, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-warning,transparent,0px,7px,7px,7px); }
+.arrow-top-right-danger{ @include NewArrow(top, $brand-danger, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$brand-danger,transparent,0px,7px,7px,7px); }
+
+.arrow-top-right-ingaia{ @include NewArrow(top, $color-ingaia, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-ingaia,transparent,0px,7px,7px,7px); }
+.arrow-top-right-saas{ @include NewArrow(top, $color-saas, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-saas,transparent,0px,7px,7px,7px); }
+.arrow-top-right-maas{ @include NewArrow(top, $color-maas, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-maas,transparent,0px,7px,7px,7px); }
+.arrow-top-right-financial-solution{ @include NewArrow(top, $color-financial-solution, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-financial-solution,transparent,0px,7px,7px,7px); }
+.arrow-top-right-education{ @include NewArrow(top, $color-education, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-education,transparent,0px,7px,7px,7px); }
+.arrow-top-right-real-estate-left{ @include NewArrow(top, $color-real-estate-left, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-real-estate-left,transparent,0px,7px,7px,7px); }
+
+.arrow-top-right-blue{ @include NewArrow(top, $color-blue, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-blue,transparent,0px,7px,7px,7px); }
+.arrow-top-right-purple{ @include NewArrow(top, $color-purple, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-purple,transparent,0px,7px,7px,7px); }
+.arrow-top-right-orange{ @include NewArrow(top, $color-orange, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-orange,transparent,0px,7px,7px,7px); }
+.arrow-top-right-green{ @include NewArrow(top, $color-green, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-green,transparent,0px,7px,7px,7px); }
+.arrow-top-right-red{ @include NewArrow(top, $color-red, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-red,transparent,0px,7px,7px,7px); }
+
+/// TOP MIDDLE
+.arrow-top-middle-primary{ @include NewArrow(top, $brand-primary, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$brand-primary,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-success{ @include NewArrow(top, $brand-success, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$brand-success,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-info{ @include NewArrow(top, $brand-info, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$brand-info,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-warning{ @include NewArrow(top, $brand-warning, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$brand-warning,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-danger{ @include NewArrow(top, $brand-danger, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$brand-danger,transparent,0px,7px,7px,7px); }
+
+.arrow-top-middle-ingaia{ @include NewArrow(top, $color-ingaia, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-ingaia,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-saas{ @include NewArrow(top, $color-saas, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-saas,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-maas{ @include NewArrow(top, $color-maas, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-maas,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-financial-solution{ @include NewArrow(top, $color-financial-solution, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-financial-solution,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-education{ @include NewArrow(top, $color-education, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-education,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-real-estate-left{ @include NewArrow(top, $color-real-estate-left, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-real-estate-left,transparent,0px,7px,7px,7px); }
+
+.arrow-top-middle-blue{ @include NewArrow(top, $color-blue, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-blue,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-purple{ @include NewArrow(top, $color-purple, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-purple,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-orange{ @include NewArrow(top, $color-orange, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-orange,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-green{ @include NewArrow(top, $color-green, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-green,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-red{ @include NewArrow(top, $color-red, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-red,transparent,0px,7px,7px,7px); }
+
+/// TOP LEFT
+.arrow-top-left-primary{ @include NewArrow(top, $brand-primary, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-primary,transparent,0px,7px,7px,7px); }
+.arrow-top-left-success{ @include NewArrow(top, $brand-success, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-success,transparent,0px,7px,7px,7px); }
+.arrow-top-left-info{ @include NewArrow(top, $brand-info, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-info,transparent,0px,7px,7px,7px); }
+.arrow-top-left-warning{ @include NewArrow(top, $brand-warning, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-warning,transparent,0px,7px,7px,7px); }
+.arrow-top-left-danger{ @include NewArrow(top, $brand-danger, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$brand-danger,transparent,0px,7px,7px,7px); }
+
+.arrow-top-left-ingaia{ @include NewArrow(top, $color-ingaia, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-ingaia,transparent,0px,7px,7px,7px); }
+.arrow-top-left-saas{ @include NewArrow(top, $color-saas, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-saas,transparent,0px,7px,7px,7px); }
+.arrow-top-left-maas{ @include NewArrow(top, $color-maas, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-maas,transparent,0px,7px,7px,7px); }
+.arrow-top-left-financial-solution{ @include NewArrow(top, $color-financial-solution, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-financial-solution,transparent,0px,7px,7px,7px); }
+.arrow-top-left-education{ @include NewArrow(top, $color-education, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-education,transparent,0px,7px,7px,7px); }
+.arrow-top-left-real-estate-left{ @include NewArrow(top, $color-real-estate-left, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-real-estate-left,transparent,0px,7px,7px,7px); }
+
+.arrow-top-left-blue{ @include NewArrow(top, $color-blue, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-blue,transparent,0px,7px,7px,7px); }
+.arrow-top-left-purple{ @include NewArrow(top, $color-purple, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-purple,transparent,0px,7px,7px,7px); }
+.arrow-top-left-orange{ @include NewArrow(top, $color-orange, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-orange,transparent,0px,7px,7px,7px); }
+.arrow-top-left-green{ @include NewArrow(top, $color-green, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-green,transparent,0px,7px,7px,7px); }
+.arrow-top-left-red{ @include NewArrow(top, $color-red, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-red,transparent,0px,7px,7px,7px); }
+
+//BOTTOM (right, middle, left)
+///BOTTOM RIGHT
+.arrow-bottom-right-primary{ @include NewArrow(bottom, $brand-primary, calc(100% + 3px),calc(100% - 30px),$brand-primary,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-success{ @include NewArrow(bottom, $brand-success, calc(100% + 3px),calc(100% - 30px),$brand-success,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-info{ @include NewArrow(bottom, $brand-info, calc(100% + 3px),calc(100% - 30px),$brand-info,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-warning{ @include NewArrow(bottom, $brand-warning, calc(100% + 3px),calc(100% - 30px),$brand-warning,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-danger{ @include NewArrow(bottom, $brand-danger, calc(100% + 3px),calc(100% - 30px),$brand-danger,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+.arrow-bottom-right-ingaia{ @include NewArrow(bottom, $color-ingaia, calc(100% + 3px),calc(100% - 30px),$color-ingaia,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-saas{ @include NewArrow(bottom, $color-saas, calc(100% + 3px),calc(100% - 30px),$color-saas,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-maas{ @include NewArrow(bottom, $color-maas, calc(100% + 3px),calc(100% - 30px),$color-maas,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-financial-solution{ @include NewArrow(bottom, $color-financial-solution, calc(100% + 3px),calc(100% - 30px),$color-financial-solution,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-education{ @include NewArrow(bottom, $color-education, calc(100% + 3px),calc(100% - 30px),$color-education,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-real-estate-left{ @include NewArrow(bottom, $color-real-estate-left, calc(100% + 3px),calc(100% - 30px),$color-real-estate-left,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+.arrow-bottom-right-blue{ @include NewArrow(bottom, $color-blue, calc(100% + 3px),calc(100% - 30px),$color-blue,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-purple{ @include NewArrow(bottom, $color-purple, calc(100% + 3px),calc(100% - 30px),$color-purple,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-orange{ @include NewArrow(bottom, $color-orange, calc(100% + 3px),calc(100% - 30px),$color-orange,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-green{ @include NewArrow(bottom, $color-green, calc(100% + 3px),calc(100% - 30px),$color-green,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-red{ @include NewArrow(bottom, $color-red, calc(100% + 3px),calc(100% - 30px),$color-red,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+///BOTTOM MIDDLE
+.arrow-bottom-middle-primary{ @include NewArrow(bottom, $brand-primary, calc(100% + 3px),calc(100% - 50% - 7.5px),$brand-primary,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-success{ @include NewArrow(bottom, $brand-success, calc(100% + 3px),calc(100% - 50% - 7.5px),$brand-success,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-info{ @include NewArrow(bottom, $brand-info, calc(100% + 3px),calc(100% - 50% - 7.5px),$brand-info,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-warning{ @include NewArrow(bottom, $brand-warning, calc(100% + 3px),calc(100% - 50% - 7.5px),$brand-warning,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-danger{ @include NewArrow(bottom, $brand-danger, calc(100% + 3px),calc(100% - 50% - 7.5px),$brand-danger,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+.arrow-bottom-middle-ingaia{ @include NewArrow(bottom, $color-ingaia, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-ingaia,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-saas{ @include NewArrow(bottom, $color-saas, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-saas,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-maas{ @include NewArrow(bottom, $color-maas, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-maas,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-financial-solution{ @include NewArrow(bottom, $color-financial-solution, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-financial-solution,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-education{ @include NewArrow(bottom, $color-education, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-education,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-real-estate-left{ @include NewArrow(bottom, $color-real-estate-left, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-real-estate-left,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+.arrow-bottom-middle-blue{ @include NewArrow(bottom, $color-blue, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-blue,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-purple{ @include NewArrow(bottom, $color-purple, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-purple,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-orange{ @include NewArrow(bottom, $color-orange, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-orange,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-green{ @include NewArrow(bottom, $color-green, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-green,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-red{ @include NewArrow(bottom, $color-red, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-red,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+///BOTTOM LEFT
+.arrow-bottom-left-primary{ @include NewArrow(bottom, $brand-primary, calc(100% + 3px),calc(0% + 20px),$brand-primary,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-success{ @include NewArrow(bottom, $brand-success, calc(100% + 3px),calc(0% + 20px),$brand-success,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-info{ @include NewArrow(bottom, $brand-info, calc(100% + 3px),calc(0% + 20px),$brand-info,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-warning{ @include NewArrow(bottom, $brand-warning, calc(100% + 3px),calc(0% + 20px),$brand-warning,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-danger{ @include NewArrow(bottom, $brand-danger, calc(100% + 3px),calc(0% + 20px),$brand-danger,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+.arrow-bottom-left-ingaia{ @include NewArrow(bottom, $color-ingaia, calc(100% + 3px),calc(0% + 20px),$color-ingaia,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-saas{ @include NewArrow(bottom, $color-saas, calc(100% + 3px),calc(0% + 20px),$color-saas,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-maas{ @include NewArrow(bottom, $color-maas, calc(100% + 3px),calc(0% + 20px),$color-maas,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-financial-solution{ @include NewArrow(bottom, $color-financial-solution, calc(100% + 3px),calc(0% + 20px),$color-financial-solution,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-education{ @include NewArrow(bottom, $color-education, calc(100% + 3px),calc(0% + 20px),$color-education,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-real-estate-left{ @include NewArrow(bottom, $color-real-estate-left, calc(100% + 3px),calc(0% + 20px),$color-real-estate-left,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+.arrow-bottom-left-blue{ @include NewArrow(bottom, $color-blue, calc(100% + 3px),calc(0% + 20px),$color-blue,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-purple{ @include NewArrow(bottom, $color-purple, calc(100% + 3px),calc(0% + 20px),$color-purple,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-orange{ @include NewArrow(bottom, $color-orange, calc(100% + 3px),calc(0% + 20px),$color-orange,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-green{ @include NewArrow(bottom, $color-green, calc(100% + 3px),calc(0% + 20px),$color-green,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-red{ @include NewArrow(bottom, $color-red, calc(100% + 3px),calc(0% + 20px),$color-red,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+//LEFT (top, middle, bottom)
+/// LEFT TOP
+.arrow-left-top-primary{ @include NewArrow(left, $brand-primary, calc(0% + 20px),calc(0% - 17px),transparent,$brand-primary,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-success{ @include NewArrow(left, $brand-success, calc(0% + 20px),calc(0% - 17px),transparent,$brand-success,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-info{ @include NewArrow(left, $brand-info, calc(0% + 20px),calc(0% - 17px),transparent,$brand-info,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-warning{ @include NewArrow(left, $brand-warning, calc(0% + 20px),calc(0% - 17px),transparent,$brand-warning,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-danger{ @include NewArrow(left, $brand-danger, calc(0% + 20px),calc(0% - 17px),transparent,$brand-danger,transparent,transparent,7px,7px,7px,7px); }
+
+.arrow-left-top-ingaia{ @include NewArrow(left, $color-ingaia, calc(0% + 20px),calc(0% - 17px),transparent,$color-ingaia,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-saas{ @include NewArrow(left, $color-saas, calc(0% + 20px),calc(0% - 17px),transparent,$color-saas,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-maas{ @include NewArrow(left, $color-maas, calc(0% + 20px),calc(0% - 17px),transparent,$color-maas,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-financial-solution{ @include NewArrow(left, $color-financial-solution, calc(0% + 20px),calc(0% - 17px),transparent,$color-financial-solution,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-education{ @include NewArrow(left, $color-education, calc(0% + 20px),calc(0% - 17px),transparent,$color-education,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-real-estate-left{ @include NewArrow(left, $color-real-estate-left, calc(0% + 20px),calc(0% - 17px),transparent,$color-real-estate-left,transparent,transparent,7px,7px,7px,7px); }
+
+.arrow-left-top-blue{ @include NewArrow(left, $color-blue, calc(0% + 20px),calc(0% - 17px),transparent,$color-blue,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-purple{ @include NewArrow(left, $color-purple, calc(0% + 20px),calc(0% - 17px),transparent,$color-purple,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-orange{ @include NewArrow(left, $color-orange, calc(0% + 20px),calc(0% - 17px),transparent,$color-orange,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-green{ @include NewArrow(left, $color-green, calc(0% + 20px),calc(0% - 17px),transparent,$color-green,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-red{ @include NewArrow(left, $color-red, calc(0% + 20px),calc(0% - 17px),transparent,$color-red,transparent,transparent,7px,7px,7px,7px); }
+
+/// LEFT MIDDLE
+.arrow-left-middle-primary{ @include NewArrow(left, $brand-primary, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$brand-primary,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-success{ @include NewArrow(left, $brand-success, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$brand-success,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-info{ @include NewArrow(left,$brand-info, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$brand-info,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-warning{ @include NewArrow(left, $brand-warning, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$brand-warning,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-danger{ @include NewArrow(left, $brand-danger, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$brand-danger,transparent,transparent,7px,7px,7px,7px); }
+
+.arrow-left-middle-ingaia{ @include NewArrow(left, $color-ingaia, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-ingaia,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-saas{ @include NewArrow(left, $color-saas, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-saas,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-maas{ @include NewArrow(left, $color-maas, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-maas,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-financial-solution{ @include NewArrow(left, $color-financial-solution, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-financial-solution,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-education{ @include NewArrow(left, $color-education, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-education,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-real-estate-left{ @include NewArrow(left, $color-real-estate-left, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-real-estate-left,transparent,transparent,7px,7px,7px,7px); }
+
+.arrow-left-middle-blue{ @include NewArrow(left, $color-blue, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-blue,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-purple{ @include NewArrow(left, $color-purple, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-purple,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-orange{ @include NewArrow(left, $color-orange, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-orange,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-green{ @include NewArrow(left, $color-green, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-green,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-red{ @include NewArrow(left, $color-red, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-red,transparent,transparent,7px,7px,7px,7px); }
+
+/// LEFT BOTTOM
+.arrow-left-bottom-primary{ @include NewArrow(left, $brand-primary, calc(100% - 30px),calc(0% - 17px),transparent,$brand-primary,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-success{ @include NewArrow(left, $brand-success, calc(100% - 30px),calc(0% - 17px),transparent,$brand-success,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-info{ @include NewArrow(left, $brand-info, calc(100% - 30px),calc(0% - 17px),transparent,$brand-info,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-warning{ @include NewArrow(left, $brand-warning, calc(100% - 30px),calc(0% - 17px),transparent,$brand-warning,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-danger{ @include NewArrow(left, $brand-danger, calc(100% - 30px),calc(0% - 17px),transparent,$brand-danger,transparent,transparent,7px,7px,7px,7px); }
+
+.arrow-left-bottom-ingaia{ @include NewArrow(left, $color-ingaia, calc(100% - 30px),calc(0% - 17px),transparent,$color-ingaia,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-saas{ @include NewArrow(left, $color-saas, calc(100% - 30px),calc(0% - 17px),transparent,$color-saas,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-maas{ @include NewArrow(left, $color-maas, calc(100% - 30px),calc(0% - 17px),transparent,$color-maas,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-financial-solution{ @include NewArrow(left, $color-financial-solution, calc(100% - 30px),calc(0% - 17px),transparent,$color-financial-solution,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-education{ @include NewArrow(left, $color-education, calc(100% - 30px),calc(0% - 17px),transparent,$color-education,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-real-estate-left{ @include NewArrow(left, $color-real-estate-left, calc(100% - 30px),calc(0% - 17px),transparent,$color-real-estate-left,transparent,transparent,7px,7px,7px,7px); }
+
+.arrow-left-bottom-blue{ @include NewArrow(left, $color-blue, calc(100% - 30px),calc(0% - 17px),transparent,$color-blue,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-purple{ @include NewArrow(left, $color-purple, calc(100% - 30px),calc(0% - 17px),transparent,$color-purple,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-orange{ @include NewArrow(left, $color-orange, calc(100% - 30px),calc(0% - 17px),transparent,$color-orange,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-green{ @include NewArrow(left, $color-green, calc(100% - 30px),calc(0% - 17px),transparent,$color-green,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-red{ @include NewArrow(left, $color-red, calc(100% - 30px),calc(0% - 17px),transparent,$color-red,transparent,transparent,7px,7px,7px,7px); }
+
+//RIGHT (top, middle, bottom)
+///RIGHT TOP
+.arrow-right-top-primary{ @include NewArrow(right, $brand-primary, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-primary,7px,7px,7px,7px); }
+.arrow-right-top-success{ @include NewArrow(right, $brand-success, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-success,7px,7px,7px,7px); }
+.arrow-right-top-info{ @include NewArrow(right, $brand-info, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-info,7px,7px,7px,7px); }
+.arrow-right-top-warning{ @include NewArrow(right, $brand-warning, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-warning,7px,7px,7px,7px); }
+.arrow-right-top-danger{ @include NewArrow(right, $brand-danger, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$brand-danger,7px,7px,7px,7px); }
+
+.arrow-right-top-ingaia{ @include NewArrow(right, $color-ingaia, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-ingaia,7px,7px,7px,7px); }
+.arrow-right-top-saas{ @include NewArrow(right, $color-saas, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-saas,7px,7px,7px,7px); }
+.arrow-right-top-maas{ @include NewArrow(right, $color-maas, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-maas,7px,7px,7px,7px); }
+.arrow-right-top-financial-solution{ @include NewArrow(right, $color-financial-solution, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-financial-solution,7px,7px,7px,7px); }
+.arrow-right-top-education{ @include NewArrow(right, $color-education, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-education,7px,7px,7px,7px); }
+.arrow-right-top-real-estate-left{ @include NewArrow(right, $color-real-estate-left, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-real-estate-left,7px,7px,7px,7px); }
+
+.arrow-right-top-blue{ @include NewArrow(right, $color-blue, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-blue,7px,7px,7px,7px); }
+.arrow-right-top-purple{ @include NewArrow(right, $color-purple, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-purple,7px,7px,7px,7px); }
+.arrow-right-top-orange{ @include NewArrow(right, $color-orange, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-orange,7px,7px,7px,7px); }
+.arrow-right-top-green{ @include NewArrow(right, $color-green, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-green,7px,7px,7px,7px); }
+.arrow-right-top-red{ @include NewArrow(right, $color-red, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-red,7px,7px,7px,7px); }
+
+///RIGHT MIDDLE
+.arrow-right-middle-primary{ @include NewArrow(right, $brand-primary, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$brand-primary,7px,7px,7px,7px); }
+.arrow-right-middle-success{ @include NewArrow(right, $brand-success, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$brand-success,7px,7px,7px,7px); }
+.arrow-right-middle-info{ @include NewArrow(right, $brand-info, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$brand-info,7px,7px,7px,7px); }
+.arrow-right-middle-warning{ @include NewArrow(right, $brand-warning, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$brand-warning,7px,7px,7px,7px); }
+.arrow-right-middle-danger{ @include NewArrow(right, $brand-danger, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$brand-danger,7px,7px,7px,7px); }
+
+.arrow-right-middle-ingaia{ @include NewArrow(right, $color-ingaia, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-ingaia,7px,7px,7px,7px); }
+.arrow-right-middle-saas{ @include NewArrow(right, $color-saas, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-saas,7px,7px,7px,7px); }
+.arrow-right-middle-maas{ @include NewArrow(right, $color-maas, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-maas,7px,7px,7px,7px); }
+.arrow-right-middle-financial-solution{ @include NewArrow(right, $color-financial-solution, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-financial-solution,7px,7px,7px,7px); }
+.arrow-right-middle-education{ @include NewArrow(right, $color-education, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-education,7px,7px,7px,7px); }
+.arrow-right-middle-real-estate-left{ @include NewArrow(right, $color-real-estate-left, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-real-estate-left,7px,7px,7px,7px); }
+
+.arrow-right-middle-blue{ @include NewArrow(right, $color-blue, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-blue,7px,7px,7px,7px); }
+.arrow-right-middle-purple{ @include NewArrow(right, $color-purple, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-purple,7px,7px,7px,7px); }
+.arrow-right-middle-orange{ @include NewArrow(right, $color-orange, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-orange,7px,7px,7px,7px); }
+.arrow-right-middle-green{ @include NewArrow(right, $color-green, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-green,7px,7px,7px,7px); }
+.arrow-right-middle-red{ @include NewArrow(right, $color-red, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-red,7px,7px,7px,7px); }
+
+///RIGHT BOTTOM
+.arrow-right-bottom-primary{ @include NewArrow(right, $brand-primary, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-primary,7px,7px,7px,7px); }
+.arrow-right-bottom-success{ @include NewArrow(right, $brand-success, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-success,7px,7px,7px,7px); }
+.arrow-right-bottom-info{ @include NewArrow(right, $brand-info, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-info,7px,7px,7px,7px); }
+.arrow-right-bottom-warning{ @include NewArrow(right, $brand-warning, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-warning,7px,7px,7px,7px); }
+.arrow-right-bottom-danger{ @include NewArrow(right, $brand-danger, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$brand-danger,7px,7px,7px,7px); }
+
+.arrow-right-bottom-ingaia{ @include NewArrow(right, $color-ingaia, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-ingaia,7px,7px,7px,7px); }
+.arrow-right-bottom-saas{ @include NewArrow(right, $color-saas, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-saas,7px,7px,7px,7px); }
+.arrow-right-bottom-maas{ @include NewArrow(right, $color-maas, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-maas,7px,7px,7px,7px); }
+.arrow-right-bottom-financial-solution{ @include NewArrow(right, $color-financial-solution, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-financial-solution,7px,7px,7px,7px); }
+.arrow-right-bottom-education{ @include NewArrow(right, $color-education, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-education,7px,7px,7px,7px); }
+.arrow-right-bottom-real-estate-left{ @include NewArrow(right, $color-real-estate-left, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-real-estate-left,7px,7px,7px,7px); }
+
+.arrow-right-bottom-blue{ @include NewArrow(right, $color-blue, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-blue,7px,7px,7px,7px); }
+.arrow-right-bottom-purple{ @include NewArrow(right, $color-purple, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-purple,7px,7px,7px,7px); }
+.arrow-right-bottom-green{ @include NewArrow(right, $color-green, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-green,7px,7px,7px,7px); }
+.arrow-right-bottom-orange{ @include NewArrow(right, $color-orange, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-orange,7px,7px,7px,7px); }
+.arrow-right-bottom-red{ @include NewArrow(right, $color-red, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-red,7px,7px,7px,7px); }
+
+/* ARROW COLORS */
+/* GRAY TOP (right, middle, left) */
+.arrow-top-right-gray{ @include NewArrow(top, $color-gray, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-gray,transparent,0px,7px,7px,7px); }
+.arrow-top-right-gray-1{ @include NewArrow(top, $color-gray-1, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-gray-1,transparent,0px,7px,7px,7px); }
+.arrow-top-right-gray-2{ @include NewArrow(top, $color-gray-2, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-gray-2,transparent,0px,7px,7px,7px); }
+.arrow-top-right-gray-3{ @include NewArrow(top, $color-gray-3, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-gray-3,transparent,0px,7px,7px,7px); }
+.arrow-top-right-gray-4{ @include NewArrow(top, $color-gray-4, calc(0% - 10px),calc(100% - 30px),transparent,transparent,$color-gray-4,transparent,0px,7px,7px,7px); }
+
+.arrow-top-middle-gray{ @include NewArrow(top, $color-gray, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-gray,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-gray-1{ @include NewArrow(top, $color-gray-1, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-gray-1,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-gray-2{ @include NewArrow(top, $color-gray-2, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-gray-2,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-gray-3{ @include NewArrow(top, $color-gray-3, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-gray-3,transparent,0px,7px,7px,7px); }
+.arrow-top-middle-gray-4{ @include NewArrow(top, $color-gray-4, calc(0% - 10px),calc(100% - 50% - 7.5px),transparent,transparent,$color-gray-4,transparent,0px,7px,7px,7px); }
+
+.arrow-top-left-gray{ @include NewArrow(top, $color-gray, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-gray,transparent,0px,7px,7px,7px); }
+.arrow-top-left-gray-1{ @include NewArrow(top, $color-gray-1, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-gray-1,transparent,0px,7px,7px,7px); }
+.arrow-top-left-gray-2{ @include NewArrow(top, $color-gray-2, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-gray-2,transparent,0px,7px,7px,7px); }
+.arrow-top-left-gray-3{ @include NewArrow(top, $color-gray-3, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-gray-3,transparent,0px,7px,7px,7px); }
+.arrow-top-left-gray-4{ @include NewArrow(top, $color-gray-4, calc(0% - 10px),calc(0% + 20px),transparent,transparent,$color-gray-4,transparent,0px,7px,7px,7px); }
+
+/* GRAY RIGHT (top, middle, bottom) */
+.arrow-right-top-gray{ @include NewArrow(right, $color-gray, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-gray,7px,7px,7px,7px); }
+.arrow-right-top-gray-1{ @include NewArrow(right, $color-gray-1, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-1,7px,7px,7px,7px); }
+.arrow-right-top-gray-2{ @include NewArrow(right, $color-gray-2, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-2,7px,7px,7px,7px); }
+.arrow-right-top-gray-3{ @include NewArrow(right, $color-gray-3, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-3,7px,7px,7px,7px); }
+.arrow-right-top-gray-4{ @include NewArrow(right, $color-gray-4, calc(0% + 20px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-4,7px,7px,7px,7px); }
+
+.arrow-right-middle-gray{ @include NewArrow(right, $color-gray, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-gray,7px,7px,7px,7px); }
+.arrow-right-middle-gray-1{ @include NewArrow(right, $color-gray-1, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-1,7px,7px,7px,7px); }
+.arrow-right-middle-gray-2{ @include NewArrow(right, $color-gray-2, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-2,7px,7px,7px,7px); }
+.arrow-right-middle-gray-3{ @include NewArrow(right, $color-gray-3, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-3,7px,7px,7px,7px); }
+.arrow-right-middle-gray-4{ @include NewArrow(right, $color-gray-4, calc(100% - 50% - 7.5px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-4,7px,7px,7px,7px); }
+
+.arrow-right-bottom-gray{ @include NewArrow(right, $color-gray, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-gray,7px,7px,7px,7px); }
+.arrow-right-bottom-gray-1{ @include NewArrow(right, $color-gray-1, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-1,7px,7px,7px,7px); }
+.arrow-right-bottom-gray-2{ @include NewArrow(right, $color-gray-2, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-2,7px,7px,7px,7px); }
+.arrow-right-bottom-gray-3{ @include NewArrow(right, $color-gray-3, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-3,7px,7px,7px,7px); }
+.arrow-right-bottom-gray-4{ @include NewArrow(right, $color-gray-4, calc(100% - 30px),calc(100% + 3px),transparent,transparent,transparent,$color-gray-4,7px,7px,7px,7px); }
+
+/* GRAY BOTTOM (right, middle, left) */
+.arrow-bottom-right-gray{ @include NewArrow(bottom, $color-gray, calc(100% + 3px),calc(100% - 30px),$color-gray,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-gray-1{ @include NewArrow(bottom, $color-gray-1, calc(100% + 3px),calc(100% - 30px),$color-gray-1,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-gray-2{ @include NewArrow(bottom, $color-gray-2, calc(100% + 3px),calc(100% - 30px),$color-gray-2,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-gray-3{ @include NewArrow(bottom, $color-gray-3, calc(100% + 3px),calc(100% - 30px),$color-gray-3,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-right-gray-4{ @include NewArrow(bottom, $color-gray-4, calc(100% + 3px),calc(100% - 30px),$color-gray-4,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+.arrow-bottom-middle-gray{ @include NewArrow(bottom, $color-gray, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-gray,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-gray-1{ @include NewArrow(bottom, $color-gray-1, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-gray-1,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-gray-2{ @include NewArrow(bottom, $color-gray-2, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-gray-2,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-gray-3{ @include NewArrow(bottom, $color-gray-3, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-gray-3,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-middle-gray-4{ @include NewArrow(bottom, $color-gray-4, calc(100% + 3px),calc(100% - 50% - 7.5px),$color-gray-4,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+.arrow-bottom-left-gray{ @include NewArrow(bottom, $color-gray, calc(100% + 3px),calc(0% + 20px),$color-gray,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-gray-1{ @include NewArrow(bottom, $color-gray-1, calc(100% + 3px),calc(0% + 20px),$color-gray-1,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-gray-2{ @include NewArrow(bottom, $color-gray-2, calc(100% + 3px),calc(0% + 20px),$color-gray-2,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-gray-3{ @include NewArrow(bottom, $color-gray-3, calc(100% + 3px),calc(0% + 20px),$color-gray-3,transparent,transparent,transparent,7px,7px,0px,7px); }
+.arrow-bottom-left-gray-4{ @include NewArrow(bottom, $color-gray-4, calc(100% + 3px),calc(0% + 20px),$color-gray-4,transparent,transparent,transparent,7px,7px,0px,7px); }
+
+/* GRAY LEFT (top, middle, bottom) */
+.arrow-left-top-gray{ @include NewArrow(left, $color-gray, calc(0% + 20px),calc(0% - 17px),transparent,$color-gray,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-gray-1{ @include NewArrow(left, $color-gray-1, calc(0% + 20px),calc(0% - 17px),transparent,$color-gray-1,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-gray-2{ @include NewArrow(left, $color-gray-2, calc(0% + 20px),calc(0% - 17px),transparent,$color-gray-2,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-gray-3{ @include NewArrow(left, $color-gray-3, calc(0% + 20px),calc(0% - 17px),transparent,$color-gray-3,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-top-gray-4{ @include NewArrow(left, $color-gray-4, calc(0% + 20px),calc(0% - 17px),transparent,$color-gray-4,transparent,transparent,7px,7px,7px,7px); }
+
+.arrow-left-middle-gray{ @include NewArrow(left, $color-gray, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-gray,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-gray-1{ @include NewArrow(left, $color-gray-1, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-gray-1,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-gray-2{ @include NewArrow(left, $color-gray-2, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-gray-2,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-gray-3{ @include NewArrow(left, $color-gray-3, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-gray-3,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-middle-gray-4{ @include NewArrow(left, $color-gray-4, calc(100% - 50% - 7.5px),calc(0% - 17px),transparent,$color-gray-4,transparent,transparent,7px,7px,7px,7px); }
+
+.arrow-left-bottom-gray{ @include NewArrow(left, $color-gray, calc(100% - 30px),calc(0% - 17px),transparent,$color-gray,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-gray-1{ @include NewArrow(left, $color-gray-1, calc(100% - 30px),calc(0% - 17px),transparent,$color-gray-1,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-gray-2{ @include NewArrow(left, $color-gray-2, calc(100% - 30px),calc(0% - 17px),transparent,$color-gray-2,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-gray-3{ @include NewArrow(left, $color-gray-3, calc(100% - 30px),calc(0% - 17px),transparent,$color-gray-3,transparent,transparent,7px,7px,7px,7px); }
+.arrow-left-bottom-gray-4{ @include NewArrow(left, $color-gray-4, calc(100% - 30px),calc(0% - 17px),transparent,$color-gray-4,transparent,transparent,7px,7px,7px,7px); }
