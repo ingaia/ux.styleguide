@@ -21,6 +21,7 @@ Escolha qual versão do bootstrap você quer usar:
 * [Bootstrap 3](#a-styleguide-com-bootstrap-3).
 * [Bootstrap 4 alpha 5](#b-styleguide-com-bootstrap-4-alpha-5).
 * [Bootstrap 4 alpha 6](#c-styleguide-com-bootstrap-4-alpha-6).
+* [Bootstrap 4 beta](#d-styleguide-com-bootstrap-4-beta).
 
 ### a. Styleguide com Bootstrap 3
 
@@ -53,3 +54,15 @@ A versão do bootstrap usada para criação dos layouts é a bootstrap#v4.0.0-al
 ```console
 $ npm install bootstrap@4.0.0-alpha.6 --save
 ```
+
+### d. Styleguide com Bootstrap 4 Beta
+
+A versão do bootstrap usada para criação dos layouts é a bootstrap@4.0.0-beta. Você pode instalá-lo com:
+
+### Npm
+
+```console
+$ npm install bootstrap@4.0.0-beta --save
+```
+
+Não é necessário chamar o bootstrap no projeto, basta compilar com Sass o arquivo stylesheet.scss.
