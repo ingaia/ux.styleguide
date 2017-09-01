@@ -2,9 +2,9 @@
 /* CARDS */
   /** box-shadow */
   .card { 
-    -webkit-box-shadow: 3px 3px 10px 0px rgba(163,163,163,0.5); 
-    -moz-box-shadow: 3px 3px 10px 0px rgba(163,163,163,0.5); 
-    box-shadow: 3px 3px 10px 0px rgba(163,163,163,0.5); 
+    -webkit-box-shadow: 0 0 5px 0 #ccc; 
+    -moz-box-shadow: 0 0 5px 0 #ccc; 
+    box-shadow: 0 0 5px 0 #ccc; 
   }
   .card-header { padding: 0.75rem 1.25rem 0.25rem 1.25rem !important; }
   .card i { font-size: 1.15rem; }

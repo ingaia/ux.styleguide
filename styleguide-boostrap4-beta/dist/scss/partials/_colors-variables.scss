@@ -66,16 +66,6 @@
 
   $link-color:                  $brand-success;
 
-  $theme-colors: (
-    primary: #6e8c99,
-    secondary: $color-gray-1,
-    success: $color-saas,
-    info: #2884b0,
-    warning: #c0ad8f,
-    danger: $color-real-estate-left-2,
-    light: #fff,    
-  ) !default;
-
   //COLORS in COLORS
 
   $color-silver:                $brand-primary;
@@ -181,4 +171,15 @@
   $color-video-2:               #BD8143;
   $color-video-3:               #7D552E;
   $color-video-4:               #3D2914;
-  $color-video-5:               #30353C;  
+  $color-video-5:               #30353C;
+
+  $theme-colors: (
+    primary: #6e8c99,
+    secondary: $color-gray-1,
+    success: $color-saas,
+    info: #2884b0,
+    warning: #c0ad8f,
+    danger: $color-real-estate-left-2,
+    light: #fff,
+    dark: $color-gray-3
+  ) !default;

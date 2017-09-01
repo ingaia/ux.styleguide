@@ -1,6 +1,6 @@
 {
   "name": "ingaia.ux.styleguide",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "inGaia Ux Style Guide",  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/ingaia/ux.styleguide/issues"
   },
-  "homepage": "https://github.com/ingaia/ux.styleguide#readme"
+  "homepage": "https://github.com/ingaia/ux.styleguide#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2",    
+    "bootstrap": "^4.0.0-beta",    
+    "ingaia-font-icons": "1.3.7",
+    "ingaia.ux.styleguide": "3.0.1",    
+    "popper.js": "^1.12.4"    
+  }
 }

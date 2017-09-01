@@ -33,18 +33,10 @@ $grid-gutter-widths: (
 $font-family-lato: "lato", Helvetica, Arial, sans-serif;
 $font-family-base: $font-family-lato;
 
-// Buttons grouped
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
-  border-radius: 2;
-}
-
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
-  border-radius: 2;
-}
-
-.btn-block {
-  border-radius: 2px;
-}
+// Border radius
+$border-radius:          .125rem;
+$border-radius-lg:       .125rem;
+$border-radius-sm:       .125rem;
 
 // Forms
 $input-height-sm: 30px;
