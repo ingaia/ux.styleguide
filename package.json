@@ -1,6 +1,6 @@
 {
   "name": "ingaia.ux.styleguide",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "inGaia Ux Style Guide",  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,10 @@
   "keywords": [
     "inGaia", 
     "ux",
-    "sass",
+    "bootstrap",
+    "ingaia-font-icons",
+    "animate.css",
+    "popper.js",
     "style",
     "guide",
     "styleguide"
