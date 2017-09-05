@@ -1,11 +1,13 @@
-@import "../../../../animate.css/animate.min.css";
-$ingaia-icons-font-path: '../../../../ingaia-font-icons/dist/fonts';
-@import "../../../../ingaia-font-icons/dist/scss/ingaia-font-icons";
+$ingaia-icons-font-path: '~ingaia-font-icons/dist/fonts/';
+$ingaia-font-path: "~ingaia.ux.styleguide/styleguide-boostrap4-beta/dist/fonts";
+
+@import "~animate.css/animate.min.css";
+@import "~ingaia-font-icons/dist/scss/ingaia-font-icons";
 
 @import "partials/variable";
 @import "partials/colors-variables";
 
-@import "../../../../bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
 @import "partials/reset";
 @import "partials/typography";
