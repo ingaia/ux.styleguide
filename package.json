@@ -1,6 +1,6 @@
 {
   "name": "ingaia.ux.styleguide",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "inGaia Ux Style Guide",  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

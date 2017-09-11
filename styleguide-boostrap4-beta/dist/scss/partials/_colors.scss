@@ -44,7 +44,7 @@
   
 
   @mixin NewClassColorSingle($nameColorSingle, $colorSingle){
-    .color-#{$nameColorSingle} { color: $nameColorSingle; }
+    .color-#{$nameColorSingle} { color: $colorSingle; }
     .bg-#{$nameColorSingle} { background-color: $colorSingle; }
     .hr-#{$nameColorSingle} { border-top: 1px solid $colorSingle; }
   }
