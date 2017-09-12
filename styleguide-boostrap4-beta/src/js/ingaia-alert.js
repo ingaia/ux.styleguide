@@ -33,3 +33,5 @@ function createAlert(config) {
 // 	    timeout: 2000
 // 	});
 // });
+
+module.exports = createAlert
