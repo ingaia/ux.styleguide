@@ -2,8 +2,8 @@ const webpack = require("webpack");
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const BUILD = './styleguide-boostrap4-beta/dist';
-const ROOT = './styleguide-boostrap4-beta/src';
+const BUILD = './dist';
+const ROOT = './src';
 const ENVIRONMENT = process.env.npm_lifecycle_event;
 let DEVTOOL = 'eval';
 
@@ -12,8 +12,7 @@ const PLUGINS = [
     $: 'jquery',
     jQuery: 'jquery',
     'window.jQuery': 'jquery',
-    Popper: ['popper.js', 'default'],
-    // createAlert: 'exports-loader?createAlert!styleguide-boostrap4-beta/src/js/ingaia-alert'
+    Popper: ['popper.js', 'default']    
   }),
   new webpack.optimize.ModuleConcatenationPlugin(),
   new webpack.DefinePlugin({
