@@ -1,0 +1,56 @@
+.Select {
+    .Select-menu-outer {
+        z-index: 10;
+    }
+
+    .Select-option-group {
+        .Select-option-group-label {
+            text-transform: capitalize;
+        }
+    }
+
+    .Select-noresults, .Select-option, .VirtualizedSelectOption  {
+        font-size: .825rem;
+        padding: 6px 10px;
+        cursor: pointer;
+    }
+
+    .Select-option, .VirtualizedSelectOption {
+        &.is-focused, &.is-focused.is-selected {
+            background-color: $brand-success;
+            color: #fff;
+        }
+
+        &.is-selected {
+            background-color: #CBE7F2;
+        }
+
+    }
+}
+
+.Select-multi-value-wrapper, .Select-control {
+    max-height: 24px;
+    overflow: hidden;
+}
+
+.Select--multi.is-focused.has-value {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+
+    .Select-control {
+        display: table;
+        height: 30px;
+    }
+
+    .Select-multi-value-wrapper, .Select-control {
+        max-height: initial;
+        overflow: initial;
+    }
+}
+
+.Select--multi.has-value {
+    .Select-value {
+        margin-top: 2px;
+    }
+}

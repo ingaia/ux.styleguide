@@ -1,0 +1,22 @@
+.rangeDatePickerStatic {
+    .popper {
+        z-index: 10 !important;
+    }
+    > div {
+        > div {
+            display: block !important;
+            .react-datepicker__input-container {
+                display: block;
+            }
+        }
+    }
+}
+
+.react-datepicker__month {
+    margin: 0.15rem;
+}
+
+.react-datepicker__day-name, .react-datepicker__day {
+    width: 1.6rem;
+    line-height: 1.6rem;
+}
