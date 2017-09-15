@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.min.css">
+    <link rel="stylesheet" href="../node_modules/ingaia-font-icons/dist/ingaia-font-icons.min.css">
+    <style>
+        .icons i.ing-ingaia-ico { font-size: 50px; }
+        .icons i.ing-ingaia-logo { font-size: 100px; }
+    </style>
     <title>Styleguide</title>
 </head>
 <body>
-    
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+            <h4 class="text-white">inGaia Style Guide</h4>
+            <span class="text-muted">Página de testes</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        <div class="container">
+            <div class="my-3 icons text-center">
+                <i class="ing ing-ingaia-ico mr-2 color-blue animated bounceInLeft"></i>
+                <i class="ing ing-ingaia-logo color-red animated bounceInRight"></i>
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Popper funcionado</a>                                  
+                </div>                        
+            </div>                    
+        </div>
+        <div class="container mt-1">
+            <button class="alert-teste btn btn-success">Teste alert</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script>        
+        $(document).ready(function(){
+            $('.alert-teste').click(function(){
+                createAlert({color: "blue", positionxy: "top-right", icon: "ing-ingaia-ico", content: "<h4>Alert</h4> <p>funcionando</p>", timeout: "6000"});            
+            });            
+        });
+    </script>
 </body>
 </html>

@@ -21,7 +21,7 @@ const PLUGINS = [
       'BABEL_ENV': JSON.stringify(ENVIRONMENT)
     }
   }),
-  new ExtractTextPlugin('app.css')
+  new ExtractTextPlugin('app.min.css')
 ];
 
 if (ENVIRONMENT === 'prod') {

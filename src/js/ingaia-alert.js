@@ -34,4 +34,4 @@ function createAlert(config) {
 // 	});
 // });
 
-module.exports = createAlert
+module.exports = createAlert;
