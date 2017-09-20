@@ -1,0 +1,3 @@
+// node-sass --watch dist/css/mycss.scss dist/css/mycss.css --output-style compressed
+$svg-path: '../../src/svg/';
+@import '../../src/scss/stylesheet';

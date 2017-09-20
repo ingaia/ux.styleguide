@@ -62,7 +62,7 @@ module.exports = {
         use: ExtractTextPlugin.extract(['css-loader', 'postcss-loader', 'sass-loader'])
       },
       {
-        test: /\.(woff[2]?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(woff[2]?|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader',
         options: {
           name: 'fonts/[name].[ext]',

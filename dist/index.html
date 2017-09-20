@@ -4,55 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- PROD and DEV CSS -->
     <link rel="stylesheet" href="app.min.css">
-    <link rel="stylesheet" href="../node_modules/ingaia-font-icons/dist/ingaia-font-icons.min.css">
+
+    <!-- MY CSS -->
+    <!-- <link rel="stylesheet" href="../node_modules/ingaia-font-icons/dist/ingaia-font-icons.min.css"> 
+    <link rel="stylesheet" href="css/mycss.css"> -->
+
     <style>
-        .icons i.ing-ingaia-ico { font-size: 50px; }
-        .icons i.ing-ingaia-logo { font-size: 100px; }
+        body { background-color: #ccc; overflow-x: hidden; padding-bottom: 60px; }        
+        .animatecss-box { height: 90px; }
+        .icons i.ing-ingaia-ico { font-size: 50px; position: relative; top: -35px; }
+        .icons i.ing-ingaia-logo { font-size: 100px; position: relative; top: -35px; }
+        code { background-color: transparent; }
     </style>
-    <title>Styleguide</title>
+    <title>Styleguide área de testes</title>
 </head>
-<body>
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-            <h4 class="text-white">inGaia Style Guide</h4>
-            <span class="text-muted">Página de testes</span>
-            </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-
-        <div class="container">
-            <div class="my-3 icons text-center">
-                <i class="ing ing-ingaia-ico mr-2 color-blue animated bounceInLeft"></i>
-                <i class="ing ing-ingaia-logo color-red animated bounceInRight"></i>
-            </div>
-        </div>
-
-        <div class="container mt-3">
-            <div class="btn-group">
-                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Popper funcionado</a>                                  
-                </div>                        
-            </div>                    
-        </div>
-        <div class="container mt-1">
-            <button class="alert-teste btn btn-success">Teste alert</button>
+<body>    
+    <div class="container">            
+        <h1 class="text-center my-4">Página para testes</h1>        
+        <div class="border-left-blue pl-4">
+            <h4 class="m-0 p-0">Para testes usando DEV e PROD</h4>
+            <div class="mb-1 color-emerald-3"><small>http://localhost:8080/#/</small></div>
+            <p>Use no <code>&lthead&gt</code>:</p>
+            <p>
+                <code>
+                    <span class="color-green-2">&lt!-- PROD and DEV CSS --&gt</span><br>
+                    &ltlink rel="stylesheet" href="app.min.css"&gt
+                </code>
+            </p>
+        </div>            
+        <hr>
+        <div class="border-left-red pl-4">
+            <h4>Para testes que compilam seus próprios arquivos</h4>            
+            <p>
+                Compile o arquivo <span class="color-pink-1">SASS</span> (Exemplo: <span class="color-red-1">mycss.scss</span>) e importe os parâmetros como mostrado abaixo:
+            </p>
+            <p>
+                <code>
+                    <span class="color-green-2">// Coloque na variável <span class="color-red-2">$svg-path</span> o caminho da pasta onde se encontra o arquivo "inGaia-loader-white.svg" usado nos componentes do ReactJS </span><br>
+                    $svg-path: '../../src/svg/'; <br>
+                    <span class="color-green-2">// Ajuste se necessário o caminho da pasta onde se encontra o arquivo scss/stylesheet.scss</span><br>
+                    @import '../../src/scss/stylesheet';
+                </code>
+            </p>            
+            <p>Use no<code>&lthead&gt</code>do seu html:</p>
+            <p>
+                <code>
+                    <span class="color-green-2">&lt!-- MY CSS | ajuste o caminho se necessário --&gt</span><br>                
+                    &ltlink rel="stylesheet" href="../node_modules/ingaia-font-icons/dist/ingaia-font-icons.min.css"&gt  <br>
+                    &ltlink rel="stylesheet" href="css/mycss.css"&gt <br>
+                </code>
+            </p>
         </div>
     </div>
+
+
+    <hr class="hr-red">
+
+
+
+    <div class="container">
+        <h1 class="text-center my-4">Área de testes</h1>
+        <div class="row">
+            <div class="col-lg-3 animatecss-box">
+                <h5 class="text-center">animate.css</h5>
+                <div class="icons text-center">
+                    <i class="ing ing-ingaia-ico mr-2 color-blue animated bounceInLeft"></i>
+                    <i class="ing ing-ingaia-logo color-red animated bounceInRight"></i>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <h5 class="text-center">PopperJS</h5>
+                <div class="row">
+                    <div class="btn-group d-block mx-auto">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Popper funcionado</a>                                  
+                        </div>                        
+                    </div>  
+                </div> 
+            </div>
+            <div class="col-lg-3 mb-4">
+                <h5 class="text-center">Alert</h5>
+                <button class="alert-teste btn btn-success d-block mx-auto">Teste alert</button>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <h5 class="text-center">SVG do componente do React</h5>                    
+                <div class="ReactModal__Content">
+                    <div class="ril-loading-circle d-block mx-auto"> 
+                        <div class="ril-loading-circle-point"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="hr-blue">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card arrow-top-right-red">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h5>Título</h5>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam placeat perspiciatis, eaque doloremque voluptatem natus rem, quae sint distinctio vitae atque aut molestias fuga dolorem iure facere? Ipsam, praesentium odio.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr class="hr-blue">
+
+    
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <script>        
         $(document).ready(function(){
             $('.alert-teste').click(function(){
-                createAlert({color: "blue", positionxy: "top-right", icon: "ing-ingaia-ico", content: "<h4>Alert</h4> <p>funcionando</p>", timeout: "6000"});            
+                createAlert({color: "blue", positionxy: "top-right", icon: "ing-ingaia-ico", content: "<h4>Alert</h4> <p>funcionando</p>", timeout: "0"});            
             });            
         });
     </script>
