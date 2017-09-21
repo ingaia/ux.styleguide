@@ -1,4 +1,40 @@
 // ARROWS
+[class*="arrow-"] {
+  &:after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border: 0 solid;
+  }
+}
+
+@function inverseBorderFunc($positionArrow) {
+  $inverseBorder: bottom;
+  @if $positionArrow == bottom {
+    $inverseBorder: top;
+  } @else if $positionArrow == left{
+    $inverseBorder: right;
+  } @else if $positionArrow == right{
+    $inverseBorder: left;
+  }
+  @return $inverseBorder;
+}
+@function arrowSizeBorderFunc($positionArrow) {
+  $arrowSizeBorder: 0px 7px 7px 7px;
+  @if $positionArrow == bottom {
+    $arrowSizeBorder: 7px 7px 0px 7px;
+  } @else if $positionArrow == left{
+    $arrowSizeBorder: 7px 7px 7px 7px;
+  } @else if $positionArrow == right{
+    $arrowSizeBorder: 7px 7px 7px 7px;
+  }
+  @return $arrowSizeBorder;
+}
+
 @mixin NewArrowTeste(
   $borderPosition, $arrowPositionName, $classColorName, 
   $borderColor, $borderColor1, $borderColor2, $borderColor3, $borderColor4, 
@@ -9,97 +45,52 @@
   $arrowColorLeft, $arrowColorLeft1, $arrowColorLeft2, $arrowColorLeft3, $arrowColorLeft4, 
   $borderTopPx, $borderRightPx, $borderBottomPx, $borderLeftPx
   ) {
-  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName} {  
-    border-#{$borderPosition}: 3px solid !important;
-    border-#{$borderPosition}-color: $borderColor !important;
+  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName} {
+    border-#{$borderPosition}: 3px solid $borderColor;
     &:after{
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
-      width: 0;
-      height: 0;
-      border-top: $borderTopPx solid $arrowColorTop;
-      border-right: $borderRightPx solid $arrowColorRight;
-      border-bottom: $borderBottomPx solid $arrowColorBottom;
-      border-left: $borderLeftPx solid $arrowColorLeft;
-      position: absolute;
+      border-color: transparent;
+      border-#{inverseBorderFunc($borderPosition)}-color: $borderColor;
+      border-width: arrowSizeBorderFunc($borderPosition);
       top: $positionArrowTop;
       left: $positionArrowLeft;
     }
   }
-  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName}-1 {      
-    border-#{$borderPosition}: 3px solid !important;
-    border-#{$borderPosition}-color: $borderColor1 !important;
+  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName}-1 {
+    border-#{$borderPosition}: 3px solid $borderColor1 !important;
     &:after{
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
-      width: 0;
-      height: 0;
-      border-top: $borderTopPx solid $arrowColorTop1;
-      border-right: $borderRightPx solid $arrowColorRight1;
-      border-bottom: $borderBottomPx solid $arrowColorBottom1;
-      border-left: $borderLeftPx solid $arrowColorLeft1;
-      position: absolute;
+      border-color: transparent;
+      border-#{inverseBorderFunc($borderPosition)}-color: $borderColor1;
+      border-width: arrowSizeBorderFunc($borderPosition);
       top: $positionArrowTop;
       left: $positionArrowLeft;
     }
   }
-  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName}-2 {      
-    border-#{$borderPosition}: 3px solid !important;
-    border-#{$borderPosition}-color: $borderColor2 !important;
+  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName}-2 {
+    border-#{$borderPosition}: 3px solid $borderColor2 !important;
     &:after{
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
-      width: 0;
-      height: 0;
-      border-top: $borderTopPx solid $arrowColorTop2;
-      border-right: $borderRightPx solid $arrowColorRight2;
-      border-bottom: $borderBottomPx solid $arrowColorBottom2;
-      border-left: $borderLeftPx solid $arrowColorLeft2;
-      position: absolute;
+      border-color: transparent;
+      border-#{inverseBorderFunc($borderPosition)}-color: $borderColor2;
+      border-width: arrowSizeBorderFunc($borderPosition);
       top: $positionArrowTop;
       left: $positionArrowLeft;
     }
   }
-  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName}-3 {      
-    border-#{$borderPosition}: 3px solid !important;
-    border-#{$borderPosition}-color: $borderColor3 !important;
+  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName}-3 {
+    border-#{$borderPosition}: 3px solid $borderColor3 !important;
     &:after{
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
-      width: 0;
-      height: 0;
-      border-top: $borderTopPx solid $arrowColorTop3;
-      border-right: $borderRightPx solid $arrowColorRight3;
-      border-bottom: $borderBottomPx solid $arrowColorBottom3;
-      border-left: $borderLeftPx solid $arrowColorLeft3;
-      position: absolute;
+      border-color: transparent;
+      border-#{inverseBorderFunc($borderPosition)}-color: $borderColor3;
+      border-width: arrowSizeBorderFunc($borderPosition);
       top: $positionArrowTop;
       left: $positionArrowLeft;
     }
   }
-  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName}-4 {      
-    border-#{$borderPosition}: 3px solid !important;
-    border-#{$borderPosition}-color: $borderColor4 !important;
+  .arrow-#{$borderPosition}-#{$arrowPositionName}-#{$classColorName}-4 {
+    border-#{$borderPosition}: 3px solid $borderColor4 !important;
     &:after{
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
-      width: 0;
-      height: 0;
-      border-top: $borderTopPx solid $arrowColorTop4;
-      border-right: $borderRightPx solid $arrowColorRight4;
-      border-bottom: $borderBottomPx solid $arrowColorBottom4;
-      border-left: $borderLeftPx solid $arrowColorLeft4;
-      position: absolute;
+      border-color: transparent;
+      border-#{inverseBorderFunc($borderPosition)}-color: $borderColor4;
+      border-width: arrowSizeBorderFunc($borderPosition);
       top: $positionArrowTop;
       left: $positionArrowLeft;
     }
