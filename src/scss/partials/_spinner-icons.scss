@@ -11,8 +11,7 @@
     -webkit-animation: load7 1.8s infinite ease-in-out;
     animation: load7 1.8s infinite ease-in-out;
   }
-  .loader {
-    color: #000;
+  .loader {    
     font-size: 10px;
     margin: 0px auto;    
     text-indent: -9999em;
@@ -60,8 +59,7 @@
 
 //SPINNER CIRCLE
 .spinner-circle {
-  .loader {
-    color: #000;
+  .loader {    
     font-size: 20px;
     margin: 0px auto;
     position: relative;
