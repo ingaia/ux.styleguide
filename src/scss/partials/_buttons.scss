@@ -1,9 +1,4 @@
-/* _buttons.scss */
-/* BUTTONS */
-
-button, .btn { text-transform: uppercase !important; font-weight: 700 !important; }
-
-.btn { border-radius: 2px; }
+// BUTTONS
 .btn-block { border: none; }
 
 .btn-light { 
@@ -14,17 +9,27 @@ button, .btn { text-transform: uppercase !important; font-weight: 700 !important
     border: 1px solid $color-gray-1; 
   }
 }
-
-/* SIZE BUTTONS */
-  /** LG - Height 63px */
-  .btn-lg, .btn-group-lg>.btn { font-size: 1.25rem !important; padding: 1.125rem 1.5rem !important; }
-  .btn-lg i { font-size: 1.25rem !important; }
-  /** MD - Height 48px */
-  .btn-md, .btn-group-md>.btn { font-size: 0.9375rem !important; padding: 0.875rem 0.99rem !important; }
-  .btn-md i { font-size: 0.9375rem !important; }
-  /** DEFAULT Height 38px */
-  .btn-default, .btn-group-default>.btn { font-size: 0.8125rem !important; padding: 0.563rem 0.855rem !important; line-height: 1.42857 !important; }
-  .btn-default i { font-size: 0.9375rem !important; }
-  /** SM - Height 30px */
-  .btn-sm, .btn-group-sm>.btn { font-size: 0.75rem !important; padding: 0.313rem 0.75rem !important;  }
-  .btn-sm i { font-size: 0.75rem !important; }
+.btn { 
+  font-size: $font-size-13;
+  padding: .625rem 1rem;
+  .ing {
+    font-size: 0.78rem;
+    position: relative;
+    top: -2px;
+  }
+}
+.btn-lg {   
+  font-size: $font-size-15;
+  padding: .75rem 1rem;
+  .ing {
+    top: -2px;
+  }
+}
+.btn-sm {   
+  font-size: $font-size-12;
+  padding: .313rem 1rem;
+  .ing {
+    font-size: 0.65rem;
+    top: -1px;
+  }
+}

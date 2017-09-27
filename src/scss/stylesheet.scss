@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
 
+$border-radius:             20px;
+$border-radius-lg:          20px;
+$border-radius-sm:          20px;
 @import "partials/variables";
-@import "bootstrap/scss/bootstrap";
 
+$border-radius:             2px;
+$border-radius-lg:          2px;
+$border-radius-sm:          2px;
+@import "bootstrap/scss/bootstrap";
 @import "partials/reset";
 @import "partials/forms";
 @import "partials/buttons";

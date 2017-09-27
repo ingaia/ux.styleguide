@@ -215,14 +215,38 @@ $grid-gutter-widths: (
   xxl: $grid-gutter-width-base
 );
 
-// Font
+// Fonts
 $font-family-lato: "lato", Helvetica, Arial, sans-serif;
 $font-family-base: $font-family-lato;
+
+$font-size-12: .75rem;
+$font-size-13: .8125rem;
+$font-size-14: .875rem;
+$font-size-15: .9375rem;
+$font-size-16: 1rem;
+
+$font-size-base: 1rem; // 16x;
+$font-size-lg:   .9375rem; // 15px;
+$font-size-sm:   .875rem; // 14px;
 
 // Border radius
 $border-radius:          .125rem;
 $border-radius-lg:       .125rem;
 $border-radius-sm:       .125rem;
 
-// Forms
-$input-height-sm: 30px;
+// Buttons and Forms
+$input-btn-padding-y:       .563rem; // 38px  | font-size: 15px
+$input-btn-padding-x:       .75rem;
+$input-btn-line-height:     1.25;
+
+$input-btn-padding-y-lg:    .688rem; // 48px | font-size: 16px
+$input-btn-padding-x-lg:    1rem;
+$input-btn-line-height-lg:  1.5;
+
+$input-btn-padding-y-sm:    .219rem; // 30px  | font-size: 14px
+$input-btn-padding-x-sm:    .5rem;
+$input-btn-line-height-sm:  1.5;
+
+// Borders
+
+$navbar-border-radius:      0px;
