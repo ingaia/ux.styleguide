@@ -3,6 +3,8 @@ label.active {
   border-color: $brand-success !important;
 }
 
+.input-group-addon { text-transform: uppercase; }
+
 // DEFAULT | LG | SM
 .form-control {
   font-size: $font-size-15;
