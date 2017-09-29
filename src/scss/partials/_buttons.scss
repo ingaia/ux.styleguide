@@ -11,25 +11,25 @@
 }
 .btn { 
   font-size: $font-size-13;
-  padding: .625rem 1rem;
+  padding: .625rem .855rem;
   .ing {
-    font-size: 0.78rem;
+    font-size: .78rem;
     position: relative;
     top: -2px;
   }
 }
 .btn-lg {   
   font-size: $font-size-15;
-  padding: .75rem 1rem;
+  padding: .75rem .99rem;
   .ing {
     top: -2px;
   }
 }
 .btn-sm {   
   font-size: $font-size-12;
-  padding: .313rem 1rem;
+  padding: .313rem .75rem;
   .ing {
-    font-size: 0.65rem;
+    font-size: .65rem;
     top: -1px;
   }
 }
