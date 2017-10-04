@@ -4,16 +4,17 @@
 @import "partials/variables";
 
 @import "bootstrap/scss/bootstrap";
-@import "partials/reset";
-@import "partials/forms";
-@import "partials/buttons";
-@import "partials/checkbox-radiobutton";
-@import "partials/borders";
-@import "partials/cards";
-@import "partials/popover";
-@import "partials/_spinner-icons";
-@import "partials/datepicker_react";
 @import "partials/colors";
+@import "partials/reset";
+@import "partials/borders";
+@import "partials/buttons";
 @import "partials/alert";
+@import "partials/cards";
+@import "partials/checkbox-radiobutton";
+@import "partials/checkbox-switch";
+@import "partials/datepicker_react";
+@import "partials/forms";
+@import "partials/spinner-icons";
+@import "partials/popover";
 
 @import "react/stylesheet";

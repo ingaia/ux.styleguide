@@ -1,0 +1,128 @@
+// Checkbox Switch
+$toggle-height: 17px;
+$toggle-width: 50px;
+$switch-size: 25px;
+
+$anim-speed: ease 0.3s all;
+
+$border-color: $color-gray;
+$switch-color: $color-blue;
+
+//   BASE
+// -------------------------------------
+.tgl {
+    position: relative;
+    display: inline-block;
+    height: $toggle-height;
+    cursor: pointer;
+
+    > input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        visibility: hidden;
+        &:checked ~ .tgl-body {
+            .tgl-switch {
+                background-color: $switch-color;                
+            }
+        }
+    }
+
+    .tgl-body {
+        width: $toggle-width;
+        height: $toggle-height;
+        border: 1px solid $border-color;
+        display: inline-block;
+        position: relative;
+        border-radius: 50px;
+    }
+
+    .tgl-switch {
+        width: $switch-size;
+        height: $switch-size;
+        display: inline-block;
+        background-color: $color-gray-1;
+        transition: $anim-speed;
+        position: absolute;
+        right: -1px;
+        top: -5px;
+        border-radius: 50%;
+        border: 1px solid darken($border-color, 5%);
+        z-index: 1;
+    }
+
+    .tgl-track {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        border-radius: 50px;
+        background: $color-gray;
+        
+    }
+
+    .tgl-bgd {
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        width: $toggle-width - ($switch-size / 2) + 10;        
+        &:before {
+            content: "\E0D3";
+            font-family: ingaia-font-icons;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: none;
+            position: relative;
+            right: -18px;
+            top: -2px;
+            color: $switch-color;
+            font-size: 0.55rem;
+        }
+    }
+
+    .tgl-bgd-negative {
+        left: auto;        
+        &:before {
+            content: "\E071";
+            font-family: ingaia-font-icons;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: none;
+            position: relative;
+            right: -32px;
+            top: -2px;
+            color: white;
+            font-size: 0.5rem;
+        }
+    }
+
+    &:hover {
+        .tgl-switch {
+            box-shadow: 0px 0px 4px $switch-color;
+        }
+    }
+    > :not(:checked) ~ .tgl-body {
+        > .tgl-switch {            
+            right: $toggle-width - $switch-size;
+            box-shadow: 0px 0px 4px $color-gray;
+        }
+        .tgl-bgd {
+            right: -($toggle-width - ($switch-size / 2));
+            &.tgl-bgd-negative {
+                right: auto;
+                left: 0px;
+            }
+        }
+    }
+}
