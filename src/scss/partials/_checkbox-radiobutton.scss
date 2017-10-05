@@ -1,7 +1,7 @@
 // CHECKBOX
-$checkbox-text-color: white;
-$checkbox-bg-color: $color-blue;
-$checkbox-border-color: $color-blue;
+$checkbox-text-color: white !default;
+$checkbox-bg-color: $color-blue !default;
+$checkbox-border-color: $color-blue !default;
 
 .ingaia-checkbox {
   label { display: inline-block; }
@@ -67,9 +67,9 @@ $checkbox-border-color: $color-blue;
 }
 
 // RADIO
-$radio-border-color: $color-blue;
-$radio-text-color: white;
-$radio-bg-color: $color-blue;
+$radio-border-color: $color-blue !default;
+$radio-text-color: white !default;
+$radio-bg-color: $color-blue !default;
 
 .ingaia-radio {
   label {

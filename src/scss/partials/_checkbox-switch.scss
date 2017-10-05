@@ -6,7 +6,7 @@ $switch-size: 25px;
 $anim-speed: ease 0.3s all;
 
 $border-color: $color-gray;
-$switch-color: $color-blue;
+$switch-color: $color-blue !default;
 
 //   BASE
 // -------------------------------------
