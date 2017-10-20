@@ -33,3 +33,10 @@
     top: -1px;
   }
 }
+.btn-link {
+  font-weight: $btn-font-weight;
+  &:hover, 
+  &:focus {
+    text-decoration: none;
+  }
+}
