@@ -2,7 +2,7 @@
 
 A **UX Styleguide** da suporte para criação de projetos usando:
 - Animate.css.
-- Bootstrap 4 Beta.
+- Bootstrap 4.
 - inGaia Font Icons.
 
 ## Instalação
