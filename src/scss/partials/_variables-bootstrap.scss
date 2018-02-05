@@ -1,0 +1,252 @@
+//COLORS in COLORS
+$color-navy:                  #0a345e;
+$color-navy-1:                #5668b1;
+$color-navy-2:                #4052a4;
+$color-navy-3:                #243571;
+$color-navy-4:                #222e64;
+
+$color-blue:                  #00a2c2;
+$color-blue-1:                #06adcf;
+$color-blue-2:                #168fab;
+$color-blue-3:                #116f84;
+$color-blue-4:                #0f3842;
+
+$color-purple:                #9d72af;
+$color-purple-1:              #cda7ce;
+$color-purple-2:              #a77ab5;
+$color-purple-3:              #886297;
+$color-purple-4:              #634970;
+
+$color-green:                 #3cb185;
+$color-green-1:               #53be86;
+$color-green-2:               #35a56f;
+$color-green-3:               #1c7e57;
+$color-green-4:               #133d2a;
+
+$color-orange:                #e89d51;
+$color-orange-1:              #be8244;
+$color-orange-2:              #faaa5c;
+$color-orange-3:              #7d562e;
+$color-orange-4:              #3d2812;
+
+$color-red:                   #f0545e;
+$color-red-1:                 #e24a54;
+$color-red-2:                 #bf3d49;
+$color-red-3:                 #7b272d;
+$color-red-4:                 #371417;
+
+$color-gray:                  #dedede;
+$color-gray-1:                #b5b5b5;
+$color-gray-2:                #676767;
+$color-gray-3:                #2f343b;
+$color-gray-4:                #222222;
+
+$color-silver:               #6e8c99;
+
+$color-ocean:                 #2884b0;
+$color-ocean-1:               #5ab8e8;
+$color-ocean-2:               #2e8dbd;
+$color-ocean-3:               #277297;
+$color-ocean-4:               #1f526d;
+
+$color-deep-purple:           #5b469b;
+$color-deep-purple-1:         #6d5ea9;
+$color-deep-purple-2:         #614c9f;
+$color-deep-purple-3:         #4f3594;
+$color-deep-purple-4:         #392c70;
+
+$color-majesty:               #9c69ac;
+$color-majesty-1:             #a270b0;
+$color-majesty-2:             #925da7;
+$color-majesty-3:             #7f489a;
+$color-majesty-4:             #492b5a;
+
+$color-pink:                  #ce1e65;
+$color-pink-1:                #dc176a;
+$color-pink-2:                #b51f59;
+$color-pink-3:                #8d1946;
+$color-pink-4:                #481325;
+
+$color-chocolate:             #725722;
+$color-chocolate-1:           #fec350;
+$color-chocolate-2:           #be9338;
+$color-chocolate-3:           #7e612b;
+$color-chocolate-4:           #57431d;
+
+$color-coyote:                #8f8332;
+$color-coyote-1:              #dac824;
+$color-coyote-2:              #9d9135;
+$color-coyote-3:              #776e2d;
+$color-coyote-4:              #504a1e;
+
+$color-yellow:                #f4f077;
+$color-yellow-1:              #e6e463;
+$color-yellow-2:              #bfbc54;
+$color-yellow-3:              #7f7e37;
+$color-yellow-4:              #40411e;
+
+$color-brown:                 #c0ad8f;
+$color-brown-1:               #c9b998;
+$color-brown-2:               #a4967e;
+$color-brown-3:               #7d745e;
+$color-brown-4:               #3e392f;
+
+$color-emerald:               #91cb74;
+$color-emerald-1:             #7ec573;
+$color-emerald-2:             #59bc66;
+$color-emerald-3:             #2f8144;
+$color-emerald-4:             #1c4324;
+
+$color-pistachio:             #a8d9be;
+$color-pistachio-1:           #b4dec6;
+$color-pistachio-2:           #95bfa8;
+$color-pistachio-3:           #789b89;
+$color-pistachio-4:           #465b50;
+
+$color-blueish:               #2f343b;
+$color-blueish-1:             #9fb0c8;
+$color-blueish-2:             #6c7788;
+$color-blueish-3:             #393f49;
+$color-blueish-4:             #30353c;
+
+$color-secondary:             $color-gray;
+$color-secondary-1:           $color-gray-1;
+$color-secondary-2:           $color-gray-2;
+$color-secondary-3:           $color-gray-3;
+$color-secondary-4:           $color-gray-4;
+
+//Colors in Marks
+$color-saas:                  $color-blue;
+$color-saas-1:                $color-blue-1;
+$color-saas-2:                $color-blue-2;
+$color-saas-3:                $color-blue-3;
+$color-saas-4:                $color-blue-4;
+
+$color-real-estate-left:      $color-red;
+$color-real-estate-left-1:    $color-red-1;
+$color-real-estate-left-2:    $color-red-2;
+$color-real-estate-left-3:    $color-red-3;
+$color-real-estate-left-4:    $color-red-4;
+
+$color-education:             $color-orange;
+$color-education-1:           $color-orange-1;
+$color-education-2:           $color-orange-2;
+$color-education-3:           $color-orange-3;
+$color-education-4:           $color-orange-4;
+
+$color-financial-solution:    $color-green;
+$color-financial-solution-1:  $color-green-1;
+$color-financial-solution-2:  $color-green-2;
+$color-financial-solution-3:  $color-green-3;
+$color-financial-solution-4:  $color-green-4;
+
+$color-maas:                  $color-purple;
+$color-maas-1:                $color-purple-1;
+$color-maas-2:                $color-purple-2;
+$color-maas-3:                $color-purple-3;
+$color-maas-4:                $color-purple-4;
+
+$color-ingaia:                $color-navy;
+$color-ingaia-1:              $color-navy-1;
+$color-ingaia-2:              $color-navy-2;
+$color-ingaia-3:              $color-navy-3;
+$color-ingaia-4:              $color-navy-4;
+
+//Bootstrap variables
+$gray-dark:                   $color-gray-4;
+$gray:                        $color-gray-3;
+$gray-light:                  $color-gray-2;
+$gray-lighter:                $color-gray-1;
+$gray-lightest:               $color-gray;
+
+$btn-secondary-color:         $color-gray-2;
+$body-color:                  $color-gray-2;
+
+$brand-primary:               $color-silver;
+$brand-default:               $color-gray-1;
+$brand-success:               $color-blue;
+$brand-info:                  $color-ocean;
+$brand-warning:               $color-brown;
+$brand-danger:                $color-red-2;
+$brand-inverse:               $color-gray-3;
+
+$link-color:                  $color-blue;
+
+$theme-colors: (
+  primary: $color-silver,
+  secondary: $color-gray-1,
+  success: $color-blue,
+  info: $color-ocean,
+  warning: $color-brown,
+  danger: $color-red-2,
+  light: #fff,
+  dark: $color-gray-3
+) !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1570px
+);
+
+// Grid columns
+$grid-columns:               12;
+$grid-gutter-width-base:     30px;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base,
+  xxl: $grid-gutter-width-base
+);
+
+// Fonts
+$font-family-lato: "lato", Helvetica, Arial, sans-serif;
+$font-family-base: $font-family-lato;
+
+$font-size-12: .75rem;
+$font-size-13: .8125rem;
+$font-size-14: .875rem;
+$font-size-15: .9375rem;
+$font-size-16: 1rem;
+
+$font-size-base: 1rem; // 16x;
+$font-size-lg:   .9375rem; // 15px;
+$font-size-sm:   .875rem; // 14px;
+
+// Border radius
+$border-radius:          .125rem;
+$border-radius-lg:       .125rem;
+$border-radius-sm:       .125rem;
+
+$card-border-radius: .1875rem;
+$navbar-border-radius:    0px;
+
+// Buttons and Forms
+$input-btn-padding-y:       .563rem; // 38px  | font-size: 15px
+$input-btn-padding-x:       .75rem;
+$input-btn-line-height:     1.25;
+
+$input-btn-padding-y-lg:    .688rem; // 48px | font-size: 16px
+$input-btn-padding-x-lg:    1rem;
+$input-btn-line-height-lg:  1.5;
+
+$input-btn-padding-y-sm:    .219rem; // 30px  | font-size: 14px
+$input-btn-padding-x-sm:    .5rem;
+$input-btn-line-height-sm:  1.5;
+
+$btn-font-weight: 600;

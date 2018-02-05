@@ -1,0 +1,22 @@
+
+$color-primary: 0, 162, 194; // $color-blue
+$color-primary-dark: 7, 63, 73; // $color-gray-3
+$color-accent: none;
+
+// Our primary is dark, so use $color-dark-contrast for overlaid text.
+$color-primary-contrast: 255, 255, 255;
+// Our accent is dark, so use $color-dark-contrast for overlaid text.
+$color-accent-contrast: 255, 255, 255;
+
+// Progress Bar
+$progress-main-color: $color-blue;
+$progress-secondary-color: $color-gray-1;
+
+// Spinners
+$spinner-single-color: $color-blue;
+$spinner-color-1: $color-blue;
+$spinner-color-2: $color-blue-2;
+$spinner-color-3: $color-blue-3;
+$spinner-color-4: $color-blue-4;
+
+

@@ -106,6 +106,10 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                <h2>Boostrap 4</h2>
+            </div>
+            
             <div class="col-lg-3 mb-3">
                 <div class="card arrow-top-middle-red border-bottom-blue">
                     <div class="card-header">
@@ -385,6 +389,106 @@
                 <button class="btn btn-link">.btn-link</button>
             </div>
         </div>
+
+        <div class="row">
+            <h2>Material Design Lite</h2>
+            <div class="col-12">
+                <!-- Colored raised button -->
+                <button class="btn btn-primary mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent">
+                    Button
+                </button>
+                <!-- Accent-colored raised button -->
+                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-info">
+                    Button
+                </button>
+                <!-- Accent-colored raised button with ripple -->
+                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-success">
+                    Button
+                </button>
+                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-warning">
+                    Button
+                </button>
+                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-danger">
+                    Button
+                </button>
+                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-dark">
+                    Button
+                </button>
+                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised btn-light">
+                        Button
+                    </button>
+                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect btn-outline-light">
+                    Button
+                </button>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent btn-link">
+                    Button
+                </button>
+            </div>
+            <div class="col-6 mt-4">
+                <h5>Bootstrap 4</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="myInput1">Label 1</label>
+                        <input class="form-control" type="text" id="myInput1" placeholder="Placeholder">
+                        <label for="myInput2">Label 2</label>
+                        <input class="form-control" type="text" id="myInput2" placeholder="Placeholder">
+                        <label for="myInput3">Label 3</label>
+                        <textarea class="form-control" type="text" id="myInput3" placeholder="Placeholder"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6 mt-4">
+                <h5>Material Design Lite</h5>
+                <form class="form-group"> 
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+                    <input class="mdl-textfield__input" type="text">
+                    <label class="mdl-textfield__label">Nome</label>                  
+                    </div> 
+                    
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label  w-100">
+                    <input class="mdl-textfield__input" type="email">
+                    <label class="mdl-textfield__label">E-mail</label> 
+                    </div>   
+
+                    <div class="mdl-textfield mdl-js-textfield w-100">
+                    <textarea class="mdl-textfield__input" type="text" rows= "5" ></textarea>
+                    <label class="mdl-textfield__label">Deixe sua mensagem...</label>
+                    </div>                                      
+                </form>
+            </div>
+
+            <div class="col-6">
+                <h5>Bar progress</h5>
+                    <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+                    
+                    <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active my-4 mr-3"></div>
+                    <div class="mdl-spinner mdl-js-spinner is-active my-4"></div>
+
+
+                    <div id="p3" class="mdl-progress mdl-js-progress mdl-componentupgraded is-active"></div>
+                    
+            </div>
+            <div class="col-6">
+                <h2>Badge</h2>
+                <div class="row">
+                <div class="col-3">
+                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-blue" data-badge="4">Inbox</span> <br><br>
+                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-red" data-badge="4">Inbox</span><br><br>
+                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-red-2" data-badge="4">Inbox</span><br><br>
+                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-green" data-badge="4">Inbox</span><br><br>
+                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-chocolate" data-badge="4">Inbox</span><br><br>
+                </div>
+                <div class="col-3">
+                    <span class="mdl-badge bg-badge-blue ing" data-badge="&#57555">Mood</span><br><br>
+                    <span class="mdl-badge bg-badge-yellow ing" data-badge="♥">Mood</span><br><br>
+                    <span class="mdl-badge bg-badge-ocean ing" data-badge="♥">Mood</span><br><br>
+                    <span class="mdl-badge bg-badge-blue-2 ing" data-badge="♥">Mood</span><br><br>
+                    <span class="mdl-badge bg-badge-gray ing" data-badge="♥">Mood</span><br><br>
+                </div>
+            </div>
+            </div>
+        </div>
         
     </div>
 
@@ -398,6 +502,10 @@
             $('.alert-teste').click(function(){
                 createAlert({color: "blue", positionxy: "top-right", icon: "ing-ingaia-ico", content: "<h4>Alert</h4> <p>funcionando</p>", timeout: "0"});            
             });            
+        });
+        document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+            this.MaterialProgress.setProgress(33);
+            this.MaterialProgress.setBuffer(87);
         });
     </script>
 </body>

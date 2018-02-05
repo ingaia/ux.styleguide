@@ -1,0 +1,5 @@
+
+.mdl-badge {
+    font-family: "Roboto";
+    &.ing::after { font-family: ingaia-font-icons !important; }
+}

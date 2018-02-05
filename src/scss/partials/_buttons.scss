@@ -9,7 +9,10 @@
     border: 1px solid $color-gray-1; 
   }
 }
-.btn { 
+.btn {
+  &.mdl-button {
+    height: 38px;
+  } 
   font-size: $font-size-13;
   padding: .625rem .855rem;
   .ing {
@@ -18,14 +21,20 @@
     top: -2px;
   }
 }
-.btn-lg {   
+.btn-lg {
+  &.mdl-button {
+    height: 48px;
+  }
   font-size: $font-size-15;
   padding: .75rem .99rem;
   .ing {
     top: -2px;
   }
 }
-.btn-sm {   
+.btn-sm {
+  &.mdl-button {
+    height: 30px;
+  }
   font-size: $font-size-12;
   padding: .313rem .75rem;
   .ing {

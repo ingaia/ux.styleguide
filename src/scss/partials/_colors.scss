@@ -13,7 +13,12 @@
     .hr-#{$className}-1 { border-top: 1px solid $colorSelected1; }
     .hr-#{$className}-2 { border-top: 1px solid $colorSelected2; }
     .hr-#{$className}-3 { border-top: 1px solid $colorSelected3; }
-    .hr-#{$className}-4 { border-top: 1px solid $colorSelected4; }
+    .hr-#{$className}-4 { border-top: 1px solid $colorSelected4; }    
+    .bg-badge-#{$className} { &::after{ background: $colorSelected; }}
+    .bg-badge-#{$className}-1 { &::after{ background: $colorSelected1; }}
+    .bg-badge-#{$className}-2 { &::after{ background: $colorSelected2; }}
+    .bg-badge-#{$className}-3 { &::after{ background: $colorSelected3; }}
+    .bg-badge-#{$className}-4 { &::after{ background: $colorSelected4; }}
   }
 
   @include NewClassColor('blue', $color-blue, $color-blue-1, $color-blue-2, $color-blue-3, $color-blue-4 ); 
@@ -42,14 +47,13 @@
   @include NewClassColor('financial-solution', $color-financial-solution, $color-financial-solution-1, $color-financial-solution-2, $color-financial-solution-3, $color-financial-solution-4 );
   @include NewClassColor('real-estate-left', $color-real-estate-left, $color-real-estate-left-1, $color-real-estate-left-2, $color-real-estate-left-3, $color-real-estate-left-4 );
   
-
   @mixin NewClassColorSingle($nameColorSingle, $colorSingle){
     .color-#{$nameColorSingle} { color: $colorSingle; }
     .bg-#{$nameColorSingle} { background-color: $colorSingle; }
     .hr-#{$nameColorSingle} { border-top: 1px solid $colorSingle; }
   }
 
-    // COLORS CLASS
+  // COLORS CLASS
   @include NewClassColorSingle('white', #fff);
   @include NewClassColorSingle('silver', $brand-primary);
   @include NewClassColorSingle('transparent', transparent );
@@ -67,3 +71,4 @@
       color: #ffffff;
     }
   }
+
