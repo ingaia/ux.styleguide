@@ -137,3 +137,18 @@ $radio-bg-color: $color-blue !default;
     }
   }
 }
+
+// Material Design Lite
+$checkbox-image-path: 'material-design-lite/src/images';
+.mdl-checkbox__tick-outline {
+  mask: url("#{$checkbox-image-path}/tick-mask.svg?embed");
+  
+  .mdl-checkbox.is-checked & {
+    background: $checkbox-color url("#{$checkbox-image-path}/tick.svg?embed");
+  }
+
+  fieldset[disabled] .mdl-checkbox.is-checked &,
+  .mdl-checkbox.is-checked.is-disabled & {
+    background: $checkbox-disabled-color url("#{$checkbox-image-path}/tick.svg?embed");
+  }
+}

@@ -1,6 +1,6 @@
 
 // Material Design bar progress
-$progress-image-path: '../svg';
+$progress-image-path: 'material-design-lite/src/images';
 @supports (-webkit-appearance:none) {
     .mdl-progress:not(.mdl-progress--indeterminate):not(.mdl-progress--indeterminate) > .auxbar,
     .mdl-progress:not(.mdl-progress__indeterminate):not(.mdl-progress__indeterminate) > .auxbar {

@@ -1,15 +1,26 @@
 a { text-decoration: none !important; }
 
-.ing {
+.ing {    
     display: inline-block;
-    font: normal normal normal 1rem ingaia-font-icons;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-	vertical-align: middle;
+    vertical-align: middle;    
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
 }
 button, .btn { text-transform: uppercase; }
 button, .btn, a { cursor: pointer; }
+button:focus { outline: 0px auto transparent !important; }
 label { font-size: $font-size-13; margin-bottom: 0rem !important; }
 
 

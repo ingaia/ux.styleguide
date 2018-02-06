@@ -1,512 +1,684 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- PROD and DEV CSS -->
-    <link rel="stylesheet" href="app.min.css">
 
-    <!-- MY CSS -->
-    <!-- <link rel="stylesheet" href="../node_modules/ingaia-font-icons/dist/ingaia-font-icons.min.css"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- PROD and DEV CSS -->
+	<link rel="stylesheet" href="app.min.css">	
+
+	<!-- MY CSS -->
+	<!-- <link rel="stylesheet" href="../node_modules/ingaia-font-icons/dist/ingaia-font-icons.min.css"> 
     <link rel="stylesheet" href="css/mycss.css"> -->
 
-    <style>
-        body { background-color: #ccc; overflow-x: hidden; padding-bottom: 60px; }        
-        .animatecss-box { height: 90px; }
-        .icons i.ing-ingaia-ico { font-size: 50px; position: relative; top: -35px; }
-        .icons i.ing-ingaia-logo { font-size: 100px; position: relative; top: -35px; }
-        code { background-color: transparent; }
-    </style>
-    <title>Styleguide área de testes</title>
+	<style>
+		body {
+			background-color: #ccc;
+			overflow-x: hidden;
+			padding-bottom: 60px;
+		}
+
+		.animatecss-box {
+			height: 90px;
+		}
+
+		.icons i.ing-ingaia-ico {
+			font-size: 50px;
+			position: relative;
+			top: -35px;
+		}
+
+		.icons i.ing-ingaia-logo {
+			font-size: 100px;
+			position: relative;
+			top: -35px;
+		}
+
+		code {
+			background-color: transparent;
+		}
+	</style>
+	<title>Styleguide área de testes</title>
 </head>
-<body>    
-    <div class="container">            
-        <h1 class="text-center my-4">Página para testes</h1>        
-        <div class="border-left-blue pl-4">
-            <h4 class="m-0 p-0">Para testes usando DEV e PROD</h4>
-            <div class="mb-1"><small><a href="http://localhost:8082/#/" target="_blank">http://localhost:8082/#/</a></small></div>
-            <p>Use no <code>&lthead&gt</code>:</p>
-            <p>
-                <code>
+
+<body>
+	<div class="container">
+		<h1 class="text-center my-4">Página para testes</h1>
+		<div class="border-left-blue pl-4">
+			<h4 class="m-0 p-0">Para testes usando DEV e PROD</h4>
+			<div class="mb-1">
+				<small>
+					<a href="http://localhost:8082/#/" target="_blank">http://localhost:8082/#/</a>
+				</small>
+			</div>
+			<p>Use no
+				<code>&lthead&gt</code>:</p>
+			<p>
+				<code>
                     <span class="color-green-2">&lt!-- PROD and DEV CSS --&gt</span><br>
                     &ltlink rel="stylesheet" href="app.min.css"&gt
                 </code>
-            </p>
-        </div>            
-        <hr>
-        <div class="border-left-red pl-4">
-            <h4>Para testes que compilam seus próprios arquivos</h4>            
-            <p>
-                Compile o arquivo <span class="color-pink-1">SASS</span> (Exemplo: <span class="color-red-1">mycss.scss</span>) e importe os parâmetros como mostrado abaixo:
-            </p>
-            <p>
-                <code>
+			</p>
+		</div>
+		<hr>
+		<div class="border-left-red pl-4">
+			<h4>Para testes que compilam seus próprios arquivos</h4>
+			<p>
+				Compile o arquivo
+				<span class="color-pink-1">SASS</span> (Exemplo:
+				<span class="color-red-1">mycss.scss</span>) e importe os parâmetros como mostrado abaixo:
+			</p>
+			<p>
+				<code>
                     <span class="color-green-2">// Coloque na variável <span class="color-red-2">$svg-path</span> o caminho da pasta onde se encontra o arquivo "inGaia-loader-white.svg" usado nos componentes do ReactJS </span><br>
                     $svg-path: '../../src/svg/'; <br>
                     <span class="color-green-2">// Ajuste se necessário o caminho da pasta onde se encontra o arquivo scss/stylesheet.scss</span><br>
                     @import '../../src/scss/stylesheet';
                 </code>
-            </p>            
-            <p>Use no<code>&lthead&gt</code>do seu html:</p>
-            <p>
-                <code>
+			</p>
+			<p>Use no
+				<code>&lthead&gt</code>do seu html:</p>
+			<p>
+				<code>
                     <span class="color-green-2">&lt!-- MY CSS | ajuste o caminho se necessário --&gt</span><br>                
                     &ltlink rel="stylesheet" href="../node_modules/ingaia-font-icons/dist/ingaia-font-icons.min.css"&gt  <br>
                     &ltlink rel="stylesheet" href="css/mycss.css"&gt <br>
                 </code>
-            </p>
-        </div>
-    </div>
+			</p>
+		</div>
+	</div>
 
 
-    <hr class="hr-red">
-
-
-
-    <div class="container">
-        <h1 class="text-center my-4">Área de testes</h1>
-        <div class="row">
-            <div class="col-lg-3 animatecss-box">
-                <h5 class="text-center">animate.css</h5>
-                <div class="icons text-center">
-                    <i class="ing ing-ingaia-ico mr-2 color-blue animated bounceInLeft"></i>
-                    <i class="ing ing-ingaia-logo color-red animated bounceInRight"></i>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-4">
-                <h5 class="text-center">PopperJS</h5>
-                <div class="row">
-                    <div class="btn-group d-block mx-auto">
-                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Popper funcionado</a>                                  
-                        </div>                        
-                    </div>  
-                </div> 
-            </div>
-            <div class="col-lg-3 mb-4">
-                <h5 class="text-center">Alert</h5>
-                <button class="alert-teste btn btn-success d-block mx-auto">Teste alert</button>
-            </div>
-            <div class="col-lg-3 mb-4">
-                <h5 class="text-center">SVG do componente do React</h5>                    
-                <div class="ReactModal__Content">
-                    <div class="ril-loading-circle d-block mx-auto"> 
-                        <div class="ril-loading-circle-point"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <hr class="hr-blue">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>Boostrap 4</h2>
-            </div>
-            
-            <div class="col-lg-3 mb-3">
-                <div class="card arrow-top-middle-red border-bottom-blue">
-                    <div class="card-header">
-                        <div class="card-title">
-                            <h5>Popovers</h5>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <p>
-                            arrow-top-right-red <br>  
-                            border-bottom-blue
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 mb-3">
-                <div class="card arrow-right-middle-blue">
-                    <div class="card-header">
-                        <div class="card-title">
-                            <h5>Popovers</h5>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <p>arrow-right-middle-blue</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 mb-3">
-                <div class="card arrow-bottom-left-deep-purple-1">
-                    <div class="card-header">
-                        <div class="card-title">
-                            <h5>Popovers</h5>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <p>arrow-bottom-left-deep-purple-1</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 mb-3">
-                <div class="card arrow-left-top-green-2">
-                    <div class="card-header">
-                        <div class="card-title">
-                            <h5>Popovers</h5>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <p>arrow-left-top-green-2</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <hr class="hr-blue">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <input type="text" class="form-control form-control-lg" value="Lorem ipsum height: 48px">                
-                <input type="text" class="form-control" value="Lorem ipsum height: 38px">
-                <input type="text" class="form-control form-control-sm" value="Lorem ipsum height: 30px">                    
-            </div>
-            <div class="col-6">   
-                <div class="input-group input-group-lg"> 
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="btnGroupAddon">
-                            <!-- <i class="ing ing-check"></i> -->
-                            success
-                        </span>
-                    </div>                
-                    <input type="text" class="form-control form-control-lg" placeholder=".form-control .form-control-lg">
-                </div>
-
-                <div class="input-group"> 
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="btnGroupAddon">
-                            <!-- <i class="ing ing-check"></i> -->
-                            success
-                        </span>
-                    </div>                
-                    <input type="text" class="form-control" placeholder=".form-control">
-                </div>
-
-                <div class="input-group input-group-sm"> 
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="btnGroupAddon">
-                            <!-- <i class="ing ing-check"></i> -->
-                            success
-                        </span>
-                    </div>                
-                    <input type="text" class="form-control form-control-sm" placeholder=".form-control .form-control-sm">
-                </div>                
-            </div>
-            
+	<hr class="hr-red">
 
 
 
-            <div class="col-4 my-5">
-                <div class="input-group input-group-lg">
-                    <span class="input-group-prepend">
-                        <button class="btn btn-secondary" type="button">Go!</button>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Buscar por..." aria-label="Buscar por...">
-                </div>
-            </div>
-            <div class="col-4 my-5">
-                <div class="input-group">
-                    <span class="input-group-prepend">
-                        <button class="btn btn-secondary" type="button">Go!</button>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Buscar por..." aria-label="Buscar por...">
-                </div>
-            </div>
-            <div class="col-4 my-5">
-                <div class="input-group input-group-sm">
-                    <span class="input-group-prepend">
-                        <button class="btn btn-secondary" type="button">Go!</button>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Buscar por..." aria-label="Buscar por...">
-                </div>
-            </div>
-        
-            
-        </div>
-        <div class="row">
-            <div class="col-6 py-4">
-                <button type="button" class="btn btn-lg btn-primary">Primary lg</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
-                <button type="button" class="btn btn-sm btn-success">Success sm</button>                
-            </div>
-            <div class="col-6 py-4">
-                <button type="button" class="btn btn-lg btn-primary">
-                    <i class="ing ing-home"></i> Primary lg
-                </button>
-                <button type="button" class="btn btn-secondary">
-                        <i class="ing ing-home"></i> Secondary                    
-                </button>
-                <button type="button" class="btn btn-sm btn-success">
-                        <i class="ing ing-home"></i> Success sm
-                </button>
-            </div>
+	<div class="container">
+		<h1 class="text-center my-4">Área de testes</h1>
+		<div class="row">
+			<div class="col-lg-3 animatecss-box">
+				<h5 class="text-center">animate.css</h5>
+				<div class="icons text-center">
+					<i class="ing ing-ingaia-ico mr-2 color-blue animated bounceInLeft"></i>
+					<i class="ing ing-ingaia-logo color-red animated bounceInRight"></i>
+				</div>
+			</div>
+			<div class="col-lg-3 mb-4">
+				<h5 class="text-center">PopperJS</h5>
+				<div class="row">
+					<div class="btn-group d-block mx-auto">
+						<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Popper funcionado</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 mb-4">
+				<h5 class="text-center">Alert</h5>
+				<button class="alert-teste btn btn-success d-block mx-auto">Teste alert</button>
+			</div>
+			<div class="col-lg-3 mb-4">
+				<h5 class="text-center">SVG do componente do React</h5>
+				<div class="ReactModal__Content">
+					<div class="ril-loading-circle d-block mx-auto">
+						<div class="ril-loading-circle-point"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-            <div class="col-lg-3">
-                <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Action
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Item Action</a>                          
-                        </div>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                </div>
-            </div>
+	<hr class="hr-blue">
 
-            <div class="col-lg-3">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Action
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Item Action</a>                          
-                        </div>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                </div>
-            </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Boostrap 4</h2>
+			</div>
 
-            <div class="col-lg-3">
-                <label for="teste">Label 13px</label>
-                <div class="input-group input-group-sm">
-                    <div class="input-group-prepend">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Action
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Item Action</a>                          
-                        </div>
-                    </div>
-                    <input type="text" id="teste" class="form-control" aria-label="Text input with dropdown button">
-                </div>
-            </div>
-            
-        </div>
-        <div class="row py-5">
-            <div class="col-12">
-                <div class="btn-group py-2">
-                    <button type="button" class="btn btn-lg btn-warning">btn-lg Left</button>
-                    <button type="button" class="btn btn-lg btn-warning">btn-lg Middle</button>
-                    <button type="button" class="btn btn-lg btn-warning">btn-lg Right</button>
-                </div>
-    
-                <div class="btn-group py-2">
-                    <button type="button" class="btn btn-danger">btn Left</button>
-                    <button type="button" class="btn btn-danger">btn Middle</button>
-                    <button type="button" class="btn btn-danger">btn Right</button>
-                </div>
+			<div class="col-lg-3 mb-3">
+				<div class="card arrow-top-middle-red border-bottom-blue">
+					<div class="card-header">
+						<div class="card-title">
+							<h5>Popovers</h5>
+						</div>
+					</div>
+					<div class="card-body">
+						<p>
+							arrow-top-right-red
+							<br> border-bottom-blue
+						</p>
+					</div>
+				</div>
+			</div>
 
-                <div class="btn-group py-2">
-                    <button type="button" class="btn btn-sm btn-success">btn-sm Left</button>
-                    <button type="button" class="btn btn-sm btn-success">btn-sm Middle</button>
-                    <button type="button" class="btn btn-sm btn-success">btn-sm Right</button>
-                </div>
-            </div>
-        </div>
-        <p>
-                Lorem import moduleName from 'module'Lorem import moduleName from 'module'Lorem import moduleName from 'module'Lorem import moduleName from 'module'Lorem import moduleName from 'module';
-        </p>
+			<div class="col-lg-3 mb-3">
+				<div class="card arrow-right-middle-blue">
+					<div class="card-header">
+						<div class="card-title">
+							<h5>Popovers</h5>
+						</div>
+					</div>
+					<div class="card-body">
+						<p>arrow-right-middle-blue</p>
+					</div>
+				</div>
+			</div>
 
+			<div class="col-lg-3 mb-3">
+				<div class="card arrow-bottom-left-deep-purple-1">
+					<div class="card-header">
+						<div class="card-title">
+							<h5>Popovers</h5>
+						</div>
+					</div>
+					<div class="card-body">
+						<p>arrow-bottom-left-deep-purple-1</p>
+					</div>
+				</div>
+			</div>
 
-        <div class="row">
-            <h4>Checkbox Switch</h4>
-        </div>
-        <div class="row">
-            <div class="col-1">
-                <label class="tgl">
-                    <input type="checkbox" checked/>
-                    <span class="tgl-body">
-                        <span class="tgl-switch"></span>
-                        <span class="tgl-track">
-                            <span class="tgl-bgd"></span>
-                            <span class="tgl-bgd tgl-bgd-negative"></span>
-                        </span>
-                    </span>
-                </label>
+			<div class="col-lg-3 mb-3">
+				<div class="card arrow-left-top-green-2">
+					<div class="card-header">
+						<div class="card-title">
+							<h5>Popovers</h5>
+						</div>
+					</div>
+					<div class="card-body">
+						<p>arrow-left-top-green-2</p>
+					</div>
+				</div>
+			</div>
 
-            </div>
-            <div class="col-1">
-                <label class="tgl">
-                        <input type="checkbox"/>
-                        <span class="tgl-body">
-                            <span class="tgl-switch"></span>
-                            <span class="tgl-track">
-                                <span class="tgl-bgd"></span>
-                                <span class="tgl-bgd tgl-bgd-negative"></span>
-                            </span>
-                        </span>
-                </label>
-            </div>
-        </div>
-        
-        <div class="row mt-4">
-            <h4>Checkbox</h4>
-            <div class="col-12">
-                <label class="ingaia-checkbox check-lg">
-                    <input type="checkbox" checked><span>Checkbox LG</span>
-                </label>
-                <label class="ingaia-checkbox">
-                    <input type="checkbox"><span>Checkbox Default</span>
-                </label>
-                <label class="ingaia-checkbox check-sm">
-                    <input type="checkbox"><span>Checkbox SM</span>
-                </label>                       
-            </div>
+		</div>
+	</div>
 
-            <h4>Radio</h4>
-            <div class="col-12">
-                <label class="ingaia-radio radio-lg">
-                    <input type="radio" name="radio1" checked><span>Radio LG</span>
-                </label>
-                <label class="ingaia-radio">
-                    <input type="radio" name="radio1"><span>Radio Default</span>
-                </label>
-                <label class="ingaia-radio radio-sm">
-                    <input type="radio" name="radio1"><span>Radio SM</span>
-                </label>
-            </div>
-            <div class="col-12 mt-4 border-top-blue pt-3">
-                <h6>Btn link com <code>font-weight: 600;</code></h4>
-                <button class="btn btn-link">.btn-link</button>
-            </div>
-        </div>
+	<hr class="hr-blue">
 
-        <div class="row">
-            <h2>Material Design Lite</h2>
-            <div class="col-12">
-                <!-- Colored raised button -->
-                <button class="btn btn-primary mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent">
-                    Button
-                </button>
-                <!-- Accent-colored raised button -->
-                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-info">
-                    Button
-                </button>
-                <!-- Accent-colored raised button with ripple -->
-                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-success">
-                    Button
-                </button>
-                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-warning">
-                    Button
-                </button>
-                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-danger">
-                    Button
-                </button>
-                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-dark">
-                    Button
-                </button>
-                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised btn-light">
-                        Button
-                    </button>
-                <button class="btn mdl-button mdl-js-button mdl-js-ripple-effect btn-outline-light">
-                    Button
-                </button>
-                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent btn-link">
-                    Button
-                </button>
-            </div>
-            <div class="col-6 mt-4">
-                <h5>Bootstrap 4</h5>
-                <form>
-                    <div class="form-group">
-                        <label for="myInput1">Label 1</label>
-                        <input class="form-control" type="text" id="myInput1" placeholder="Placeholder">
-                        <label for="myInput2">Label 2</label>
-                        <input class="form-control" type="text" id="myInput2" placeholder="Placeholder">
-                        <label for="myInput3">Label 3</label>
-                        <textarea class="form-control" type="text" id="myInput3" placeholder="Placeholder"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="col-6 mt-4">
-                <h5>Material Design Lite</h5>
-                <form class="form-group"> 
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
-                    <input class="mdl-textfield__input" type="text">
-                    <label class="mdl-textfield__label">Nome</label>                  
-                    </div> 
-                    
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label  w-100">
-                    <input class="mdl-textfield__input" type="email">
-                    <label class="mdl-textfield__label">E-mail</label> 
-                    </div>   
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<input type="text" class="form-control form-control-lg" value="Lorem ipsum height: 48px">
+				<input type="text" class="form-control" value="Lorem ipsum height: 38px">
+				<input type="text" class="form-control form-control-sm" value="Lorem ipsum height: 30px">
+			</div>
+			<div class="col-6">
+				<div class="input-group input-group-lg">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="btnGroupAddon">
+							<i class="ing ing-check"></i>							
+						</span>
+					</div>
+					<input type="text" class="form-control form-control-lg" placeholder=".form-control .form-control-lg">
+				</div>
 
-                    <div class="mdl-textfield mdl-js-textfield w-100">
-                    <textarea class="mdl-textfield__input" type="text" rows= "5" ></textarea>
-                    <label class="mdl-textfield__label">Deixe sua mensagem...</label>
-                    </div>                                      
-                </form>
-            </div>
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="btnGroupAddon">
+							<!-- <i class="ing ing-check"></i> -->
+							success
+						</span>
+					</div>
+					<input type="text" class="form-control" placeholder=".form-control">
+				</div>
 
-            <div class="col-6">
-                <h5>Bar progress</h5>
-                    <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+				<div class="input-group input-group-sm">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="btnGroupAddon">
+							<i class="ing ing-check"></i>							
+						</span>
+					</div>
+					<input type="text" class="form-control form-control-sm" placeholder=".form-control .form-control-sm">
+				</div>
+			</div>
 
-                    
-                    <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active my-4 mr-3"></div>
-                    <div class="mdl-spinner mdl-js-spinner is-active my-4"></div>
+			<div class="col-4 my-5">
+				<div class="input-group input-group-lg">
+					<span class="input-group-prepend">
+						<button class="btn btn-secondary" type="button">Go!</button>
+					</span>
+					<input type="text" class="form-control" placeholder="Buscar por..." aria-label="Buscar por...">
+				</div>
+			</div>
+			<div class="col-4 my-5">
+				<div class="input-group">
+					<span class="input-group-prepend">
+						<button class="btn btn-secondary" type="button">Go!</button>
+					</span>
+					<input type="text" class="form-control" placeholder="Buscar por..." aria-label="Buscar por...">
+				</div>
+			</div>
+			<div class="col-4 my-5">
+				<div class="input-group input-group-sm">
+					<span class="input-group-prepend">
+						<button class="btn btn-secondary" type="button">Go!</button>
+					</span>
+					<input type="text" class="form-control" placeholder="Buscar por..." aria-label="Buscar por...">
+				</div>
+			</div>
 
 
-                    <div id="p3" class="mdl-progress mdl-js-progress mdl-componentupgraded is-active"></div>
-                    
-            </div>
-            <div class="col-6">
-                <h2>Badge</h2>
-                <div class="row">
-                <div class="col-3">
-                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-blue" data-badge="4">Inbox</span> <br><br>
-                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-red" data-badge="4">Inbox</span><br><br>
-                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-red-2" data-badge="4">Inbox</span><br><br>
-                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-green" data-badge="4">Inbox</span><br><br>
-                    <span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-chocolate" data-badge="4">Inbox</span><br><br>
-                </div>
-                <div class="col-3">
-                    <span class="mdl-badge bg-badge-blue ing" data-badge="&#57555">Mood</span><br><br>
-                    <span class="mdl-badge bg-badge-yellow ing" data-badge="♥">Mood</span><br><br>
-                    <span class="mdl-badge bg-badge-ocean ing" data-badge="♥">Mood</span><br><br>
-                    <span class="mdl-badge bg-badge-blue-2 ing" data-badge="♥">Mood</span><br><br>
-                    <span class="mdl-badge bg-badge-gray ing" data-badge="♥">Mood</span><br><br>
-                </div>
-            </div>
-            </div>
-        </div>
-        
-    </div>
+		</div>
+		<div class="row">
+			<div class="col-6 py-4">
+				<button type="button" class="btn btn-lg btn-primary">Primary lg</button>
+				<button type="button" class="btn btn-secondary">Secondary</button>
+				<button type="button" class="btn btn-sm btn-success">Success sm</button>
+			</div>
+			<div class="col-6 py-4">
+				<button type="button" class="btn btn-lg btn-primary">
+					<i class="ing ing-home"></i> Primary lg
+				</button>
+				<button type="button" class="btn btn-secondary">
+					<i class="ing ing-home"></i> Secondary
+				</button>
+				<button type="button" class="btn btn-sm btn-success">
+					<i class="ing ing-home"></i> Success sm
+				</button>
+			</div>
 
-    
+			<div class="col-lg-3">
+				<div class="input-group input-group-lg">
+					<div class="input-group-prepend">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Action
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Item Action</a>
+						</div>
+					</div>
+					<input type="text" class="form-control" aria-label="Text input with dropdown button">
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Action
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Item Action</a>
+						</div>
+					</div>
+					<input type="text" class="form-control" aria-label="Text input with dropdown button">
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<label for="teste">Label 13px</label>
+				<div class="input-group input-group-sm">
+					<div class="input-group-prepend">
+						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Action
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Item Action</a>
+						</div>
+					</div>
+					<input type="text" id="teste" class="form-control" aria-label="Text input with dropdown button">
+				</div>
+			</div>
+
+		</div>
+		<div class="row py-5">
+			<div class="col-12">
+				<div class="btn-group py-2">
+					<button type="button" class="btn btn-lg btn-warning">btn-lg Left</button>
+					<button type="button" class="btn btn-lg btn-warning">btn-lg Middle</button>
+					<button type="button" class="btn btn-lg btn-warning">btn-lg Right</button>
+				</div>
+
+				<div class="btn-group py-2">
+					<button type="button" class="btn btn-danger">btn Left</button>
+					<button type="button" class="btn btn-danger">btn Middle</button>
+					<button type="button" class="btn btn-danger">btn Right</button>
+				</div>
+
+				<div class="btn-group py-2">
+					<button type="button" class="btn btn-sm btn-success">btn-sm Left</button>
+					<button type="button" class="btn btn-sm btn-success">btn-sm Middle</button>
+					<button type="button" class="btn btn-sm btn-success">btn-sm Right</button>
+				</div>
+			</div>
+		</div>
+		<p>
+			Lorem import moduleName from 'module'Lorem import moduleName from 'module'Lorem import moduleName from 'module'Lorem import
+			moduleName from 'module'Lorem import moduleName from 'module';
+		</p>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-    <script>        
-        $(document).ready(function(){
-            $('.alert-teste').click(function(){
-                createAlert({color: "blue", positionxy: "top-right", icon: "ing-ingaia-ico", content: "<h4>Alert</h4> <p>funcionando</p>", timeout: "0"});            
-            });            
-        });
-        document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
-            this.MaterialProgress.setProgress(33);
-            this.MaterialProgress.setBuffer(87);
-        });
-    </script>
+		<div class="row">
+			<h4>Checkbox Switch</h4>
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<label class="tgl">
+					<input type="checkbox" checked/>
+					<span class="tgl-body">
+						<span class="tgl-switch"></span>
+						<span class="tgl-track">
+							<span class="tgl-bgd"></span>
+							<span class="tgl-bgd tgl-bgd-negative"></span>
+						</span>
+					</span>
+				</label>
+
+			</div>
+			<div class="col-1">
+				<label class="tgl">
+					<input type="checkbox" />
+					<span class="tgl-body">
+						<span class="tgl-switch"></span>
+						<span class="tgl-track">
+							<span class="tgl-bgd"></span>
+							<span class="tgl-bgd tgl-bgd-negative"></span>
+						</span>
+					</span>
+				</label>
+			</div>
+		</div>
+
+		<div class="row mt-4">
+			<h4>Checkbox</h4>
+			<div class="col-12">
+				<label class="ingaia-checkbox check-lg">
+					<input type="checkbox" checked>
+					<span>Checkbox LG</span>
+				</label>
+				<label class="ingaia-checkbox">
+					<input type="checkbox">
+					<span>Checkbox Default</span>
+				</label>
+				<label class="ingaia-checkbox check-sm">
+					<input type="checkbox">
+					<span>Checkbox SM</span>
+				</label>
+			</div>
+
+			<h4>Radio</h4>
+			<div class="col-12">
+				<label class="ingaia-radio radio-lg">
+					<input type="radio" name="radio1" checked>
+					<span>Radio LG</span>
+				</label>
+				<label class="ingaia-radio">
+					<input type="radio" name="radio1">
+					<span>Radio Default</span>
+				</label>
+				<label class="ingaia-radio radio-sm">
+					<input type="radio" name="radio1">
+					<span>Radio SM</span>
+				</label>
+			</div>
+			<div class="col-12 mt-4 border-top-blue pt-3">
+				<h6>Btn link com
+					<code>font-weight: 600;</code>
+					</h4>
+					<button class="btn btn-link">.btn-link</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<h2>Material Design Lite</h2>
+			<div class="col-12">				
+				<button class="btn btn-primary mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent">
+					Button
+				</button>				
+				<button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-info">
+					Button
+				</button>				
+				<button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-success">
+					Button
+				</button>
+				<button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-warning">
+					Button
+				</button>
+				<button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-danger">
+					Button
+				</button>
+				<button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent btn-dark">
+					Button
+				</button>
+				<button class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised btn-light">
+					Button
+				</button>
+				<button class="btn mdl-button mdl-js-button mdl-js-ripple-effect btn-outline-light">
+					Button
+				</button>
+				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent btn-link">
+					Button
+				</button>
+			</div>
+			<div class="col-6 mt-4">
+				<h5>Bootstrap 4</h5>
+				<form>
+					<div class="form-group">
+						<label for="myInput1">Label 1</label>
+						<input class="form-control" type="text" id="myInput1" placeholder="Placeholder">
+						<label for="myInput2">Label 2</label>
+						<input class="form-control" type="text" id="myInput2" placeholder="Placeholder">
+						<label for="myInput3">Label 3</label>
+						<textarea class="form-control" type="text" id="myInput3" placeholder="Placeholder"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="col-6 mt-4">
+				<h5>Material Design Lite</h5>
+				<form class="form-group">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+						<input class="mdl-textfield__input" type="text">
+						<label class="mdl-textfield__label">Nome</label>
+					</div>
+
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label  w-100">
+						<input class="mdl-textfield__input" type="email">
+						<label class="mdl-textfield__label">E-mail</label>
+					</div>
+
+					<div class="mdl-textfield mdl-js-textfield w-100">
+						<textarea class="mdl-textfield__input" type="text" rows="5"></textarea>
+						<label class="mdl-textfield__label">Deixe sua mensagem...</label>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-6">
+				<h5>Bar progress</h5>
+				<div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+
+				<div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active my-4 mr-3"></div>
+				<div class="mdl-spinner mdl-js-spinner is-active my-4"></div>
+
+
+				<div id="p3" class="mdl-progress mdl-js-progress mdl-componentupgraded is-active"></div>
+
+			</div>
+			<div class="col-6">
+				<h2>Badge</h2>
+				<div class="row">
+					<div class="col-3">
+						<span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-blue" data-badge="4">Inbox</span>
+						<br>
+						<br>
+						<span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-red" data-badge="4">Inbox</span>
+						<br>
+						<br>
+						<span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-red-2" data-badge="4">Inbox</span>
+						<br>
+						<br>
+						<span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-green" data-badge="4">Inbox</span>
+						<br>
+						<br>
+						<span class="mdl-badge mb-4 mdl-badge--overlap bg-badge-chocolate" data-badge="4">Inbox</span>
+						<br>
+						<br>
+					</div>
+					<div class="col-3">
+						<span class="mdl-badge bg-badge-blue ing" data-badge="&#57555">Mood</span>
+						<br>
+						<br>
+						<span class="mdl-badge bg-badge-green ing" data-badge="&#57360">Mood</span>
+						<br>
+						<br>
+						<span class="mdl-badge bg-badge-ocean ing" data-badge="&#57392">Mood</span>
+						<br>
+						<br>
+						<span class="mdl-badge bg-badge-blue-2 ing" data-badge="&#57404">Mood</span>
+						<br>
+						<br>
+						<span class="mdl-badge bg-badge-gray ing" data-badge="&#57405">Mood</span>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<!-- Colored FAB button -->
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+						<i class="material-icons">face</i>
+				</button>
+				<!-- Colored FAB button with ripple -->
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+					<i class="ing ing-ingaia-ico"></i>
+				</button>
+			</div>
+			<div class="col-6">
+				<h2>Sliders</h2>
+				<!-- Default Slider -->
+				<input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">
+				<!-- Slider with Starting Value -->
+				<input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0">
+			</div>
+			<div class="col-6">
+				<h2>Dropdown</h2>
+				<!-- Left aligned menu below button -->
+				<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="material-icons">more_vert</i>
+				</button>
+
+				<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left">
+					<li class="mdl-menu__item">Some Action</li>
+					<li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
+					<li disabled class="mdl-menu__item">Disabled Action</li>
+					<li class="mdl-menu__item">Yet Another Action</li>
+				</ul>
+			</div>
+			<div class="col-12 mt-4">
+				<h2>TOGGLES</h2>
+			</div>
+			<div class="col-2">
+				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+					<input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+					<span class="mdl-switch__label"></span>
+				</label>
+			</div>
+			<div class="col-2">
+				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+					<input type="checkbox" id="switch-2" class="mdl-switch__input">
+					<span class="mdl-switch__label"></span>
+				</label>
+			</div>
+			<div class="col-2">
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+					<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+					<span class="mdl-checkbox__label">Checkbox</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+					<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+					<span class="mdl-checkbox__label">Checkbox</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+					<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+					<span class="mdl-radio__label">First</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+					<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+					<span class="mdl-radio__label">Second</span>
+				</label>
+			</div>
+			<div class="col-6">
+				<h2>Table</h2>
+				<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+					<thead>
+						<tr>
+							<th class="mdl-data-table__cell--non-numeric">Material</th>
+							<th>Quantity</th>
+							<th>Unit price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+							<td>25</td>
+							<td>$2.90</td>
+						</tr>
+						<tr>
+							<td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+							<td>50</td>
+							<td>$1.25</td>
+						</tr>
+						<tr>
+							<td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+							<td>10</td>
+							<td>$2.35</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="col-6">
+				<h2>Tooltips<h2>
+				<!-- Simple Tooltip -->
+				<div id="tt1" class="icon material-icons">add</div>
+				<div class="mdl-tooltip" data-mdl-for="tt1">
+					Follow
+				</div>
+				<!-- Large Tooltip -->
+				<div id="tt2" class="icon material-icons">print</div>
+				<div class="mdl-tooltip mdl-tooltip--large" for="tt2">
+					Print
+				</div>
+			</div>
+			<div class="col-6 mt-4">
+				Icons				
+				<i class="material-icons">face</i>
+			</div>
+
+			<div class="col-12">
+				<div class="btn btn-success">
+					Enviar
+				</div>
+
+				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent btn btn-success btn-lg">
+					Button
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+	<script>        
+		$(document).ready(function () {
+			$('.alert-teste').click(function () {
+				createAlert({ color: "blue", positionxy: "top-right", icon: "ing-ingaia-ico", content: "<h4>Alert</h4> <p>funcionando</p>", timeout: "0" });
+			});
+		});
+		document.querySelector('#p3').addEventListener('mdl-componentupgraded', function () {
+			this.MaterialProgress.setProgress(33);
+			this.MaterialProgress.setBuffer(87);
+		});
+	</script>
 </body>
+
 </html>

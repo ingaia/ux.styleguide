@@ -3,7 +3,9 @@
 A **UX Styleguide** da suporte para criação de projetos usando:
 - Animate.css.
 - Bootstrap 4.
+- Material Design Lite
 - inGaia Font Icons.
+- Material Design Icons
 
 ## Instalação
 
@@ -29,6 +31,7 @@ Caso queira adicionar os scripts separadamente, eles se encontram na pasta:
 - jQuery `/node_modules/jquery/dist/jquery.min.js` 
 - Popper.js `/node_modules/popper.js/dist/umd/popper.min.js`
 - Bootstrap.js `/node_modules/bootstrap/dist/js/bootstrap.min.js`
+- Material.js `/node_modules/material-design-lite/material.min.js`
 
 ### inGaia Font Icons
 
@@ -44,6 +47,10 @@ CSS Minificado
 
 ou compile usando SASS:
 `node_modules/ingaia-font-icons/dist/scss/ingaia-font-icons.scss`
+
+### Material Design Icons
+
+[Material Icons Library](https://material.io/icons/)
 
 ### ReactJS
 
