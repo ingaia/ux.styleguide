@@ -1,6 +1,6 @@
 {
   "name": "ingaia.ux.styleguide",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "inGaia Ux Style Guide",
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --inline --hot",

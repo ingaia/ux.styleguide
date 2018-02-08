@@ -1,11 +1,11 @@
-$svg-path: '../svg/' !default;
+$svg-path: '../svg' !default;
 .ReactModal__Content {
     .ril-loading-circle {
         content: "";
         width: 100px;
         height: 100px;
         // background-image: url(../svg/inGaia-loader-white.svg);
-        background-image: url(#{$svg-path}inGaia-loader-white.svg);
+        background-image: url(#{$svg-path}/inGaia-loader-white.svg);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
