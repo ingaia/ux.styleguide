@@ -1,6 +1,6 @@
 {
   "name": "ingaia.ux.styleguide",
-  "version": "4.3.1",
+  "version": "4.3.2",
   "description": "inGaia Ux Style Guide",
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --inline --hot",
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/ingaia/ux.styleguide#readme",
   "dependencies": {
-    "animate.css": "^3.5.2",
+    "animate.css": "3.5.1",
     "bootstrap": "^4.0.0",
     "ingaia-font-icons": "^1.4.5",
     "jquery": "^3.3.1",
