@@ -18,27 +18,23 @@ label.active {
 
 // DEFAULT
 .input-group{
-  .input-group-prepend, .input-group-append {
-    .input-group-text {
-      font-size: $font-size-13;
-    }
+  .input-group-addon {
+    font-size: $font-size-13;
   }
   .input-group-btn .btn {
     font-size: $font-size-13;
     padding: .625rem .8125rem;
   }
   .dropdown-toggle {
-    font-size: $font-size-13;
+    font-size: $font-size-15;
     text-transform: capitalize;    
   }
 }
 
 //LG
 .input-group-lg{
-  .input-group-prepend, .input-group-append, .btn {
-    .input-group-text {
-      font-size: $font-size-15
-    }
+  .input-group-addon, .btn {
+    font-size: $font-size-15;
   }
   .input-group-btn .btn {
     font-size: $font-size-15;
@@ -52,10 +48,8 @@ label.active {
 
 //SM
 .input-group-sm{
-  .input-group-prepend, .input-group-append, .btn {
-    .input-group-text {
-      font-size: $font-size-12;
-    }
+  .input-group-addon, .btn {
+    font-size: $font-size-12;
   }
   .input-group-btn .btn {
     font-size: $font-size-12;
